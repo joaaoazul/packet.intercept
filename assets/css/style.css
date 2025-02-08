@@ -139,7 +139,7 @@ header, nav{
   }
 
   footer {
-    background: #004d99;
+    background: #00a0a0;
     color: #fff;
     text-align: center;
     padding: 15px;
@@ -152,11 +152,9 @@ header, nav{
       align-items: center;
     }
     .toggle-mode {
-      flex-direction: column;
-      top: 90px;
-      right: 10px;
-      padding: 8px 12px;
-      display: flex;
-        align-items: center;
-    }
+        position: static;  /* Remove a posição absoluta */
+        display: block;    /* Garante que ocupe uma linha inteira */
+        margin: 10px auto; /* Centraliza horizontalmente e adiciona espaço acima e abaixo */
+        padding: 8px 12px;
+      }
   }
