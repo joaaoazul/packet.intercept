@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Second Brain: ISC2 CC Study Avançado</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Second Brain: ISC2 CC Study Avançado</h1>
     <button class="toggle-mode">Modo Escuro</button>
   </header>
-
   <nav>
     <ul>
       <li><a href="#principios">Princípios de Segurança</a></li>
@@ -21,52 +23,93 @@
       <li><a href="#operacoes">Operações de Segurança</a></li>
     </ul>
   </nav>
+<main>
 
   <div class="search-container">
     <input type="text" id="searchInput" placeholder="Buscar conteúdo...">
   </div>
 
-  <div class="container">
-    <!-- Seção: Princípios de Segurança -->
-    <section id="principios">
-      <h2>Princípios de Segurança</h2>
-      
-      <article id="cia-triad">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>CIA Triad</h3>
-        <p>Conceitos de Confidencialidade, Integridade e Disponibilidade. Anote aqui exemplos e práticas para proteger dados e sistemas.</p>
-      </article>
-      
-      <article id="autenticacao-mfa">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Autenticação e MFA</h3>
-        <p>Métodos de autenticação e a importância da autenticação multifator para aumentar a segurança.</p>
-      </article>
-      
-      <article id="privacidade">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Privacidade e Não-repúdio</h3>
-        <p>Discussão sobre a proteção dos dados pessoais e os mecanismos para garantir que as ações não sejam negadas.</p>
-      </article>
-      
-      <article id="gestao-riscos">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Gestão de Riscos</h3>
-        <p>Processo de identificar, avaliar e tratar riscos, com metodologias e frameworks recomendados.</p>
-      </article>
-      
-      <article id="controles-seguranca">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Controles de Segurança</h3>
-        <p>Controles técnicos, administrativos e físicos para a proteção dos sistemas e dados.</p>
-      </article>
-      
-      <article id="codigo-etica">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Código de Ética da ISC2</h3>
-        <p>Princípios éticos e condutas esperadas dos profissionais de segurança da informação.</p>
-      </article>
-    </section>
+  <section id="principios">
+    <h2>Princípios de Segurança</h2>
+    
+    <article id="cia-triad">
+      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+      <h3><span>CIA Triad</span></h3>
+      <p>
+        A tríade CIA é o modelo clássico que orienta as práticas de segurança da informação, composto por:
+        <br><br>
+        <span>Confidencialidade:</span>
+        <br>
+        <span>O que é:</span> Assegurar que apenas pessoas autorizadas tenham acesso a dados e informações sensíveis.
+        <br>
+        <span>Como proteger:</span> Utilizando criptografia, controles de acesso, autenticação forte e políticas de privacidade.
+        <br>
+        <strong>Exemplo:</strong> Um banco que armazena dados dos clientes em servidores criptografados e limita o acesso apenas a funcionários autorizados.
+        <br>
+        <strong>Pergunta para reflexão:</strong> Quais métodos podem ser implementados para garantir que dados confidenciais não sejam acessados por pessoas não autorizadas?
+        <br><br>
+        <span>Integridade:</span>
+        <br>
+        <span>O que é:</span> Garantir que os dados não sejam alterados de maneira não autorizada, mantendo sua exatidão e confiabilidade.
+        <br>
+        <span>Como proteger:</span> Utilizando funções hash (como SHA-256), assinaturas digitais e controles de versionamento.
+        <br>
+        <strong>Exemplo:</strong> Um sistema de controle de versões que registra todas as alterações em um documento importante, permitindo identificar modificações não autorizadas.
+        <br>
+        <strong>Pergunta para reflexão:</strong> Como as assinaturas digitais ajudam a assegurar a integridade dos dados?
+        <br><br>
+        <span>Disponibilidade:</span>
+        <br>
+        <span>O que é:</span> Assegurar que os dados e sistemas estejam acessíveis quando necessários pelos usuários autorizados.
+        <br>
+        <span>Como proteger:</span> Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.
+        <br>
+        <strong>Exemplo:</strong> Um site de e-commerce que utiliza servidores em clusters e redes de distribuição de conteúdo (CDNs) para manter o serviço ativo mesmo durante picos de acesso.
+        <br>
+        <strong>Pergunta para reflexão:</strong> Que estratégias podem ser adotadas para minimizar o impacto de um ataque de negação de serviço (DDoS) e garantir a disponibilidade?
+      </p>
+    </article>
+    
+    <article id="autenticacao-mfa">
+      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+      <h3>Autenticação e MFA</h3>
+      <p>
+        Métodos de autenticação e a importância da autenticação multifator para aumentar a segurança.
+      </p>
+    </article>
+    
+    <article id="privacidade">
+      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+      <h3>Privacidade e Não-repúdio</h3>
+      <p>
+        Discussão sobre a proteção dos dados pessoais e os mecanismos para garantir que as ações não sejam negadas.
+      </p>
+    </article>
+    
+    <article id="gestao-riscos">
+      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+      <h3>Gestão de Riscos</h3>
+      <p>
+        Processo de identificar, avaliar e tratar riscos, com metodologias e frameworks recomendados.
+      </p>
+    </article>
+    
+    <article id="controles-seguranca">
+      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+      <h3>Controles de Segurança</h3>
+      <p>
+        Controles técnicos, administrativos e físicos para a proteção dos sistemas e dados.
+      </p>
+    </article>
+    
+    <article id="codigo-etica">
+      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+      <h3>Código de Ética da ISC2</h3>
+      <p>
+        Princípios éticos e condutas esperadas dos profissionais de segurança da informação.
+      </p>
+    </article>
+  </section>
 
     <!-- Seção: Continuidade de Negócios e Recuperação de Desastres -->
     <section id="continuidade">
@@ -169,7 +212,7 @@
       <button id="addTaskBtn">Adicionar Tarefa</button>
     </section>
   </div>
-
+</main>
   <footer>
     <p>&copy; 2025 joaoDev. Todos os direitos reservados.</p>
   </footer>
