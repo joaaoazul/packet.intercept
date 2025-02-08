@@ -6,10 +6,10 @@
   <title>Second Brain: ISC2 CC Study Avançado</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-<link rel="icon" href="./assets/img/logo_cc.png">
-<link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/img/logo_cc.png">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <header>
@@ -25,200 +25,348 @@
       <li><a href="#operacoes">Operações de Segurança</a></li>
     </ul>
   </nav>
-<main>
+  <main>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar conteúdo...">
+    </div>
+    <div class="container">
+      <!-- Seção: Princípios de Segurança -->
+      <section id="principios">
+        <h2>Princípios de Segurança</h2>
+        
+        <!-- Artigo: CIA Triad -->
+        <article id="cia-triad">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3><span>CIA Triad</span></h3>
+          <p>
+            A tríade CIA é o modelo clássico que orienta as práticas de segurança da informação, composto por:
+            <br><br>
+            <span class="CIA">Confidencialidade:</span>
+            <br>
+            <span><strong>O que é:</strong></span> Assegurar que apenas pessoas autorizadas tenham acesso a dados e informações sensíveis.
+            <br>
+            <span><strong>Como proteger:</strong></span> Utilizando criptografia, controles de acesso, autenticação forte e políticas de privacidade.
+            <br>
+            <strong>Exemplo:</strong> Um banco que armazena dados dos clientes em servidores criptografados e limita o acesso apenas a funcionários autorizados.
+            <br>
+            <strong>Pergunta para reflexão:</strong> Quais métodos podem ser implementados para garantir que dados confidenciais não sejam acessados por pessoas não autorizadas?
+            <br><br>
+            <span class="CIA">Integridade:</span>
+            <br>
+            <span><strong>O que é:</strong></span> Garantir que os dados não sejam alterados de maneira não autorizada, mantendo sua exatidão e confiabilidade.
+            <br>
+            <span><strong>Como proteger:</strong></span> Utilizando funções hash (como SHA-256), assinaturas digitais e controles de versionamento.
+            <br>
+            <strong>Exemplo:</strong> Um sistema de controle de versões que registra todas as alterações em um documento importante, permitindo identificar modificações não autorizadas.
+            <br>
+            <strong>Pergunta para reflexão:</strong> Como as assinaturas digitais ajudam a assegurar a integridade dos dados?
+            <br><br>
+            <span class="CIA">Disponibilidade:</span>
+            <br>
+            <span><strong>O que é:</strong></span> Assegurar que os dados e sistemas estejam acessíveis quando necessários pelos usuários autorizados.
+            <br>
+            <span><strong>Como proteger:</strong></span>Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.
+            <br>
+            <strong>Exemplo:</strong> Um site de e-commerce que utiliza servidores em clusters e redes de distribuição de conteúdo (CDNs) para manter o serviço ativo mesmo durante picos de acesso.
+            <br>
+            <strong>Pergunta para reflexão:</strong> Que estratégias podem ser adotadas para minimizar o impacto de um ataque de negação de serviço (DDoS) e garantir a disponibilidade?
+          </p>
+            <div class="cia-triad-img">
+              <img src="./assets/img/cia-triad.jpg" alt="CIA Triad">
+            </div>
 
-  <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Buscar conteúdo...">
-  </div>
+        </article>
+        
+        <!-- Artigo: Autenticação e MFA -->
+        <article id="autenticacao-mfa">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Autenticação e MFA</h3>
+          <p>
+            <strong>Definição:</strong><br>
+            A autenticação é o processo de verificar a identidade de um usuário ou sistema, enquanto a autenticação multifator (MFA) exige que o usuário apresente dois ou mais fatores de autenticação.
+          </p>
+          <p>
+            <strong>Fatores de Autenticação:</strong>
+          </p>
+          <ul>
+            <li><strong>Algo que você sabe:</strong> Senhas, PINs ou respostas a perguntas secretas.</li>
+            <li><strong>Algo que você tem:</strong> Tokens físicos, smartphones (para receber códigos via SMS ou aplicativos autenticadores) ou smart cards.</li>
+            <li><strong>Algo que você é:</strong> Características biométricas, como impressões digitais, reconhecimento facial ou leitura da íris.</li>
+          </ul>
+          <p>
+            <strong>Como Implementar MFA:</strong><br>
+            <em>Exemplo Prático:</em> Um serviço de e-mail pode exigir que, além da senha, o usuário insira um código temporário gerado por um aplicativo autenticador (como Google Authenticator). Assim, mesmo que a senha seja comprometida, o acesso não é garantido sem o segundo fator.
+          </p>
+          <p>
+            <strong>Pergunta para reflexão:</strong> Quais são as vantagens de usar autenticação multifator em comparação com a autenticação baseada apenas em senha?
+          </p>
+          <p>
+            <strong>Desafios e Boas Práticas:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Desafios:</strong>
+              <ul>
+                <li>Gerenciamento de dispositivos perdidos ou comprometidos.</li>
+                <li>Usabilidade e aceitação dos usuários.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Boas Práticas:</strong>
+              <ul>
+                <li>Fornecer métodos alternativos de verificação.</li>
+                <li>Educar os usuários sobre a importância da MFA.</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        
+        <!-- Artigo: Privacidade e Não-repúdio -->
+        <article id="privacidade">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Privacidade e Não-repúdio</h3>
+          <p>
+            <strong>Privacidade:</strong><br>
+            <strong>O que é:</strong> Proteção dos dados pessoais e sensíveis para que o uso, o armazenamento e a transmissão desses dados estejam em conformidade com as leis e regulamentações (como GDPR, LGPD).
+          </p>
+          <p>
+            <strong>Como Proteger:</strong>
+          </p>
+          <ul>
+            <li><strong>Criptografia:</strong> Tanto para dados em repouso quanto em trânsito.</li>
+            <li><strong>Anonimização e Pseudonimização:</strong> Tornar os dados menos identificáveis sem comprometer a utilidade da informação.</li>
+            <li><strong>Consentimento Informado:</strong> Garantir que os usuários saibam como seus dados serão usados.</li>
+          </ul>
+          <p>
+            <strong>Exemplo:</strong> Um aplicativo de saúde que coleta dados biométricos informa os usuários sobre a finalidade do uso desses dados e adota técnicas de anonimização para proteger a identidade dos pacientes.
+          </p>
+          <p>
+            <strong>Pergunta para reflexão:</strong> Como as leis de privacidade influenciam a forma como uma empresa coleta e armazena dados dos seus clientes?
+          </p>
+          <p>
+            <strong>Não-repúdio:</strong><br>
+            <strong>O que é:</strong> Garante que uma ação ou transação não possa ser negada pelo autor posteriormente, criando um registro verificável da ação.
+          </p>
+          <p>
+            <strong>Como Proteger:</strong>
+          </p>
+          <ul>
+            <li><strong>Assinaturas Digitais:</strong> Utilizando criptografia para validar a autoria de uma transação ou mensagem.</li>
+            <li><strong>Logs de Auditoria:</strong> Registrando todas as atividades relevantes, garantindo rastreabilidade.</li>
+          </ul>
+          <p>
+            <strong>Exemplo:</strong> Em transações financeiras, uma assinatura digital assegura que o remetente não pode negar ter autorizado a transferência de recursos.
+          </p>
+          <p>
+            <strong>Pergunta para reflexão:</strong> Por que os registros de auditoria são essenciais para garantir o não-repúdio em sistemas críticos?
+          </p>
+        </article>
+        
+        <!-- Artigo: Gestão de Riscos (Atualizado) -->
+        <article id="gestao-riscos">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Gestão de Riscos</h3>
+          <p>
+            <strong>Definição:</strong><br>
+            Gestão de riscos é o processo sistemático de identificar, avaliar e mitigar os riscos que podem afetar os ativos e as operações de uma organização. Risco é definido como a probabilidade de ocorrência de um evento negativo que possa impactar os objetivos da organização, aliado ao impacto que esse evento pode causar.
+          </p>
+          <p>
+            <strong>Risk Management:</strong><br>
+            Envolve a aplicação de métodos, políticas e procedimentos para gerenciar riscos, minimizando sua probabilidade e/ou impacto e garantindo a continuidade dos negócios.
+          </p>
+          <p>
+            <strong>Risk Assessment and Identification:</strong><br>
+            Consiste na identificação de vulnerabilidades e ameaças, seguida da avaliação dos riscos associados. Essa etapa envolve a coleta de dados e a realização de análises — tanto qualitativas quanto quantitativas — para determinar a criticidade dos riscos.
+          </p>
+          <p>
+            <strong>Risk Treatment:</strong><br>
+            Após identificar os riscos, são aplicadas estratégias de tratamento que podem incluir:
+          </p>
+          <ul>
+            <li><strong>Mitigação:</strong> Implementar controles e medidas de segurança para reduzir a probabilidade ou o impacto do risco.</li>
+            <li><strong>Transferência:</strong> Transferir o risco para terceiros, por exemplo, por meio de seguros ou terceirização.</li>
+            <li><strong>Aceitação:</strong> Decidir não agir se o risco for considerado aceitável dentro do contexto da organização.</li>
+          </ul>
+          <p>
+            <strong>Qualitative and Quantitative Risk Analysis:</strong><br>
+            A análise qualitativa avalia os riscos com base em critérios subjetivos (como probabilidade e impacto) sem a atribuição de valores numéricos precisos, enquanto a análise quantitativa utiliza dados numéricos para calcular o valor do risco. Ambas as abordagens ajudam a priorizar os riscos e a definir as estratégias de tratamento.
+          </p>
+          <p>
+            <strong>Exemplo Prático:</strong><br>
+            Uma empresa de TI identifica que um servidor crítico possui vulnerabilidades conhecidas. Após uma análise qualitativa, o risco é classificado como alto devido ao impacto potencial, e a equipe decide implementar medidas de mitigação (como a aplicação de patches e a configuração de firewalls) e realizar monitoramento contínuo para reduzir esse risco.
+          </p>
+          <div class="test-container">
+          <h4 class="test">Teste de Compreensão</h4>
+          <ol>
+            <li>O que é risco e como ele é definido no contexto da gestão de riscos?</li>
+            <li>Quais são as principais etapas da gestão de riscos?</li>
+            <li>Descreva a diferença entre análise qualitativa e quantitativa de riscos.</li>
+            <li>Liste e explique as estratégias de tratamento de riscos.</li>
+            <li>Por que é importante identificar e classificar os riscos antes de tratá-los?</li>
+          </ol>
+          <p>
+            Responda às perguntas e revise suas respostas com base nos estudos e nas referências oficiais. Essa prática ajudará a consolidar seu entendimento sobre o tema.
+          </p>
 
-  <section id="principios">
-    <h2>Princípios de Segurança</h2>
-    
-    <article id="cia-triad">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3><span>CIA Triad</span></h3>
-      <p>
-        A tríade CIA é o modelo clássico que orienta as práticas de segurança da informação, composto por:
-        <br><br>
-        <span>Confidencialidade:</span>
-        <br>
-        <span>O que é:</span> Assegurar que apenas pessoas autorizadas tenham acesso a dados e informações sensíveis.
-        <br>
-        <span>Como proteger:</span> Utilizando criptografia, controles de acesso, autenticação forte e políticas de privacidade.
-        <br>
-        <strong>Exemplo:</strong> Um banco que armazena dados dos clientes em servidores criptografados e limita o acesso apenas a funcionários autorizados.
-        <br>
-        <strong>Pergunta para reflexão:</strong> Quais métodos podem ser implementados para garantir que dados confidenciais não sejam acessados por pessoas não autorizadas?
-        <br><br>
-        <span>Integridade:</span>
-        <br>
-        <span>O que é:</span> Garantir que os dados não sejam alterados de maneira não autorizada, mantendo sua exatidão e confiabilidade.
-        <br>
-        <span>Como proteger:</span> Utilizando funções hash (como SHA-256), assinaturas digitais e controles de versionamento.
-        <br>
-        <strong>Exemplo:</strong> Um sistema de controle de versões que registra todas as alterações em um documento importante, permitindo identificar modificações não autorizadas.
-        <br>
-        <strong>Pergunta para reflexão:</strong> Como as assinaturas digitais ajudam a assegurar a integridade dos dados?
-        <br><br>
-        <span>Disponibilidade:</span>
-        <br>
-        <span>O que é:</span> Assegurar que os dados e sistemas estejam acessíveis quando necessários pelos usuários autorizados.
-        <br>
-        <span>Como proteger:</span> Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.
-        <br>
-        <strong>Exemplo:</strong> Um site de e-commerce que utiliza servidores em clusters e redes de distribuição de conteúdo (CDNs) para manter o serviço ativo mesmo durante picos de acesso.
-        <br>
-        <strong>Pergunta para reflexão:</strong> Que estratégias podem ser adotadas para minimizar o impacto de um ataque de negação de serviço (DDoS) e garantir a disponibilidade?
-      </p>
-    </article>
-    
-    <article id="autenticacao-mfa">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3>Autenticação e MFA</h3>
-      <p>
-        Métodos de autenticação e a importância da autenticação multifator para aumentar a segurança.
-      </p>
-    </article>
-    
-    <article id="privacidade">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3>Privacidade e Não-repúdio</h3>
-      <p>
-        Discussão sobre a proteção dos dados pessoais e os mecanismos para garantir que as ações não sejam negadas.
-      </p>
-    </article>
-    
-    <article id="gestao-riscos">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3>Gestão de Riscos</h3>
-      <p>
-        Processo de identificar, avaliar e tratar riscos, com metodologias e frameworks recomendados.
-      </p>
-    </article>
-    
-    <article id="controles-seguranca">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3>Controles de Segurança</h3>
-      <p>
-        Controles técnicos, administrativos e físicos para a proteção dos sistemas e dados.
-      </p>
-    </article>
-    
-    <article id="codigo-etica">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3>Código de Ética da ISC2</h3>
-      <p>
-        Princípios éticos e condutas esperadas dos profissionais de segurança da informação.
-      </p>
-    </article>
-  </section>
-
-    <!-- Seção: Continuidade de Negócios e Recuperação de Desastres -->
-    <section id="continuidade">
-      <h2>Continuidade de Negócios e Recuperação de Desastres (DR)</h2>
+          <details>
+            <summary>Mostrar Respostas ao Teste</summary>
+            <ol>
+              <li><strong>Resposta:</strong> Risco é a probabilidade de ocorrência de um evento negativo associado ao impacto que ele pode causar nos objetivos da organização.</li>
+              <li><strong>Resposta:</strong> Identificação, avaliação, tratamento e monitoramento/revisão dos riscos.</li>
+              <li><strong>Resposta:</strong> A análise qualitativa utiliza critérios subjetivos para avaliar riscos, enquanto a quantitativa emprega dados numéricos para mensurar o valor do risco.</li>
+              <li><strong>Resposta:</strong> Mitigação, transferência e aceitação.</li>
+              <li><strong>Resposta:</strong> Porque isso permite priorizar os riscos e definir estratégias adequadas para minimizar seu impacto.</li>
+            </ol>
+          </details>
+        </div>
+        </article>
+        
+        <!-- Artigo: Controles de Segurança -->
+        <article id="controles-seguranca">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Controles de Segurança</h3>
+          <p>
+            <strong>Definição:</strong><br>
+            Controles de segurança são medidas implementadas para reduzir riscos e proteger os ativos de uma organização. Eles podem ser classificados em:
+          </p>
+          <ul>
+            <li>
+              <strong>Controles Técnicos:</strong> Ferramentas e tecnologias que protegem sistemas e dados, como firewalls, antivírus, sistemas de detecção e prevenção de intrusos (IDS/IPS) e criptografia.
+            </li>
+            <li>
+              <strong>Controles Administrativos:</strong> Políticas, procedimentos e práticas de gestão que orientam a segurança da informação, como políticas de segurança, treinamentos, auditorias e planos de resposta a incidentes.
+            </li>
+            <li>
+              <strong>Controles Físicos:</strong> Medidas que protegem o acesso físico a sistemas e dados, como câmeras de vigilância, controle de acesso a instalações, alarmes e barreiras físicas.
+            </li>
+          </ul>
+          <p>
+            <strong>Exemplo Prático:</strong> Uma organização protege seu data center implementando controles técnicos (firewalls e VPNs para acesso seguro), administrativos (políticas de uso aceitável e treinamentos periódicos) e físicos (controle de acesso por biometria e vigilância por CFTV).
+          </p>
+          <p>
+            <strong>Pergunta para reflexão:</strong> Como a combinação de controles técnicos, administrativos e físicos pode fortalecer a postura de segurança de uma organização?
+          </p>
+        </article>
+        
+        <!-- Artigo: Código de Ética da ISC2 -->
+        <article id="codigo-etica">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Código de Ética da ISC2</h3>
+          <p>
+            <strong>Definição:</strong><br>
+            O Código de Ética da ISC2 é um conjunto de princípios que orientam o comportamento dos profissionais certificados, garantindo que atuem com responsabilidade, integridade e competência.
+          </p>
+          <p>
+            <strong>Princípios Fundamentais:</strong>
+          </p>
+          <ul>
+            <li><strong>Responsabilidade Profissional:</strong> Agir com competência e diligência na proteção de informações e sistemas.</li>
+            <li><strong>Integridade:</strong> Manter a honestidade e a transparência, evitando conflitos de interesse.</li>
+            <li><strong>Confidencialidade:</strong> Proteger informações sensíveis, respeitando a privacidade de clientes e colegas.</li>
+            <li><strong>Excelência Profissional:</strong> Buscar continuamente o aprimoramento das habilidades e cumprir os mais altos padrões éticos.</li>
+          </ul>
+          <p>
+            <strong>Exemplo Prático:</strong> Um profissional certificado pela ISC2 se recusa a participar de atividades que possam comprometer a segurança dos dados, mesmo sob pressão, demonstrando integridade e responsabilidade.
+          </p>
+          <p>
+            <strong>Pergunta para reflexão:</strong> De que maneira o Código de Ética da ISC2 contribui para a confiança dos clientes e da comunidade de segurança da informação?
+          </p>
+        </article>
+      </section>
       
-      <article id="business-continuity">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Business Continuity (BC)</h3>
-        <p>Estratégias e processos para manter as operações críticas durante incidentes. Anote os pontos chave do BC.</p>
-      </article>
+      <!-- Seção: Continuidade de Negócios e Recuperação de Desastres -->
+      <section id="continuidade">
+        <h2>Continuidade de Negócios e Recuperação de Desastres (DR)</h2>
+        <article id="business-continuity">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Business Continuity (BC)</h3>
+          <p>Estratégias e processos para manter as operações críticas durante incidentes. Anote os pontos chave do BC.</p>
+        </article>
+        <article id="disaster-recovery">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Recuperação de Desastres (DR)</h3>
+          <p>Procedimentos para restaurar sistemas após desastres ou falhas graves, incluindo RTO e RPO.</p>
+        </article>
+        <article id="resposta-incidentes">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Resposta a Incidentes</h3>
+          <p>Etapas para identificar, conter e recuperar de incidentes de segurança. Insira aqui fluxos e processos recomendados.</p>
+        </article>
+      </section>
       
-      <article id="disaster-recovery">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Recuperação de Desastres (DR)</h3>
-        <p>Procedimentos para restaurar sistemas após desastres ou falhas graves, incluindo RTO e RPO.</p>
-      </article>
+      <!-- Seção: Controle de Acesso -->
+      <section id="controle">
+        <h2>Controle de Acesso</h2>
+        <article id="controles-fisicos">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Controles Físicos</h3>
+          <p>Métodos para restringir o acesso físico a ambientes e ativos, como uso de crachás e monitoramento por CFTV.</p>
+        </article>
+        <article id="controles-logicos">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Controles Lógicos</h3>
+          <p>Gerenciamento de acesso digital, utilizando modelos como RBAC, DAC, MAC e ABAC.</p>
+        </article>
+        <article id="menor-privilegio">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Princípio do Menor Privilégio</h3>
+          <p>Garantir que cada usuário tenha apenas os acessos estritamente necessários para suas funções.</p>
+        </article>
+      </section>
       
-      <article id="resposta-incidentes">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Resposta a Incidentes</h3>
-        <p>Etapas para identificar, conter e recuperar de incidentes de segurança. Insira aqui fluxos e processos recomendados.</p>
-      </article>
-    </section>
-
-    <!-- Seção: Controle de Acesso -->
-    <section id="controle">
-      <h2>Controle de Acesso</h2>
+      <!-- Seção: Segurança de Redes -->
+      <section id="redes">
+        <h2>Segurança de Redes</h2>
+        <article id="infraestrutura-seguranca">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Infraestrutura de Segurança</h3>
+          <p>Uso de firewalls, VPNs, IDS/IPS e segmentação para proteger a rede contra ameaças.</p>
+        </article>
+        <article id="ameacas-ataques">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Ameaças e Ataques à Rede</h3>
+          <p>Exemplos de ataques (DDoS, phishing, MitM) e as técnicas de mitigação associadas.</p>
+        </article>
+        <article id="protocolos-seguros">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Protocolos Seguros</h3>
+          <p>Implementação de protocolos como TLS e IPSec para garantir comunicações seguras.</p>
+        </article>
+      </section>
       
-      <article id="controles-fisicos">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Controles Físicos</h3>
-        <p>Métodos para restringir o acesso físico a ambientes e ativos, como uso de crachás e monitoramento por CFTV.</p>
-      </article>
+      <!-- Seção: Operações de Segurança -->
+      <section id="operacoes">
+        <h2>Operações de Segurança</h2>
+        <article id="seguranca-dados">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Segurança de Dados</h3>
+          <p>Técnicas para proteger informações sensíveis, incluindo criptografia e políticas de DLP.</p>
+        </article>
+        <article id="endurecimento-sistema">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Endurecimento do Sistema</h3>
+          <p>Práticas para reduzir vulnerabilidades, como aplicação de patches e configurações seguras.</p>
+        </article>
+        <article id="treinamento">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <h3>Treinamento em Conscientização de Segurança</h3>
+          <p>Estratégias e iniciativas para educar os usuários sobre boas práticas de segurança.</p>
+        </article>
+      </section>
       
-      <article id="controles-logicos">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Controles Lógicos</h3>
-        <p>Gerenciamento de acesso digital, utilizando modelos como RBAC, DAC, MAC e ABAC.</p>
-      </article>
-      
-      <article id="menor-privilegio">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Princípio do Menor Privilégio</h3>
-        <p>Garantir que cada usuário tenha apenas os acessos estritamente necessários para suas funções.</p>
-      </article>
-    </section>
-
-    <!-- Seção: Segurança de Redes -->
-    <section id="redes">
-      <h2>Segurança de Redes</h2>
-      
-      <article id="infraestrutura-seguranca">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Infraestrutura de Segurança</h3>
-        <p>Uso de firewalls, VPNs, IDS/IPS e segmentação para proteger a rede contra ameaças.</p>
-      </article>
-      
-      <article id="ameacas-ataques">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Ameaças e Ataques à Rede</h3>
-        <p>Exemplos de ataques (DDoS, phishing, MitM) e as técnicas de mitigação associadas.</p>
-      </article>
-      
-      <article id="protocolos-seguros">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Protocolos Seguros</h3>
-        <p>Implementação de protocolos como TLS e IPSec para garantir comunicações seguras.</p>
-      </article>
-    </section>
-
-    <!-- Seção: Operações de Segurança -->
-    <section id="operacoes">
-      <h2>Operações de Segurança</h2>
-      
-      <article id="seguranca-dados">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Segurança de Dados</h3>
-        <p>Técnicas para proteger informações sensíveis, incluindo criptografia e políticas de DLP.</p>
-      </article>
-      
-      <article id="endurecimento-sistema">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Endurecimento do Sistema</h3>
-        <p>Práticas para reduzir vulnerabilidades, como aplicação de patches e configurações seguras.</p>
-      </article>
-      
-      <article id="treinamento">
-        <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-        <h3>Treinamento em Conscientização de Segurança</h3>
-        <p>Estratégias e iniciativas para educar os usuários sobre boas práticas de segurança.</p>
-      </article>
-    </section>
-
-    <!-- Seção: Dashboard de Progresso e Tarefas -->
-    <section id="dashboard">
-      <h2>Dashboard de Progresso e Tarefas</h2>
-      <p>Aqui você pode ver seu progresso e gerenciar suas tarefas de estudo.</p>
-      <ul id="taskList"></ul>
-      <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
-      <button id="addTaskBtn">Adicionar Tarefa</button>
-    </section>
-  </div>
-</main>
+      <!-- Seção: Dashboard de Progresso e Tarefas -->
+      <section id="dashboard">
+        <h2>Dashboard de Progresso e Tarefas</h2>
+        <p>Aqui você pode ver seu progresso e gerenciar suas tarefas de estudo.</p>
+        <ul id="taskList"></ul>
+        <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+        <button id="addTaskBtn">Adicionar Tarefa</button>
+      </section>
+    </div>
+  </main>
   <footer>
     <p>&copy; 2025 joaoDev. Todos os direitos reservados. v1.2</p>
   </footer>
-
   <script src="./assets/js/script.js"></script>
-
+</body>
 </html>

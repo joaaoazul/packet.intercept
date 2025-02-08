@@ -1,8 +1,13 @@
 const toggleBtn = document.querySelector('.toggle-mode');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
-    });
+const container = document.querySelector('.container');
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (container) {
+    container.classList.toggle('dark-mode');
+  }
+  toggleBtn.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
+});
 
     // Navegação suave
     document.querySelectorAll('nav a').forEach(anchor => {
