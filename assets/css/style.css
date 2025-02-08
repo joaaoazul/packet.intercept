@@ -221,4 +221,9 @@ footer {
     margin: 10px auto; /* Centraliza horizontalmente e adiciona espaçamento */
     padding: 8px 12px;
   }
+
+  .cia-triad-img img{
+  max-width: 100%;
+  height: auto;
+  }
 }
