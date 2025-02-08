@@ -112,6 +112,10 @@ section {
  align-items: center;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
+}
+.cia-triad-img img{
+  border-radius: 12px;
 }
 
 section h2 {
