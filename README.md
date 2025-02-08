@@ -23,4 +23,4 @@ Este projeto é um site "Second Brain" desenvolvido para auxiliar nos estudos pa
 
 1. **Clone ou Faça o Download do Repositório:**  
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   [git clone https://github.com/joaaoazul/CC-Second-Brain.git]
