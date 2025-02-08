@@ -75,3 +75,9 @@ const toggleBtn = document.querySelector('.toggle-mode');
 
     addTaskBtn.addEventListener('click', addTask);
     loadTasks();
+
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+          .then(() => console.log("Service Worker registado!"));
+  }
+  
