@@ -1,0 +1,553 @@
+[
+    {
+      "question": "Qual é a função principal de um firewall?",
+      "options": [
+        "Filtrar o tráfego de rede para prevenir acessos não autorizados",
+        "Armazenar dados temporariamente",
+        "Aumentar a velocidade da rede",
+        "Gerar energia para o servidor"
+      ],
+      "correct": 0,
+      "explanation": "O firewall atua como uma barreira, monitorando e filtrando o tráfego de rede para impedir acessos não autorizados."
+    },
+    {
+      "question": "O que é MFA (Autenticação Multifator)?",
+      "options": [
+        "Uso exclusivo de senhas complexas",
+        "Autenticação que requer dois ou mais métodos de verificação",
+        "Autenticação baseada em endereço IP",
+        "Verificação de segurança via rede social"
+      ],
+      "correct": 1,
+      "explanation": "MFA exige que o usuário apresente dois ou mais fatores de autenticação, aumentando a segurança."
+    },
+    {
+      "question": "Qual é a tríade da segurança da informação?",
+      "options": [
+        "Confidencialidade, Integridade, Disponibilidade",
+        "Integridade, Usabilidade, Confiabilidade",
+        "Autenticidade, Disponibilidade, Usabilidade",
+        "Responsabilidade, Integridade, Confiabilidade"
+      ],
+      "correct": 0,
+      "explanation": "A tríade CIA representa Confidencialidade, Integridade e Disponibilidade."
+    },
+    {
+      "question": "Qual o objetivo da criptografia?",
+      "options": [
+        "Armazenar dados",
+        "Proteger a confidencialidade dos dados",
+        "Aumentar a velocidade da rede",
+        "Facilitar o acesso dos usuários"
+      ],
+      "correct": 1,
+      "explanation": "A criptografia protege os dados, garantindo que apenas partes autorizadas possam acessá-los."
+    },
+    {
+      "question": "O que é phishing?",
+      "options": [
+        "Um ataque que visa roubar informações através de e-mails fraudulentos",
+        "Um tipo de malware",
+        "Um método de criptografia",
+        "Um sistema de backup"
+      ],
+      "correct": 0,
+      "explanation": "Phishing é uma técnica de fraude online que tenta enganar o usuário para que forneça informações confidenciais."
+    },
+    {
+      "question": "Qual o propósito de um IDS (Intrusion Detection System)?",
+      "options": [
+        "Detectar e alertar sobre atividades suspeitas",
+        "Bloquear todo o tráfego",
+        "Gerenciar senhas",
+        "Criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "Um IDS monitora o tráfego de rede e alerta os administradores sobre possíveis intrusões."
+    },
+    {
+      "question": "O que significa o termo DLP?",
+      "options": [
+        "Data Loss Prevention",
+        "Digital Log Processing",
+        "Data Layer Protection",
+        "Direct Login Protocol"
+      ],
+      "correct": 0,
+      "explanation": "DLP (Data Loss Prevention) refere-se a estratégias para prevenir a perda de dados."
+    },
+    {
+      "question": "Qual é a principal função de um antivírus?",
+      "options": [
+        "Detectar e remover malware",
+        "Aumentar a velocidade do computador",
+        "Armazenar arquivos",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Um antivírus identifica e remove softwares maliciosos do sistema."
+    },
+    {
+      "question": "O que é um ataque DDoS?",
+      "options": [
+        "Um ataque de negação de serviço distribuído",
+        "Um tipo de phishing",
+        "Um sistema de backup",
+        "Uma técnica de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "DDoS é um ataque que sobrecarrega um sistema com tráfego, tornando-o indisponível."
+    },
+    {
+      "question": "Qual a importância do backup?",
+      "options": [
+        "Recuperar dados em caso de perda",
+        "Aumentar a velocidade da rede",
+        "Melhorar a qualidade da imagem",
+        "Reduzir o consumo de energia"
+      ],
+      "correct": 0,
+      "explanation": "Backups são essenciais para recuperar dados em caso de falhas ou ataques."
+    },
+    {
+      "question": "O que é uma VPN?",
+      "options": [
+        "Rede privada virtual para conexões seguras",
+        "Um tipo de malware",
+        "Uma técnica de backup",
+        "Um software antivírus"
+      ],
+      "correct": 0,
+      "explanation": "VPNs criam conexões seguras e privadas pela internet."
+    },
+    {
+      "question": "Qual é a função do protocolo TLS?",
+      "options": [
+        "Garantir comunicações seguras",
+        "Aumentar a velocidade de transferência",
+        "Armazenar senhas",
+        "Gerenciar logs"
+      ],
+      "correct": 0,
+      "explanation": "TLS (Transport Layer Security) criptografa dados durante a transmissão para garantir segurança."
+    },
+    {
+      "question": "O que é um honeypot em segurança cibernética?",
+      "options": [
+        "Um sistema para atrair e identificar invasores",
+        "Um tipo de firewall",
+        "Um software antivírus",
+        "Um método de backup"
+      ],
+      "correct": 0,
+      "explanation": "Honeypots atraem invasores para monitorar suas técnicas e intenções sem comprometer sistemas reais."
+    },
+    {
+      "question": "Qual é o papel do SIEM (Security Information and Event Management)?",
+      "options": [
+        "Coletar, correlacionar e analisar logs de segurança",
+        "Gerenciar senhas",
+        "Criptografar dados",
+        "Monitorar a temperatura do servidor"
+      ],
+      "correct": 0,
+      "explanation": "SIEMs agregam e analisam logs para identificar e responder a incidentes de segurança."
+    },
+    {
+      "question": "O que significa o termo 'zero-day'?",
+      "options": [
+        "Uma vulnerabilidade desconhecida",
+        "Um ataque DDoS",
+        "Um backup sem falhas",
+        "Uma atualização de software"
+      ],
+      "correct": 0,
+      "explanation": "Vulnerabilidades zero-day são falhas desconhecidas pelos desenvolvedores e sem correção disponível."
+    },
+    {
+      "question": "Qual é a função de um proxy?",
+      "options": [
+        "Servir como intermediário entre o usuário e a internet",
+        "Armazenar senhas",
+        "Criptografar dados",
+        "Aumentar a velocidade do computador"
+      ],
+      "correct": 0,
+      "explanation": "Um proxy atua como intermediário, ajudando a filtrar e monitorar o tráfego entre o usuário e a internet."
+    },
+    {
+      "question": "O que é engenharia social?",
+      "options": [
+        "Manipulação psicológica para obter informações confidenciais",
+        "Um método de criptografia",
+        "Uma técnica de backup",
+        "Um ataque DDoS"
+      ],
+      "correct": 0,
+      "explanation": "Engenharia social envolve manipular pessoas para que revelem informações confidenciais."
+    },
+    {
+      "question": "Qual é o objetivo da segmentação de rede?",
+      "options": [
+        "Isolar partes da rede para melhorar a segurança",
+        "Aumentar a velocidade da rede",
+        "Armazenar dados",
+        "Facilitar o acesso remoto"
+      ],
+      "correct": 0,
+      "explanation": "Segmentar a rede limita a propagação de ataques e facilita o gerenciamento da segurança."
+    },
+    {
+      "question": "O que é um certificado digital?",
+      "options": [
+        "Um arquivo que autentica a identidade de uma entidade",
+        "Um tipo de malware",
+        "Um backup criptografado",
+        "Um sistema de firewall"
+      ],
+      "correct": 0,
+      "explanation": "Certificados digitais garantem a autenticidade e integridade de comunicações e transações."
+    },
+    {
+      "question": "Qual é a finalidade da autenticação de dois fatores (2FA)?",
+      "options": [
+        "Adicionar uma camada extra de segurança",
+        "Aumentar a velocidade do login",
+        "Armazenar mais senhas",
+        "Facilitar o acesso público"
+      ],
+      "correct": 0,
+      "explanation": "2FA requer dois métodos de verificação, tornando mais difícil o acesso não autorizado."
+    },
+    {
+      "question": "O que é ransomware?",
+      "options": [
+        "Um tipo de malware que sequestra dados e exige resgate",
+        "Um firewall",
+        "Um software de backup",
+        "Uma VPN"
+      ],
+      "correct": 0,
+      "explanation": "Ransomware criptografa os dados e solicita um pagamento para liberá-los."
+    },
+    {
+      "question": "Qual é o papel do controle de acesso baseado em função (RBAC)?",
+      "options": [
+        "Restringir acessos com base nas funções dos usuários",
+        "Aumentar a velocidade da rede",
+        "Gerenciar backups",
+        "Criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "RBAC limita o acesso aos recursos de acordo com as responsabilidades dos usuários."
+    },
+    {
+      "question": "O que é spoofing?",
+      "options": [
+        "Falsificação de identidade ou endereço IP",
+        "Um tipo de backup",
+        "Um método de criptografia",
+        "Uma técnica de firewall"
+      ],
+      "correct": 0,
+      "explanation": "Spoofing é a falsificação de informações de origem para enganar sistemas ou pessoas."
+    },
+    {
+      "question": "O que significa VPN split tunneling?",
+      "options": [
+        "Dividir o tráfego entre a VPN e a conexão local",
+        "Criptografar todo o tráfego",
+        "Armazenar senhas separadamente",
+        "Gerenciar backups de forma distribuída"
+      ],
+      "correct": 0,
+      "explanation": "Split tunneling permite que parte do tráfego seja roteada pela VPN e parte pela conexão local."
+    },
+    {
+      "question": "Qual é a importância dos patches de segurança?",
+      "options": [
+        "Corrigir vulnerabilidades e proteger sistemas",
+        "Aumentar a velocidade do computador",
+        "Melhorar a qualidade da imagem",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Patches de segurança corrigem falhas conhecidas e ajudam a manter o sistema protegido."
+    },
+    {
+      "question": "O que é um ataque Man-in-the-Middle (MitM)?",
+      "options": [
+        "Um ataque em que o invasor intercepta a comunicação entre duas partes",
+        "Um backup falho",
+        "Uma atualização de software",
+        "Um tipo de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "MitM intercepta e, possivelmente, altera a comunicação entre duas partes sem que elas percebam."
+    },
+    {
+      "question": "O que significa o termo 'sandboxing'?",
+      "options": [
+        "Executar código em um ambiente isolado para testar seu comportamento",
+        "Armazenar dados em um backup",
+        "Melhorar a velocidade do sistema",
+        "Compartilhar arquivos de forma segura"
+      ],
+      "correct": 0,
+      "explanation": "Sandboxing isola o código em um ambiente controlado, prevenindo danos ao sistema principal."
+    },
+    {
+      "question": "Qual é a finalidade do controle de versão em segurança?",
+      "options": [
+        "Monitorar alterações em dados e identificar acessos não autorizados",
+        "Aumentar a velocidade do sistema",
+        "Criptografar informações",
+        "Gerenciar backups"
+      ],
+      "correct": 0,
+      "explanation": "O controle de versão ajuda a rastrear mudanças e detectar modificações não autorizadas."
+    },
+    {
+      "question": "O que é um rootkit?",
+      "options": [
+        "Um conjunto de ferramentas que permite controle remoto não autorizado",
+        "Um tipo de firewall",
+        "Um método de backup",
+        "Uma técnica de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "Rootkits são usados para ocultar a presença de malware e manter o acesso privilegiado ao sistema."
+    },
+    {
+      "question": "Qual é o papel da análise forense digital?",
+      "options": [
+        "Investigar incidentes e coletar evidências digitais",
+        "Melhorar a velocidade do sistema",
+        "Gerenciar senhas",
+        "Armazenar dados de forma segura"
+      ],
+      "correct": 0,
+      "explanation": "A análise forense digital investiga crimes cibernéticos e coleta evidências para processos legais."
+    },
+    {
+      "question": "O que é segurança de endpoint?",
+      "options": [
+        "Proteção de dispositivos finais como PCs e smartphones",
+        "Armazenamento em nuvem",
+        "Backup de dados",
+        "Monitoramento de rede"
+      ],
+      "correct": 0,
+      "explanation": "Segurança de endpoint protege dispositivos individuais contra ameaças."
+    },
+    {
+      "question": "O que é um botnet?",
+      "options": [
+        "Uma rede de dispositivos comprometidos controlados remotamente",
+        "Um tipo de backup",
+        "Um firewall distribuído",
+        "Um sistema de VPN"
+      ],
+      "correct": 0,
+      "explanation": "Botnets consistem em dispositivos infectados que podem ser usados para ataques em larga escala."
+    },
+    {
+      "question": "Qual é a função do algoritmo RSA?",
+      "options": [
+        "Criptografar dados usando chave pública e privada",
+        "Armazenar dados de forma segura",
+        "Monitorar a rede",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "O RSA é um algoritmo de criptografia assimétrica que usa um par de chaves para encriptar e decriptar dados."
+    },
+    {
+      "question": "O que significa hashing?",
+      "options": [
+        "Converter dados em um valor fixo para verificação de integridade",
+        "Armazenar dados de forma criptografada",
+        "Melhorar a velocidade do sistema",
+        "Gerenciar acessos"
+      ],
+      "correct": 0,
+      "explanation": "Hashing gera um resumo dos dados que pode ser usado para verificar sua integridade."
+    },
+    {
+      "question": "Qual é o objetivo da segurança na camada de aplicação?",
+      "options": [
+        "Proteger softwares e aplicações contra vulnerabilidades",
+        "Aumentar a velocidade do site",
+        "Armazenar dados de forma segura",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "A segurança na camada de aplicação protege contra ataques que exploram vulnerabilidades específicas de softwares."
+    },
+    {
+      "question": "O que é um ataque de força bruta?",
+      "options": [
+        "Tentar todas as combinações possíveis de senhas para obter acesso",
+        "Uma técnica de criptografia",
+        "Um backup sem falhas",
+        "Uma atualização de software"
+      ],
+      "correct": 0,
+      "explanation": "Ataques de força bruta tentam adivinhar senhas por meio de múltiplas tentativas."
+    },
+    {
+      "question": "Qual é a finalidade da autenticação baseada em certificados?",
+      "options": [
+        "Validar a identidade através de certificados digitais",
+        "Armazenar senhas",
+        "Monitorar a rede",
+        "Gerenciar backups"
+      ],
+      "correct": 0,
+      "explanation": "Certificados digitais autenticam a identidade de usuários e sistemas, garantindo comunicações seguras."
+    },
+    {
+      "question": "O que significa 'patch management'?",
+      "options": [
+        "Gerenciar e aplicar atualizações de segurança em sistemas",
+        "Armazenar backups",
+        "Monitorar a rede",
+        "Criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "Patch management envolve a atualização regular dos sistemas para corrigir vulnerabilidades."
+    },
+    {
+      "question": "Qual é a importância de realizar testes de penetração?",
+      "options": [
+        "Identificar vulnerabilidades exploráveis antes que sejam descobertas por atacantes",
+        "Melhorar a velocidade do sistema",
+        "Armazenar dados",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Testes de penetração simulam ataques para identificar falhas de segurança antes que possam ser exploradas."
+    },
+    {
+      "question": "O que é um SIEM?",
+      "options": [
+        "Um sistema para gerenciamento e análise de logs de segurança",
+        "Um tipo de antivírus",
+        "Um método de criptografia",
+        "Uma VPN corporativa"
+      ],
+      "correct": 0,
+      "explanation": "SIEMs agregam e analisam logs de segurança para detectar e responder a ameaças."
+    },
+    {
+      "question": "Qual é a função do controle de acesso baseado em políticas (PBAC)?",
+      "options": [
+        "Gerenciar acessos com base em políticas definidas",
+        "Armazenar senhas",
+        "Aumentar a velocidade da rede",
+        "Criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "PBAC utiliza políticas para determinar quais usuários podem acessar quais recursos."
+    },
+    {
+      "question": "O que é multifator biométrico?",
+      "options": [
+        "Uso de mais de um dado biométrico para autenticação",
+        "Um tipo de firewall",
+        "Uma técnica de backup",
+        "Um método de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "Multifator biométrico requer a verificação de mais de um dado (como impressão digital e reconhecimento facial) para autenticação."
+    },
+    {
+      "question": "Qual é o objetivo do gerenciamento de vulnerabilidades?",
+      "options": [
+        "Identificar, classificar e remediar vulnerabilidades em sistemas",
+        "Aumentar a velocidade do sistema",
+        "Armazenar dados",
+        "Monitorar a rede"
+      ],
+      "correct": 0,
+      "explanation": "Gerenciamento de vulnerabilidades visa corrigir falhas de segurança antes que sejam exploradas."
+    },
+    {
+      "question": "O que é criptografia simétrica?",
+      "options": [
+        "Criptografia que usa a mesma chave para encriptar e decriptar dados",
+        "Criptografia que usa chaves diferentes para encriptar e decriptar",
+        "Uma técnica de backup",
+        "Um método de autenticação"
+      ],
+      "correct": 0,
+      "explanation": "Na criptografia simétrica, a mesma chave é utilizada tanto para encriptar quanto para decriptar os dados."
+    },
+    {
+      "question": "O que é criptografia assimétrica?",
+      "options": [
+        "Criptografia que usa um par de chaves (pública e privada)",
+        "Criptografia que usa uma única chave",
+        "Um tipo de backup",
+        "Uma técnica de firewall"
+      ],
+      "correct": 0,
+      "explanation": "A criptografia assimétrica utiliza duas chaves diferentes, uma pública e uma privada, para aumentar a segurança."
+    },
+    {
+      "question": "Qual é a finalidade de um WAF (Web Application Firewall)?",
+      "options": [
+        "Proteger aplicações web contra ataques",
+        "Armazenar dados",
+        "Gerenciar senhas",
+        "Melhorar a velocidade do site"
+      ],
+      "correct": 0,
+      "explanation": "Um WAF protege aplicações web filtrando e monitorando tráfego HTTP."
+    },
+    {
+      "question": "O que é autenticação SSO?",
+      "options": [
+        "Single Sign-On, permitindo acesso a múltiplos sistemas com uma única autenticação",
+        "Um tipo de backup",
+        "Um sistema de criptografia",
+        "Uma técnica de segmentação de rede"
+      ],
+      "correct": 0,
+      "explanation": "SSO permite que o usuário faça login uma vez e acesse vários sistemas sem precisar autenticar novamente."
+    },
+    {
+      "question": "O que é o princípio do privilégio mínimo?",
+      "options": [
+        "Conceder aos usuários apenas as permissões necessárias para suas funções",
+        "Aumentar a velocidade do sistema",
+        "Armazenar mais dados",
+        "Facilitar o acesso público"
+      ],
+      "correct": 0,
+      "explanation": "O privilégio mínimo assegura que os usuários tenham apenas os acessos estritamente necessários."
+    },
+    {
+      "question": "O que significa a sigla 'APT'?",
+      "options": [
+        "Advanced Persistent Threat, uma ameaça persistente e sofisticada",
+        "Um tipo de backup",
+        "Uma técnica de criptografia",
+        "Um sistema de firewall"
+      ],
+      "correct": 0,
+      "explanation": "APT refere-se a ameaças cibernéticas sofisticadas e de longo prazo."
+    },
+    {
+      "question": "Qual é o papel da educação em segurança cibernética?",
+      "options": [
+        "Conscientizar e treinar usuários para prevenir ataques",
+        "Aumentar a velocidade da rede",
+        "Armazenar dados",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "A educação em segurança é fundamental para prevenir ataques através do comportamento consciente dos usuários."
+    }
+  ]
+  
