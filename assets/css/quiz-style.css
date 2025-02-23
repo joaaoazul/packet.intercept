@@ -1,78 +1,202 @@
-body {
-    font-family: 'Outfit', sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .back-button {
-    display: inline-block;
-    margin-top: 17px;
-    padding: 8px 12px;
-    background: #101357;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
+/* Corpo e fonte */
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #f2f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container principal do quiz */
+.quiz-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-bar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-button {
+  background: #fff;
+  color: #101357;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Título principal */
+h1 {
+  font-size: 2rem;
+  color: #101357;
+  margin-top: 60px;
+}
+
+/* Seção de seleção de grupo */
+#categorySelection {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#categorySelection label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+#categorySelection select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#categorySelection button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #00a0a0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.3s;
+}
+
+#categorySelection button:hover {
+  background: #008080;
+}
+
+/* Área do Quiz */
+#quizArea {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Temporizador */
+#timer {
+  font-size: 1.2rem;
+  text-align: right;
+  color: #101357;
+  margin-bottom: 10px;
+}
+
+/* Pontuação */
+#score {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Pergunta e opções */
+#quiz p#question {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#options button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: #00a0a0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#options button:hover {
+  background: #008080;
+}
+
+/* Feedback e próximo botão */
+#feedback {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+#nextBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #101357;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+#nextBtn:hover {
+  background: #0e0b56;
+}
+
+/* Controles (botão de reinício) */
+#quizControls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #categorySelection label, 
+  #categorySelection select, 
+  #categorySelection button {
+    font-size: 0.9rem;
   }
-  
-  
-  .quiz-container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
+  h1 {
+    font-size: 1.8rem;
   }
-  
-  .quiz-container h1 {
-    margin-bottom: 20px;
-    color: #101357;
-  }
-  
-  #question {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  #options button {
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    border: none;
-    background: #00a0a0;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
-  }
-  
-  #options button:hover {
-    background: #008080;
-  }
-  
-  #feedback {
-    margin-top: 20px;
-    font-size: 1.1em;
-    font-weight: bold;
-  }
-  
-  #nextBtn {
-    padding: 10px 20px;
-    border: none;
-    background: #101357;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
-  }
-  
+}
+
+.export-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.export-container button {
+  padding: 10px 15px;
+  background: #101357;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+.export-container button:hover {
+  background: #0e0b56;
+}

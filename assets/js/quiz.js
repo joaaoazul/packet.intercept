@@ -4,7 +4,7 @@ let currentQuestion = 0;
 let score = 0;
 let progress = [];
 
-// Tempo limite (em segundos) para o quiz – 5 minutos (300s) neste exemplo
+// Tempo limite (em segundos) para o quiz – 5 minutos = 300s neste exemplo
 const TIME_LIMIT = 300;
 let timeRemaining = TIME_LIMIT;
 let timerInterval;
@@ -17,8 +17,8 @@ const scoreEl = document.getElementById('score');
 const groupFilterEl = document.getElementById('categoryFilter');
 const startQuizBtn = document.getElementById('startQuizBtn');
 const quizArea = document.getElementById('quizArea');
-const quizContent = document.getElementById('quizContent'); // Container do conteúdo interativo
-const quizControls = document.getElementById('quizControls'); // Container para controles, como reiniciar
+const quizContent = document.getElementById('quizContent'); // Container interativo
+const quizControls = document.getElementById('quizControls'); // Container para controles (botão reiniciar)
 const timerEl = document.getElementById('timer');
 
 function updateScore() {
@@ -49,6 +49,7 @@ function shuffleOptions(q) {
     text: option,
     isCorrect: index === q.correct
   }));
+  // Algoritmo Fisher-Yates para embaralhar
   for (let i = options.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [options[i], options[j]] = [options[j], options[i]];
@@ -64,10 +65,11 @@ function loadQuestion() {
   optionsEl.innerHTML = '';
   
   const shuffledOptions = shuffleOptions(q);
-  shuffledOptions.forEach(optionObj => {
+  // Cria os botões para cada opção e passa o objeto da opção e a posição escolhida
+  shuffledOptions.forEach((optionObj, index) => {
     const btn = document.createElement('button');
     btn.textContent = optionObj.text;
-    btn.addEventListener('click', () => checkAnswer(optionObj.isCorrect));
+    btn.addEventListener('click', () => checkAnswer(optionObj, index, shuffledOptions));
     optionsEl.appendChild(btn);
   });
   updateScore();
@@ -78,10 +80,15 @@ function disableOptions() {
   optionButtons.forEach(btn => btn.disabled = true);
 }
 
-function checkAnswer(isCorrect) {
+function checkAnswer(selectedOption, chosenIndex, shuffledOptions) {
   const q = filteredQuestions[currentQuestion];
   feedbackEl.style.display = 'block';
   disableOptions();
+  
+  // Determina o índice da opção correta no array embaralhado
+  const correctIndex = shuffledOptions.findIndex(opt => opt.isCorrect);
+  const isCorrect = selectedOption.isCorrect;
+  
   if (isCorrect) {
     feedbackEl.textContent = "Correto! " + q.explanation;
     feedbackEl.style.color = "green";
@@ -90,12 +97,19 @@ function checkAnswer(isCorrect) {
     feedbackEl.textContent = "Incorreto. " + q.explanation;
     feedbackEl.style.color = "red";
   }
+  
+  // Armazena os detalhes da questão no progresso
   progress.push({
     question: q.question,
-    correct: isCorrect,
+    options: shuffledOptions.map(opt => opt.text),
+    chosenIndex: chosenIndex,
+    correctIndex: correctIndex,
+    isCorrect: isCorrect,
+    explanation: q.explanation,
     group: q.group || "Geral",
     difficulty: q.difficulty
   });
+  
   updateScore();
   nextBtn.style.display = 'block';
 }
@@ -111,7 +125,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 function finishQuiz(message) {
-  // Bloqueia apenas o conteúdo interativo, mantendo os controles (como o botão de reiniciar) ativos.
+  // Bloqueia apenas o conteúdo interativo, mas mantém os controles ativos
   quizContent.style.pointerEvents = 'none';
   quizContent.style.opacity = '0.6';
   feedbackEl.style.display = 'block';
@@ -126,9 +140,17 @@ function displayProgressSummary() {
   let summaryDiv = document.createElement('div');
   summaryDiv.id = 'progressSummary';
   summaryDiv.innerHTML = "<h2>Resumo do Quiz</h2>";
+  
   progress.forEach((item, index) => {
     let p = document.createElement('p');
-    p.textContent = `Q${index + 1}: ${item.correct ? 'Correto' : 'Incorreto'} - ${item.question}`;
+    p.innerHTML = `<strong>Q${index + 1}:</strong> ${item.question}<br>`;
+    item.options.forEach((option, i) => {
+      let marker = "";
+      if (i === item.correctIndex) marker += " (CORRETA)";
+      if (i === item.chosenIndex) marker += " (Sua resposta)";
+      p.innerHTML += `${i + 1}. ${option}${marker}<br>`;
+    });
+    p.innerHTML += `<em>Explicação:</em> ${item.explanation}<br><br>`;
     summaryDiv.appendChild(p);
   });
   quizArea.appendChild(summaryDiv);
@@ -216,10 +238,8 @@ startQuizBtn.addEventListener('click', () => {
     alert("Não há perguntas para esse grupo!");
     return;
   }
-  // Esconde a área de seleção de grupo e mostra o quiz
   document.getElementById('categorySelection').style.display = 'none';
   quizArea.style.display = 'block';
-  // Reinicia variáveis e inicia o quiz
   currentQuestion = 0;
   score = 0;
   progress = [];

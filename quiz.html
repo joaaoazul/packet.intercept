@@ -6,27 +6,29 @@
   <title>Quiz de Exame</title>
   <link rel="stylesheet" href="./assets/css/quiz-style.css">
   <!-- Usando a mesma fonte da página principal -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="quiz-container">
-    <div class="top-bar">
-      <a href="index.html" class="back-button">Voltar aos Estudos</a>
-    </div>
-    <h1>Quiz de Exame</h1>
+    <header>
+      <div class="top-bar">
+        <a href="index.html" class="back-button">Voltar aos Estudos</a>
+      </div>
+      <h1>Quiz de Exame</h1>
+    </header>
     
     <!-- Seção para seleção de grupo -->
-    <div id="categorySelection">
+    <section id="categorySelection">
       <label for="categoryFilter">Selecione o grupo:</label>
       <select id="categoryFilter">
         <option value="all">Todos os Grupos</option>
       </select>
       <button id="startQuizBtn">Iniciar Quiz</button>
-    </div>
+    </section>
     
     <!-- Área do quiz (inicialmente oculta) -->
-    <div id="quizArea" style="display:none;">
-      <!-- Essa div conterá o conteúdo interativo do quiz -->
+    <section id="quizArea" style="display:none;">
       <div id="quizContent">
         <div id="timer"></div>
         <div id="score">Pontuação: 0</div>
@@ -36,15 +38,17 @@
             <!-- Botões de resposta serão gerados aqui -->
           </div>
         </div>
-        <!-- Feedback de resposta e botão "Próxima Pergunta" -->
         <div id="feedback" style="display: none;"></div>
         <button id="nextBtn" style="display: none;">Próxima Pergunta</button>
       </div>
-      <!-- Essa div não será bloqueada e receberá o botão de reinício -->
       <div id="quizControls"></div>
-    </div>
-    
+    </section>
   </div>
+
+  <div class="export-container">
+    <button id="exportBtn">Exportar Resultados do Quiz</button>
+  </div>  
+  <script src="./assets/js/export.js"></script>
   <script src="./assets/js/quiz.js"></script>
 </body>
 </html>
