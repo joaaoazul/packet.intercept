@@ -20,20 +20,20 @@ const questions = [
         "Verificação de segurança via rede social"
       ],
       correct: 1,
-      explanation: "MFA exige que o usuário apresente dois ou mais fatores de autenticação, como senha e código via SMS ou app autenticador, aumentando a segurança."
+      explanation: "MFA exige que o usuário apresente dois ou mais fatores de autenticação, aumentando a segurança."
     },
-    // Adiciona mais perguntas conforme necessário
+    // Adicione quantas perguntas desejar, baseadas no exame oficial.
   ];
   
   let currentQuestion = 0;
   
   const questionEl = document.getElementById('question');
   const optionsEl = document.getElementById('options');
-  const explanationEl = document.getElementById('explanation');
+  const feedbackEl = document.getElementById('feedback');
   const nextBtn = document.getElementById('nextBtn');
   
   function loadQuestion() {
-    explanationEl.style.display = 'none';
+    feedbackEl.style.display = 'none';
     nextBtn.style.display = 'none';
     const q = questions[currentQuestion];
     questionEl.textContent = q.question;
@@ -46,16 +46,23 @@ const questions = [
     });
   }
   
+  function disableOptions() {
+    const optionButtons = optionsEl.querySelectorAll('button');
+    optionButtons.forEach(btn => btn.disabled = true);
+  }
+  
   function checkAnswer(selected) {
     const q = questions[currentQuestion];
+    feedbackEl.style.display = 'block';
+    disableOptions();
     if (selected === q.correct) {
-      alert("Correto!");
-      nextBtn.style.display = 'block';
+      feedbackEl.textContent = "Correto!";
+      feedbackEl.style.color = "green";
     } else {
-      explanationEl.textContent = "Incorreto. " + q.explanation;
-      explanationEl.style.display = 'block';
-      nextBtn.style.display = 'block';
+      feedbackEl.textContent = "Incorreto. " + q.explanation;
+      feedbackEl.style.color = "red";
     }
+    nextBtn.style.display = 'block';
   }
   
   nextBtn.addEventListener('click', () => {
@@ -63,10 +70,10 @@ const questions = [
     if (currentQuestion < questions.length) {
       loadQuestion();
     } else {
-      alert("Quiz concluído!");
-      // Aqui podes redirecionar o usuário ou reiniciar o quiz
-      currentQuestion = 0;
-      loadQuestion();
+      feedbackEl.textContent = "Quiz concluído!";
+      feedbackEl.style.color = "blue";
+      nextBtn.style.display = 'none';
+      // Opcional: redirecionar para outra página ou reiniciar o quiz
     }
   });
   
