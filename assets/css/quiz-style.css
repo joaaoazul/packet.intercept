@@ -9,6 +9,18 @@ body {
     align-items: center;
     min-height: 100vh;
   }
+
+  .back-button {
+    display: inline-block;
+    margin-top: 17px;
+    padding: 8px 12px;
+    background: #101357;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
   
   .quiz-container {
     background: #fff;

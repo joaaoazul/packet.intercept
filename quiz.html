@@ -5,21 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz de Exame</title>
   <link rel="stylesheet" href="./assets/css/quiz-style.css">
-  <!-- Se quiseres usar a mesma fonte da página principal -->
+  <!-- Usando a mesma fonte da página principal -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="quiz-container">
     <h1>Quiz de Exame</h1>
-    <div id="quiz">
-      <p id="question"></p>
-      <div id="options">
-        <!-- Botões de resposta serão gerados aqui -->
-      </div>
+    
+    <!-- Seção para seleção de categoria -->
+    <div id="categorySelection">
+      <label for="categoryFilter">Selecione a categoria:</label>
+      <select id="categoryFilter">
+        <option value="all">Todas</option>
+      </select>
+      <button id="startQuizBtn">Iniciar Quiz</button>
+
+      <a href="index.html" class="back-button">Voltar aos Estudos</a>
     </div>
-    <!-- Feedback de resposta -->
-    <div id="feedback" style="display: none;"></div>
-    <button id="nextBtn" style="display: none;">Próxima Pergunta</button>
+    
+    <!-- Área do quiz (inicialmente oculta até o usuário iniciar) -->
+    <div id="quizArea" style="display:none;">
+      <div id="score">Pontuação: 0</div>
+      <div id="quiz">
+        <p id="question"></p>
+        <div id="options">
+          <!-- Botões de resposta serão gerados aqui -->
+        </div>
+      </div>
+      <!-- Feedback de resposta -->
+      <div id="feedback" style="display: none;"></div>
+      <button id="nextBtn" style="display: none;">Próxima Pergunta</button>
+    </div>
+    
   </div>
   <script src="./assets/js/quiz.js"></script>
 </body>
