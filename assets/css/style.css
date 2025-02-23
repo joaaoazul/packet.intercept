@@ -109,7 +109,7 @@ section {
 }
 
 .cia-triad-img{
- align-items: center;
+  align-items: center;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -168,7 +168,7 @@ article ul {
 }
 
 .test-container ol{
-margin-left: 20px;
+  margin-left: 20px;
   padding-left: 20px;
   list-style-type: disc;
 }
@@ -198,6 +198,22 @@ article ul li {
   color: gold;
 }
 
+/* Botão de progresso */
+.progress-btn {
+  position: absolute;
+  top: 10px;
+  right: 40px; /* Um pouco à esquerda do botão de favorito */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.completed-article {
+  opacity: 0.6;
+}
+
 /* Dashboard de Progresso */
 #dashboard {
   border: 2px dashed #004d99;
@@ -225,6 +241,7 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+  font-family: 'Outfit', sans-serif;
 }
 
 /* Responsividade */
@@ -241,7 +258,7 @@ footer {
   }
 
   .cia-triad-img img{
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
   }
 }

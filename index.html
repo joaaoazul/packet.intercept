@@ -37,6 +37,7 @@
         <!-- Artigo: CIA Triad -->
         <article id="cia-triad">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3><span>CIA Triad</span></h3>
           <p>
             A tríade CIA é o modelo clássico que orienta as práticas de segurança da informação, composto por:
@@ -65,21 +66,21 @@
             <br>
             <span><strong>O que é:</strong></span> Assegurar que os dados e sistemas estejam acessíveis quando necessários pelos usuários autorizados.
             <br>
-            <span><strong>Como proteger:</strong></span>Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.
+            <span><strong>Como proteger:</strong></span> Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.
             <br>
             <strong>Exemplo:</strong> Um site de e-commerce que utiliza servidores em clusters e redes de distribuição de conteúdo (CDNs) para manter o serviço ativo mesmo durante picos de acesso.
             <br>
             <strong>Pergunta para reflexão:</strong> Que estratégias podem ser adotadas para minimizar o impacto de um ataque de negação de serviço (DDoS) e garantir a disponibilidade?
           </p>
-            <div class="cia-triad-img">
-              <img src="./assets/img/cia-triad.jpg" alt="CIA Triad">
-            </div>
-
+          <div class="cia-triad-img">
+            <img src="./assets/img/cia-triad.jpg" alt="CIA Triad">
+          </div>
         </article>
         
         <!-- Artigo: Autenticação e MFA -->
         <article id="autenticacao-mfa">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Autenticação e MFA</h3>
           <p>
             <strong>Definição:</strong><br>
@@ -94,36 +95,17 @@
             <li><strong>Algo que você é:</strong> Características biométricas, como impressões digitais, reconhecimento facial ou leitura da íris.</li>
           </ul>
           <p>
-            <strong>Como Implementar MFA:</strong><br>
-            <em>Exemplo Prático:</em> Um serviço de e-mail pode exigir que, além da senha, o usuário insira um código temporário gerado por um aplicativo autenticador (como Google Authenticator). Assim, mesmo que a senha seja comprometida, o acesso não é garantido sem o segundo fator.
+            <strong>Exemplo Prático:</strong> Um serviço de e-mail pode exigir que, além da senha, o usuário insira um código temporário gerado por um aplicativo autenticador (como Google Authenticator).
           </p>
           <p>
             <strong>Pergunta para reflexão:</strong> Quais são as vantagens de usar autenticação multifator em comparação com a autenticação baseada apenas em senha?
           </p>
-          <p>
-            <strong>Desafios e Boas Práticas:</strong>
-          </p>
-          <ul>
-            <li>
-              <strong>Desafios:</strong>
-              <ul>
-                <li>Gerenciamento de dispositivos perdidos ou comprometidos.</li>
-                <li>Usabilidade e aceitação dos usuários.</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Boas Práticas:</strong>
-              <ul>
-                <li>Fornecer métodos alternativos de verificação.</li>
-                <li>Educar os usuários sobre a importância da MFA.</li>
-              </ul>
-            </li>
-          </ul>
         </article>
         
         <!-- Artigo: Privacidade e Não-repúdio -->
         <article id="privacidade">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Privacidade e Não-repúdio</h3>
           <p>
             <strong>Privacidade:</strong><br>
@@ -141,9 +123,6 @@
             <strong>Exemplo:</strong> Um aplicativo de saúde que coleta dados biométricos informa os usuários sobre a finalidade do uso desses dados e adota técnicas de anonimização para proteger a identidade dos pacientes.
           </p>
           <p>
-            <strong>Pergunta para reflexão:</strong> Como as leis de privacidade influenciam a forma como uma empresa coleta e armazena dados dos seus clientes?
-          </p>
-          <p>
             <strong>Não-repúdio:</strong><br>
             <strong>O que é:</strong> Garante que uma ação ou transação não possa ser negada pelo autor posteriormente, criando um registro verificável da ação.
           </p>
@@ -154,17 +133,12 @@
             <li><strong>Assinaturas Digitais:</strong> Utilizando criptografia para validar a autoria de uma transação ou mensagem.</li>
             <li><strong>Logs de Auditoria:</strong> Registrando todas as atividades relevantes, garantindo rastreabilidade.</li>
           </ul>
-          <p>
-            <strong>Exemplo:</strong> Em transações financeiras, uma assinatura digital assegura que o remetente não pode negar ter autorizado a transferência de recursos.
-          </p>
-          <p>
-            <strong>Pergunta para reflexão:</strong> Por que os registros de auditoria são essenciais para garantir o não-repúdio em sistemas críticos?
-          </p>
         </article>
         
         <!-- Artigo: Gestão de Riscos (Atualizado) -->
         <article id="gestao-riscos">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Gestão de Riscos</h3>
           <p>
             <strong>Definição:</strong><br>
@@ -199,34 +173,34 @@
             Uma empresa de TI identifica que um servidor crítico possui vulnerabilidades conhecidas. Após uma análise qualitativa, o risco é classificado como alto devido ao impacto potencial, e a equipe decide implementar medidas de mitigação (como a aplicação de patches e a configuração de firewalls) e realizar monitoramento contínuo para reduzir esse risco.
           </p>
           <div class="test-container">
-          <h4 class="test">Teste de Compreensão</h4>
-          <ol>
-            <li>O que é risco e como ele é definido no contexto da gestão de riscos?</li>
-            <li>Quais são as principais etapas da gestão de riscos?</li>
-            <li>Descreva a diferença entre análise qualitativa e quantitativa de riscos.</li>
-            <li>Liste e explique as estratégias de tratamento de riscos.</li>
-            <li>Por que é importante identificar e classificar os riscos antes de tratá-los?</li>
-          </ol>
-          <p>
-            Responda às perguntas e revise suas respostas com base nos estudos e nas referências oficiais. Essa prática ajudará a consolidar seu entendimento sobre o tema.
-          </p>
-          <details>
-            <summary>Mostrar Respostas ao Teste</summary>
+            <h4 class="test">Teste de Compreensão</h4>
             <ol>
-              <li><strong>Resposta:</strong> Risco é a probabilidade de ocorrência de um evento negativo associado ao impacto que ele pode causar nos objetivos da organização.</li>
-              <li><strong>Resposta:</strong> Identificação, avaliação, tratamento e monitoramento/revisão dos riscos.</li>
-              <li><strong>Resposta:</strong> A análise qualitativa utiliza critérios subjetivos para avaliar riscos, enquanto a quantitativa emprega dados numéricos para mensurar o valor do risco.</li>
-              <li><strong>Resposta:</strong> Mitigação, transferência e aceitação.</li>
-              <li><strong>Resposta:</strong> Porque isso permite priorizar os riscos e definir estratégias adequadas para minimizar seu impacto.</li>
+              <li>O que é risco e como ele é definido no contexto da gestão de riscos?</li>
+              <li>Quais são as principais etapas da gestão de riscos?</li>
+              <li>Descreva a diferença entre análise qualitativa e quantitativa de riscos.</li>
+              <li>Liste e explique as estratégias de tratamento de riscos.</li>
+              <li>Por que é importante identificar e classificar os riscos antes de tratá-los?</li>
             </ol>
-          </details>
-
-        </div>
+            <p>
+              Responda às perguntas e revise suas respostas com base nos estudos e nas referências oficiais. Essa prática ajudará a consolidar seu entendimento sobre o tema.
+            </p>
+            <details>
+              <summary>Mostrar Respostas ao Teste</summary>
+              <ol>
+                <li><strong>Resposta:</strong> Risco é a probabilidade de ocorrência de um evento negativo associado ao impacto que ele pode causar nos objetivos da organização.</li>
+                <li><strong>Resposta:</strong> Identificação, avaliação, tratamento e monitoramento/revisão dos riscos.</li>
+                <li><strong>Resposta:</strong> A análise qualitativa utiliza critérios subjetivos para avaliar riscos, enquanto a quantitativa emprega dados numéricos para mensurar o valor do risco.</li>
+                <li><strong>Resposta:</strong> Mitigação, transferência e aceitação.</li>
+                <li><strong>Resposta:</strong> Porque isso permite priorizar os riscos e definir estratégias adequadas para minimizar seu impacto.</li>
+              </ol>
+            </details>
+          </div>
         </article>
         
         <!-- Artigo: Controles de Segurança -->
         <article id="controles-seguranca">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Controles de Segurança</h3>
           <p>
             <strong>Definição:</strong><br>
@@ -246,14 +220,12 @@
           <p>
             <strong>Exemplo Prático:</strong> Uma organização protege seu data center implementando controles técnicos (firewalls e VPNs para acesso seguro), administrativos (políticas de uso aceitável e treinamentos periódicos) e físicos (controle de acesso por biometria e vigilância por CFTV).
           </p>
-          <p>
-            <strong>Pergunta para reflexão:</strong> Como a combinação de controles técnicos, administrativos e físicos pode fortalecer a postura de segurança de uma organização?
-          </p>
         </article>
         
         <!-- Artigo: Código de Ética da ISC2 -->
         <article id="codigo-etica">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Código de Ética da ISC2</h3>
           <p>
             <strong>Definição:</strong><br>
@@ -271,13 +243,11 @@
           <p>
             <strong>Exemplo Prático:</strong> Um profissional certificado pela ISC2 se recusa a participar de atividades que possam comprometer a segurança dos dados, mesmo sob pressão, demonstrando integridade e responsabilidade.
           </p>
-          <p>
-            <strong>Pergunta para reflexão:</strong> De que maneira o Código de Ética da ISC2 contribui para a confiança dos clientes e da comunidade de segurança da informação?
-          </p>
         </article>
       </section>
       
       <!-- Seção: Continuidade de Negócios e Recuperação de Desastres -->
+<<<<<<< HEAD
   <!-- Seção: Continuidade de Negócios e Recuperação de Desastres -->
   <section id="continuidade">
     <h2>Continuidade de Negócios e Recuperação de Desastres (DR)</h2>
@@ -422,22 +392,113 @@
   </section>
   
 
+=======
+      <section id="continuidade">
+        <h2>Continuidade de Negócios e Recuperação de Desastres (DR)</h2>
+        
+        <!-- Artigo: Business Continuity (BC) -->
+        <article id="business-continuity">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
+          <h3>Business Continuity (BC)</h3>
+          <p>
+            <strong>Definição:</strong><br>
+            Business Continuity é o conjunto de estratégias, planos e procedimentos que garantem que as funções críticas de uma organização continuem operando durante e após um incidente, minimizando interrupções e perdas.
+          </p>
+          <p>
+            <strong>Componentes Principais:</strong>
+          </p>
+          <ul>
+            <li><strong>Análise de Impacto nos Negócios (BIA):</strong> Identifica as funções críticas e avalia o impacto que uma interrupção pode causar. O BIA define os prazos críticos e os recursos necessários para a recuperação.</li>
+            <li><strong>Plano de Continuidade de Negócios (BCP):</strong> Documenta os procedimentos a serem seguidos para manter ou retomar operações essenciais. Inclui responsabilidades, processos, recursos e contatos de emergência.</li>
+            <li><strong>Estratégias de Mitigação:</strong> Envolvem a implementação de medidas como redundância de hardware, replicação de dados e a utilização de centros de dados alternativos para reduzir a vulnerabilidade a falhas.</li>
+            <li><strong>Testes e Exercícios:</strong> São realizados simulados e testes periódicos para garantir que o plano funcione efetivamente e para identificar áreas que precisam de melhoria.</li>
+            <li><strong>Comunicação e Coordenação:</strong> Definição clara de papéis, responsabilidades e canais de comunicação durante uma crise.</li>
+          </ul>
+          <p>
+            <strong>Exemplo Prático:</strong><br>
+            Uma empresa de serviços financeiros realiza um BIA e identifica que seus sistemas de transação são críticos. Ela implementa um BCP que inclui servidores redundantes em um data center secundário e realiza exercícios semestrais para validar a transferência automática de operações em caso de falha.
+          </p>
+        </article>
+        
+        <!-- Artigo: Disaster Recovery (DR) -->
+        <article id="disaster-recovery">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
+          <h3>Disaster Recovery (DR)</h3>
+          <p>
+            <strong>Definição:</strong><br>
+            Disaster Recovery é o conjunto de estratégias e procedimentos voltados para a restauração dos sistemas de TI e dados após um desastre ou falha grave, com o objetivo de retomar as operações o mais rápido possível.
+          </p>
+          <p>
+            <strong>Componentes Principais:</strong>
+          </p>
+          <ul>
+            <li><strong>RTO (Recovery Time Objective):</strong> O tempo máximo tolerável para a recuperação dos sistemas críticos.</li>
+            <li><strong>RPO (Recovery Point Objective):</strong> A quantidade máxima de dados que pode ser perdida, expressa em tempo (por exemplo, 4 horas de dados).</li>
+            <li><strong>Soluções de Backup e Replicação:</strong> Estratégias de backup (diário, semanal) e replicação de dados em tempo real para assegurar que as informações estejam disponíveis em caso de falha.</li>
+            <li><strong>Procedimentos de Restauração:</strong> Passos detalhados para recuperar sistemas e restaurar os dados, incluindo a ordem de prioridades e os responsáveis pela execução do plano.</li>
+            <li><strong>Infraestrutura Alternativa:</strong> Centros de dados ou serviços em nuvem que podem ser ativados caso o local principal sofra um desastre.</li>
+          </ul>
+          <p>
+            <strong>Exemplo Prático:</strong><br>
+            Uma empresa de saúde mantém backups diários e utiliza um serviço de replicação em nuvem. Em caso de um incêndio em seu data center principal, o plano de DR prevê que os sistemas sejam automaticamente restaurados a partir da cópia na nuvem, com um RTO de 2 horas e um RPO de 1 hora.
+          </p>
+        </article>
+        
+        <!-- Artigo: Resposta a Incidentes -->
+        <article id="resposta-incidentes">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
+          <h3>Resposta a Incidentes</h3>
+          <p>
+            <strong>Definição:</strong><br>
+            Resposta a Incidentes é o conjunto de ações e procedimentos adotados para identificar, conter, erradicar e recuperar de um incidente de segurança, minimizando o impacto e restaurando a normalidade dos serviços.
+          </p>
+          <p>
+            <strong>Fases do Processo de Resposta a Incidentes:</strong>
+          </p>
+          <ul>
+            <li><strong>Preparação:</strong> Desenvolvimento de um plano de resposta a incidentes, treinamento da equipe e instalação de ferramentas de monitoramento.</li>
+            <li><strong>Identificação:</strong> Monitoramento contínuo e detecção precoce de atividades suspeitas ou anômalas.</li>
+            <li><strong>Contenção:</strong> Isolamento dos sistemas afetados para evitar a propagação do incidente.</li>
+            <li><strong>Erradicação:</strong> Remoção da causa raiz do incidente, como a eliminação de malware ou o fechamento de brechas de segurança.</li>
+            <li><strong>Recuperação:</strong> Restauração dos sistemas e validação da integridade dos dados, garantindo que o ambiente esteja seguro para retomar as operações.</li>
+            <li><strong>Lições Aprendidas:</strong> Revisão pós-incidente para identificar falhas e aprimorar o plano de resposta.</li>
+          </ul>
+          <div class="test-container">
+            <details>
+              <summary><strong>Exercício:</strong> Simule um cenário de resposta a incidentes para um ataque de phishing que comprometeu contas de e-mail corporativas.</summary>
+              <ol>
+                <li>Liste as ações imediatas que a equipe deve tomar para conter o ataque.</li>
+                <li>Descreva o procedimento para identificar as contas comprometidas e erradicar o phishing.</li>
+                <li>Explique como os sistemas seriam restaurados e como a integridade dos dados seria verificada.</li>
+                <li>Proponha medidas para evitar futuros ataques semelhantes.</li>
+              </ol>
+            </details>
+          </div>
+        </article>
+      </section>
+>>>>>>> d7b6942428f300fa5184cb48d58f6bca44b9ba49
       
       <!-- Seção: Controle de Acesso -->
       <section id="controle">
         <h2>Controle de Acesso</h2>
         <article id="controles-fisicos">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Controles Físicos</h3>
           <p>Métodos para restringir o acesso físico a ambientes e ativos, como uso de crachás e monitoramento por CFTV.</p>
         </article>
         <article id="controles-logicos">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Controles Lógicos</h3>
           <p>Gerenciamento de acesso digital, utilizando modelos como RBAC, DAC, MAC e ABAC.</p>
         </article>
         <article id="menor-privilegio">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Princípio do Menor Privilégio</h3>
           <p>Garantir que cada usuário tenha apenas os acessos estritamente necessários para suas funções.</p>
         </article>
@@ -448,16 +509,19 @@
         <h2>Segurança de Redes</h2>
         <article id="infraestrutura-seguranca">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Infraestrutura de Segurança</h3>
           <p>Uso de firewalls, VPNs, IDS/IPS e segmentação para proteger a rede contra ameaças.</p>
         </article>
         <article id="ameacas-ataques">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Ameaças e Ataques à Rede</h3>
           <p>Exemplos de ataques (DDoS, phishing, MitM) e as técnicas de mitigação associadas.</p>
         </article>
         <article id="protocolos-seguros">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Protocolos Seguros</h3>
           <p>Implementação de protocolos como TLS e IPSec para garantir comunicações seguras.</p>
         </article>
@@ -468,29 +532,37 @@
         <h2>Operações de Segurança</h2>
         <article id="seguranca-dados">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Segurança de Dados</h3>
           <p>Técnicas para proteger informações sensíveis, incluindo criptografia e políticas de DLP.</p>
         </article>
         <article id="endurecimento-sistema">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Endurecimento do Sistema</h3>
           <p>Práticas para reduzir vulnerabilidades, como aplicação de patches e configurações seguras.</p>
         </article>
         <article id="treinamento">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Treinamento em Conscientização de Segurança</h3>
           <p>Estratégias e iniciativas para educar os usuários sobre boas práticas de segurança.</p>
         </article>
       </section>
       
       <!-- Seção: Dashboard de Progresso e Tarefas -->
-      <section id="dashboard">
-        <h2>Dashboard de Progresso e Tarefas</h2>
-        <p>Aqui você pode ver seu progresso e gerenciar suas tarefas de estudo.</p>
-        <ul id="taskList"></ul>
-        <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
-        <button id="addTaskBtn">Adicionar Tarefa</button>
-      </section>
+   <!-- Seção: Dashboard de Progresso e Tarefas -->
+<section id="dashboard">
+  <h2>Dashboard de Progresso e Tarefas</h2>
+  <p>Aqui você pode ver seu progresso e gerenciar suas tarefas de estudo.</p>
+  <ul id="taskList"></ul>
+  <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+  <button id="addTaskBtn">Adicionar Tarefa</button>
+  <br><br>
+  <!-- Botão para iniciar o Quiz de Exame -->
+  <a href="quiz.html"><button id="startQuizBtn">Iniciar Quiz de Exame</button></a>
+</section>
+
     </div>
   </main>
   <footer>

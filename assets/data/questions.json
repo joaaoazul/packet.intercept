@@ -1,0 +1,1214 @@
+[
+    {
+      "question": "Qual a função principal de um firewall?",
+      "difficulty": "Fácil",
+      "options": [
+        "Controlar e restringir o tráfego de rede conforme regras definidas",
+        "Acelerar a conexão com a internet",
+        "Armazenar logs de atividades do usuário",
+        "Substituir a autenticação multifator"
+      ],
+      "correct": 0,
+      "explanation": "O firewall filtra pacotes de dados, permitindo ou bloqueando o tráfego de acordo com regras de segurança."
+    },
+    {
+      "question": "O que caracteriza um ataque de phishing?",
+      "difficulty": "Médio",
+      "options": [
+        "Envio de e-mails ou mensagens fraudulentas para roubo de dados",
+        "Interceptação de pacotes em uma rede pública",
+        "Ataque de força bruta para quebra de senhas",
+        "Exploração de vulnerabilidades em servidores web"
+      ],
+      "correct": 0,
+      "explanation": "Phishing engana usuários para que forneçam informações confidenciais por meio de e-mails falsificados."
+    },
+    {
+      "question": "No contexto de segurança, o que significa MFA?",
+      "difficulty": "Fácil",
+      "options": [
+        "Autenticação que exige múltiplos fatores para validar o acesso",
+        "Protocolo de comunicação segura entre servidores",
+        "Método de compressão de dados para proteção de arquivos",
+        "Sistema de armazenamento descentralizado"
+      ],
+      "correct": 0,
+      "explanation": "MFA (Autenticação Multifator) requer pelo menos dois fatores diferentes para conceder acesso."
+    },
+    {
+      "question": "Qual é a tríade da segurança da informação?",
+      "difficulty": "Fácil",
+      "options": [
+        "Confidencialidade, Integridade, Disponibilidade",
+        "Integridade, Usabilidade, Confiabilidade",
+        "Autenticidade, Disponibilidade, Usabilidade",
+        "Responsabilidade, Integridade, Confiabilidade"
+      ],
+      "correct": 0,
+      "explanation": "A tríade CIA representa Confidencialidade, Integridade e Disponibilidade."
+    },
+    {
+      "question": "Qual o objetivo da criptografia?",
+      "difficulty": "Fácil",
+      "options": [
+        "Armazenar dados",
+        "Proteger a confidencialidade dos dados",
+        "Aumentar a velocidade da rede",
+        "Facilitar o acesso dos usuários"
+      ],
+      "correct": 1,
+      "explanation": "A criptografia protege os dados, garantindo que apenas partes autorizadas possam acessá-los."
+    },
+    {
+      "question": "O que é phishing?",
+      "difficulty": "Fácil",
+      "options": [
+        "Um ataque que visa roubar informações por meio de e-mails fraudulentos",
+        "Um tipo de malware",
+        "Um método de criptografia",
+        "Um sistema de backup"
+      ],
+      "correct": 0,
+      "explanation": "Phishing é uma técnica de fraude online para enganar usuários e roubar dados confidenciais."
+    },
+    {
+      "question": "Qual o propósito de um IDS (Intrusion Detection System)?",
+      "difficulty": "Médio",
+      "options": [
+        "Detectar e alertar sobre atividades suspeitas",
+        "Bloquear todo o tráfego",
+        "Gerenciar senhas",
+        "Criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "Um IDS monitora o tráfego de rede e alerta os administradores sobre possíveis intrusões."
+    },
+    {
+      "question": "O que significa o termo DLP?",
+      "difficulty": "Fácil",
+      "options": [
+        "Data Loss Prevention",
+        "Digital Log Processing",
+        "Data Layer Protection",
+        "Direct Login Protocol"
+      ],
+      "correct": 0,
+      "explanation": "DLP (Data Loss Prevention) refere-se a estratégias para prevenir a perda de dados."
+    },
+    {
+      "question": "Qual é a principal função de um antivírus?",
+      "difficulty": "Fácil",
+      "options": [
+        "Detectar e remover malware",
+        "Aumentar a velocidade do computador",
+        "Armazenar arquivos",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Um antivírus identifica e remove softwares maliciosos do sistema."
+    },
+    {
+      "question": "O que é um ataque DDoS?",
+      "difficulty": "Fácil",
+      "options": [
+        "Um ataque de negação de serviço distribuído",
+        "Um tipo de phishing",
+        "Um sistema de backup",
+        "Uma técnica de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "DDoS sobrecarrega um sistema com tráfego, tornando-o indisponível."
+    },
+    {
+      "question": "Qual a importância do backup?",
+      "difficulty": "Fácil",
+      "options": [
+        "Recuperar dados em caso de perda",
+        "Aumentar a velocidade da rede",
+        "Melhorar a qualidade da imagem",
+        "Reduzir o consumo de energia"
+      ],
+      "correct": 0,
+      "explanation": "Backups são essenciais para recuperar dados em caso de falhas ou ataques."
+    },
+    {
+      "question": "O que é uma VPN?",
+      "difficulty": "Fácil",
+      "options": [
+        "Rede privada virtual para conexões seguras",
+        "Um tipo de malware",
+        "Uma técnica de backup",
+        "Um software antivírus"
+      ],
+      "correct": 0,
+      "explanation": "VPNs criam conexões seguras e privadas pela internet."
+    },
+    {
+      "question": "Qual é a função do protocolo TLS?",
+      "difficulty": "Fácil",
+      "options": [
+        "Garantir comunicações seguras",
+        "Aumentar a velocidade de transferência",
+        "Armazenar senhas",
+        "Gerenciar logs"
+      ],
+      "correct": 0,
+      "explanation": "TLS (Transport Layer Security) criptografa dados durante a transmissão para garantir segurança."
+    },
+    {
+      "question": "O que é um honeypot em segurança cibernética?",
+      "difficulty": "Médio",
+      "options": [
+        "Um sistema para atrair e identificar invasores",
+        "Um tipo de firewall",
+        "Um software antivírus",
+        "Um método de backup"
+      ],
+      "correct": 0,
+      "explanation": "Honeypots atraem invasores para analisar suas técnicas sem comprometer sistemas reais."
+    },
+    {
+      "question": "Qual é o papel do SIEM (Security Information and Event Management)?",
+      "difficulty": "Difícil",
+      "options": [
+        "Coletar, correlacionar e analisar logs de segurança",
+        "Gerenciar senhas",
+        "Criptografar dados",
+        "Monitorar a temperatura do servidor"
+      ],
+      "correct": 0,
+      "explanation": "SIEMs agregam e analisam logs para identificar e responder a incidentes de segurança."
+    },
+    {
+      "question": "O que significa o termo 'zero-day'?",
+      "difficulty": "Difícil",
+      "options": [
+        "Uma vulnerabilidade desconhecida",
+        "Um ataque DDoS",
+        "Um backup sem falhas",
+        "Uma atualização de software"
+      ],
+      "correct": 0,
+      "explanation": "Vulnerabilidades zero-day são falhas não conhecidas pelos desenvolvedores e sem correção disponível."
+    },
+    {
+      "question": "Qual é a função de um proxy?",
+      "difficulty": "Médio",
+      "options": [
+        "Servir como intermediário entre o usuário e a internet",
+        "Armazenar senhas",
+        "Criptografar dados",
+        "Aumentar a velocidade do computador"
+      ],
+      "correct": 0,
+      "explanation": "Um proxy atua como intermediário, filtrando e monitorando o tráfego entre o usuário e a internet."
+    },
+    {
+      "question": "O que é engenharia social?",
+      "difficulty": "Médio",
+      "options": [
+        "Manipulação psicológica para obter informações confidenciais",
+        "Um método de criptografia",
+        "Uma técnica de backup",
+        "Um ataque DDoS"
+      ],
+      "correct": 0,
+      "explanation": "Engenharia social manipula pessoas para revelar informações confidenciais."
+    },
+    {
+      "question": "Qual é o objetivo da segmentação de rede?",
+      "difficulty": "Médio",
+      "options": [
+        "Isolar partes da rede para melhorar a segurança",
+        "Aumentar a velocidade da rede",
+        "Armazenar dados",
+        "Facilitar o acesso remoto"
+      ],
+      "correct": 0,
+      "explanation": "Segmentar a rede limita a propagação de ataques e facilita o gerenciamento da segurança."
+    },
+    {
+      "question": "O que é um certificado digital?",
+      "difficulty": "Fácil",
+      "options": [
+        "Um arquivo que autentica a identidade de uma entidade",
+        "Um tipo de malware",
+        "Um backup criptografado",
+        "Um sistema de firewall"
+      ],
+      "correct": 0,
+      "explanation": "Certificados digitais garantem a autenticidade e integridade das comunicações e transações."
+    },
+    {
+      "question": "Qual é a finalidade da autenticação de dois fatores (2FA)?",
+      "difficulty": "Fácil",
+      "options": [
+        "Adicionar uma camada extra de segurança",
+        "Aumentar a velocidade do login",
+        "Armazenar mais senhas",
+        "Facilitar o acesso público"
+      ],
+      "correct": 0,
+      "explanation": "2FA requer dois métodos de verificação, dificultando o acesso não autorizado."
+    },
+    {
+      "question": "O que é ransomware?",
+      "difficulty": "Médio",
+      "options": [
+        "Um malware que sequestra dados e exige resgate",
+        "Um firewall",
+        "Um software de backup",
+        "Uma VPN"
+      ],
+      "correct": 0,
+      "explanation": "Ransomware criptografa os dados e solicita um pagamento para liberá-los."
+    },
+    {
+      "question": "Qual é o papel do controle de acesso baseado em função (RBAC)?",
+      "difficulty": "Médio",
+      "options": [
+        "Restringir acessos com base nas funções dos usuários",
+        "Aumentar a velocidade da rede",
+        "Gerenciar backups",
+        "Criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "RBAC limita o acesso aos recursos conforme as responsabilidades dos usuários."
+    },
+    {
+      "question": "O que é spoofing?",
+      "difficulty": "Médio",
+      "options": [
+        "Falsificação de identidade ou endereço IP",
+        "Um tipo de backup",
+        "Um método de criptografia",
+        "Uma técnica de firewall"
+      ],
+      "correct": 0,
+      "explanation": "Spoofing falsifica informações de origem para enganar sistemas ou pessoas."
+    },
+    {
+      "question": "O que significa VPN split tunneling?",
+      "difficulty": "Difícil",
+      "options": [
+        "Dividir o tráfego entre a VPN e a conexão local",
+        "Criptografar todo o tráfego",
+        "Armazenar senhas separadamente",
+        "Gerenciar backups de forma distribuída"
+      ],
+      "correct": 0,
+      "explanation": "Split tunneling permite que parte do tráfego seja roteada pela VPN e parte pela conexão local."
+    },
+    {
+      "question": "Qual é a importância dos patches de segurança?",
+      "difficulty": "Fácil",
+      "options": [
+        "Corrigir vulnerabilidades e proteger sistemas",
+        "Aumentar a velocidade do computador",
+        "Melhorar a qualidade da imagem",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Patches corrigem falhas conhecidas e ajudam a manter o sistema protegido."
+    },
+    {
+      "question": "O que é um ataque Man-in-the-Middle (MitM)?",
+      "difficulty": "Difícil",
+      "options": [
+        "Interceptar e alterar a comunicação entre duas partes sem que elas percebam",
+        "Um backup falho",
+        "Uma atualização de software",
+        "Um tipo de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "MitM intercepta e pode modificar a comunicação entre duas partes, comprometendo a segurança."
+    },
+    {
+      "question": "O que significa o termo 'sandboxing'?",
+      "difficulty": "Médio",
+      "options": [
+        "Executar código em um ambiente isolado para testar seu comportamento",
+        "Armazenar dados em um backup",
+        "Melhorar a velocidade do sistema",
+        "Compartilhar arquivos de forma segura"
+      ],
+      "correct": 0,
+      "explanation": "Sandboxing isola o código em um ambiente controlado, prevenindo danos ao sistema principal."
+    },
+    {
+      "question": "Qual é a finalidade do controle de versão em segurança?",
+      "difficulty": "Médio",
+      "options": [
+        "Monitorar alterações em dados para identificar acessos não autorizados",
+        "Aumentar a velocidade do sistema",
+        "Criptografar informações",
+        "Gerenciar backups"
+      ],
+      "correct": 0,
+      "explanation": "O controle de versão rastreia mudanças e ajuda a detectar modificações indesejadas."
+    },
+    {
+      "question": "O que é um rootkit?",
+      "difficulty": "Difícil",
+      "options": [
+        "Conjunto de ferramentas que permite controle remoto não autorizado e se oculta no sistema",
+        "Um tipo de firewall",
+        "Um método de backup",
+        "Uma técnica de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "Rootkits ocultam a presença de malware e possibilitam acesso privilegiado ao sistema."
+    },
+    {
+      "question": "Qual é o papel da análise forense digital?",
+      "difficulty": "Difícil",
+      "options": [
+        "Investigar incidentes e coletar evidências digitais para processos legais",
+        "Melhorar a velocidade do sistema",
+        "Gerenciar senhas",
+        "Armazenar dados de forma segura"
+      ],
+      "correct": 0,
+      "explanation": "A análise forense digital coleta e analisa dados para reconstruir eventos e identificar a origem de incidentes."
+    },
+    {
+      "question": "O que é segurança de endpoint?",
+      "difficulty": "Fácil",
+      "options": [
+        "Proteção de dispositivos finais como PCs e smartphones contra ameaças",
+        "Armazenamento em nuvem",
+        "Backup de dados",
+        "Monitoramento de rede"
+      ],
+      "correct": 0,
+      "explanation": "Segurança de endpoint protege dispositivos individuais contra ataques e malware."
+    },
+    {
+      "question": "O que é um botnet?",
+      "difficulty": "Difícil",
+      "options": [
+        "Rede de dispositivos comprometidos controlados remotamente para realizar ataques",
+        "Um tipo de backup",
+        "Um firewall distribuído",
+        "Um sistema de VPN"
+      ],
+      "correct": 0,
+      "explanation": "Botnets consistem em dispositivos infectados usados para lançar ataques em larga escala."
+    },
+    {
+      "question": "Qual é a função do algoritmo RSA?",
+      "difficulty": "Médio",
+      "options": [
+        "Criptografar dados usando um par de chaves (pública e privada)",
+        "Armazenar dados de forma segura",
+        "Monitorar a rede",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "RSA é um algoritmo de criptografia assimétrica que utiliza duas chaves para encriptar e decriptar dados."
+    },
+    {
+      "question": "O que significa hashing?",
+      "difficulty": "Médio",
+      "options": [
+        "Converter dados em um valor fixo para verificação de integridade",
+        "Armazenar dados de forma criptografada",
+        "Melhorar a velocidade do sistema",
+        "Gerenciar acessos"
+      ],
+      "correct": 0,
+      "explanation": "Hashing gera um resumo dos dados que pode ser usado para verificar se foram alterados."
+    },
+    {
+      "question": "Qual é o objetivo da segurança na camada de aplicação?",
+      "difficulty": "Difícil",
+      "options": [
+        "Proteger softwares contra vulnerabilidades específicas",
+        "Aumentar a velocidade do site",
+        "Armazenar dados de forma segura",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Segurança na camada de aplicação visa mitigar ataques que exploram falhas específicas de softwares."
+    },
+    {
+      "question": "O que é um ataque de força bruta?",
+      "difficulty": "Médio",
+      "options": [
+        "Tentar todas as combinações possíveis de senhas para obter acesso",
+        "Uma técnica de criptografia",
+        "Um backup sem falhas",
+        "Uma atualização de software"
+      ],
+      "correct": 0,
+      "explanation": "Ataques de força bruta tentam adivinhar senhas por meio de múltiplas tentativas."
+    },
+    {
+      "question": "Qual a finalidade da autenticação baseada em certificados?",
+      "difficulty": "Fácil",
+      "options": [
+        "Validar a identidade através de certificados digitais",
+        "Armazenar senhas",
+        "Monitorar a rede",
+        "Gerenciar backups"
+      ],
+      "correct": 0,
+      "explanation": "Certificados digitais autenticam a identidade de usuários e sistemas, garantindo comunicações seguras."
+    },
+    {
+      "question": "O que significa 'patch management'?",
+      "difficulty": "Médio",
+      "options": [
+        "Gerenciar e aplicar atualizações de segurança para corrigir vulnerabilidades",
+        "Armazenar backups",
+        "Monitorar a rede",
+        "Criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "Patch management envolve atualizar sistemas para corrigir falhas conhecidas."
+    },
+    {
+      "question": "Qual é a importância de realizar testes de penetração?",
+      "difficulty": "Difícil",
+      "options": [
+        "Identificar vulnerabilidades exploráveis antes que sejam descobertas por atacantes",
+        "Melhorar a velocidade do sistema",
+        "Armazenar dados",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Testes de penetração simulam ataques para identificar e corrigir falhas de segurança."
+    },
+    {
+      "question": "O que é um SIEM?",
+      "difficulty": "Difícil",
+      "options": [
+        "Sistema para gerenciamento e análise de logs de segurança",
+        "Um tipo de antivírus",
+        "Método de criptografia",
+        "Uma VPN corporativa"
+      ],
+      "correct": 0,
+      "explanation": "SIEMs agregam e analisam logs para detectar e responder a ameaças."
+    },
+    {
+      "question": "Qual é a função do controle de acesso baseado em políticas (PBAC)?",
+      "difficulty": "Médio",
+      "options": [
+        "Gerenciar acessos com base em políticas definidas",
+        "Armazenar senhas",
+        "Aumentar a velocidade da rede",
+        "Criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "PBAC utiliza regras para determinar quais usuários podem acessar quais recursos."
+    },
+    {
+      "question": "O que é multifator biométrico?",
+      "difficulty": "Difícil",
+      "options": [
+        "Uso de mais de um dado biométrico para autenticação",
+        "Um tipo de firewall",
+        "Uma técnica de backup",
+        "Um método de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "Autenticação multifator biométrica exige dois ou mais dados, como impressão digital e reconhecimento facial."
+    },
+    {
+      "question": "Qual é o objetivo do gerenciamento de vulnerabilidades?",
+      "difficulty": "Médio",
+      "options": [
+        "Identificar, classificar e remediar vulnerabilidades em sistemas",
+        "Aumentar a velocidade do sistema",
+        "Armazenar dados",
+        "Monitorar a rede"
+      ],
+      "correct": 0,
+      "explanation": "Gerenciamento de vulnerabilidades busca identificar e corrigir falhas antes que sejam exploradas."
+    },
+    {
+      "question": "O que é criptografia simétrica?",
+      "difficulty": "Fácil",
+      "options": [
+        "Criptografia que usa a mesma chave para encriptar e decriptar dados",
+        "Criptografia que usa chaves diferentes para encriptar e decriptar",
+        "Uma técnica de backup",
+        "Um método de autenticação"
+      ],
+      "correct": 0,
+      "explanation": "Na criptografia simétrica, a mesma chave é usada para encriptar e decriptar os dados."
+    },
+    {
+      "question": "O que é criptografia assimétrica?",
+      "difficulty": "Médio",
+      "options": [
+        "Criptografia que usa um par de chaves (pública e privada)",
+        "Criptografia que usa uma única chave",
+        "Um tipo de backup",
+        "Uma técnica de firewall"
+      ],
+      "correct": 0,
+      "explanation": "Criptografia assimétrica utiliza chaves diferentes para encriptar e decriptar, aumentando a segurança."
+    },
+    {
+      "question": "Qual é a finalidade de um WAF (Web Application Firewall)?",
+      "difficulty": "Médio",
+      "options": [
+        "Proteger aplicações web contra ataques",
+        "Armazenar dados",
+        "Gerenciar senhas",
+        "Melhorar a velocidade do site"
+      ],
+      "correct": 0,
+      "explanation": "Um WAF filtra e monitora o tráfego HTTP para proteger aplicações web."
+    },
+    {
+      "question": "O que é autenticação SSO?",
+      "difficulty": "Fácil",
+      "options": [
+        "Single Sign-On, permitindo acesso a múltiplos sistemas com uma única autenticação",
+        "Um tipo de backup",
+        "Um sistema de criptografia",
+        "Uma técnica de segmentação de rede"
+      ],
+      "correct": 0,
+      "explanation": "SSO permite que o usuário faça login uma vez para acessar vários sistemas sem precisar repetir a autenticação."
+    },
+    {
+      "question": "O que é o princípio do privilégio mínimo?",
+      "difficulty": "Fácil",
+      "options": [
+        "Conceder aos usuários apenas as permissões necessárias para suas funções",
+        "Aumentar a velocidade do sistema",
+        "Armazenar mais dados",
+        "Facilitar o acesso público"
+      ],
+      "correct": 0,
+      "explanation": "O privilégio mínimo garante que os usuários tenham apenas o acesso essencial aos recursos."
+    },
+    {
+      "question": "O que significa a sigla 'APT'?",
+      "difficulty": "Difícil",
+      "options": [
+        "Advanced Persistent Threat, uma ameaça cibernética sofisticada e contínua",
+        "Um tipo de backup",
+        "Uma técnica de criptografia",
+        "Um sistema de firewall"
+      ],
+      "correct": 0,
+      "explanation": "APT refere-se a ameaças sofisticadas que persistem por longos períodos para comprometer sistemas."
+    },
+    {
+      "question": "Qual é o papel da educação em segurança cibernética?",
+      "difficulty": "Fácil",
+      "options": [
+        "Conscientizar e treinar usuários para prevenir ataques",
+        "Aumentar a velocidade da rede",
+        "Armazenar dados",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Educação em segurança melhora a conscientização dos usuários, reduzindo riscos baseados em erros humanos."
+    },
+    {
+      "question": "Qual a função de um IPS (Intrusion Prevention System)?",
+      "difficulty": "Médio",
+      "options": [
+        "Detectar e bloquear atividades maliciosas em tempo real",
+        "Armazenar logs de segurança",
+        "Gerenciar senhas",
+        "Aumentar a velocidade da rede"
+      ],
+      "correct": 0,
+      "explanation": "Um IPS bloqueia automaticamente o tráfego suspeito para prevenir ataques."
+    },
+    {
+      "question": "Qual a função de uma honeynet?",
+      "difficulty": "Médio",
+      "options": [
+        "Rede de sistemas falsos para atrair e analisar invasores",
+        "Método para acelerar a rede",
+        "Sistema de backup redundante",
+        "Ferramenta para encriptação de dados"
+      ],
+      "correct": 0,
+      "explanation": "Honeynets simulam ambientes reais para estudar táticas e comportamentos de invasores."
+    },
+    {
+      "question": "Qual a finalidade de um plano de resposta a incidentes?",
+      "difficulty": "Fácil",
+      "options": [
+        "Orientar a equipe na contenção e recuperação de incidentes de segurança",
+        "Aumentar a velocidade do sistema",
+        "Melhorar o design do site",
+        "Substituir medidas de criptografia"
+      ],
+      "correct": 0,
+      "explanation": "Um plano de resposta define os procedimentos para minimizar danos e restaurar operações após incidentes."
+    },
+    {
+      "question": "O que é análise de risco?",
+      "difficulty": "Fácil",
+      "options": [
+        "Avaliar ameaças e vulnerabilidades para priorizar ações de mitigação",
+        "Aumentar a velocidade do sistema",
+        "Armazenar backups automaticamente",
+        "Monitorar a rede sem intervenção"
+      ],
+      "correct": 0,
+      "explanation": "Análise de risco identifica e avalia ameaças para definir estratégias de proteção."
+    },
+    {
+      "question": "Qual o objetivo do planejamento de continuidade de negócios?",
+      "difficulty": "Médio",
+      "options": [
+        "Garantir que operações críticas continuem durante incidentes",
+        "Melhorar a estética do sistema",
+        "Aumentar a velocidade de processamento",
+        "Substituir backups tradicionais"
+      ],
+      "correct": 0,
+      "explanation": "O planejamento de continuidade assegura que serviços essenciais permaneçam ativos durante crises."
+    },
+    {
+      "question": "Qual a finalidade do plano de recuperação de desastres (DR)?",
+      "difficulty": "Médio",
+      "options": [
+        "Restaurar sistemas e dados rapidamente após um desastre",
+        "Aumentar a velocidade do sistema",
+        "Melhorar a comunicação interna",
+        "Armazenar logs de segurança"
+      ],
+      "correct": 0,
+      "explanation": "DR foca na recuperação rápida dos serviços após eventos catastróficos."
+    },
+    {
+      "question": "Por que é importante criptografar dados em repouso?",
+      "difficulty": "Médio",
+      "options": [
+        "Para proteger dados armazenados contra acesso não autorizado",
+        "Para acelerar a leitura dos dados",
+        "Para reduzir o consumo de energia",
+        "Para substituir backups"
+      ],
+      "correct": 0,
+      "explanation": "Criptografia em repouso protege dados mesmo que o dispositivo seja comprometido."
+    },
+    {
+      "question": "Qual o objetivo de criptografar dados em trânsito?",
+      "difficulty": "Fácil",
+      "options": [
+        "Proteger informações durante a transmissão pela rede",
+        "Aumentar a velocidade de transferência",
+        "Armazenar dados localmente",
+        "Gerenciar senhas"
+      ],
+      "correct": 0,
+      "explanation": "Criptografia em trânsito evita que dados sejam interceptados ou alterados durante a comunicação."
+    },
+    {
+      "question": "Como a autenticação multifator difere da tradicional?",
+      "difficulty": "Médio",
+      "options": [
+        "Exige múltiplos métodos de verificação, aumentando a segurança",
+        "É baseada apenas em senhas",
+        "Depende exclusivamente de certificados digitais",
+        "Não oferece segurança adicional"
+      ],
+      "correct": 0,
+      "explanation": "MFA combina diversos fatores para autenticar o usuário de forma mais robusta."
+    },
+    {
+      "question": "Qual a principal função de funções hash criptográficas?",
+      "difficulty": "Médio",
+      "options": [
+        "Garantir a integridade dos dados por meio de resumos únicos",
+        "Criptografar dados para confidencialidade",
+        "Aumentar a velocidade de acesso aos dados",
+        "Gerenciar permissões de usuários"
+      ],
+      "correct": 0,
+      "explanation": "Funções hash geram resumos que permitem verificar se os dados foram alterados."
+    },
+    {
+      "question": "O que é esteganografia?",
+      "difficulty": "Difícil",
+      "options": [
+        "Técnica de esconder informações dentro de outros arquivos, como imagens",
+        "Método para acelerar a transmissão de dados",
+        "Técnica de autenticação multifator",
+        "Sistema de backup em nuvem"
+      ],
+      "correct": 0,
+      "explanation": "Esteganografia oculta mensagens dentro de mídias sem evidenciar a presença dos dados ocultos."
+    },
+    {
+      "question": "Qual a diferença entre encriptação e hashing?",
+      "difficulty": "Médio",
+      "options": [
+        "Encriptação é reversível com chave; hashing é unidirecional",
+        "Ambas são reversíveis com a mesma chave",
+        "Hashing aumenta o tamanho dos dados, encriptação não",
+        "Encriptação é usada apenas para backups"
+      ],
+      "correct": 0,
+      "explanation": "Encriptação permite recuperar dados com a chave correta; hashing não pode ser revertido."
+    },
+    {
+      "question": "O que é PKI (Infraestrutura de Chave Pública)?",
+      "difficulty": "Médio",
+      "options": [
+        "Conjunto de políticas e tecnologias para gerenciar certificados digitais",
+        "Método para acelerar redes sem fio",
+        "Sistema de backup de chaves",
+        "Técnica de criptografia simétrica"
+      ],
+      "correct": 0,
+      "explanation": "PKI gerencia certificados e chaves públicas, assegurando a autenticidade das comunicações."
+    },
+    {
+      "question": "O que é uma assinatura digital?",
+      "difficulty": "Fácil",
+      "options": [
+        "Mecanismo que garante a integridade e autenticidade de um documento",
+        "Um tipo de firewall",
+        "Método de compressão de dados",
+        "Sistema de backup automatizado"
+      ],
+      "correct": 0,
+      "explanation": "Assinaturas digitais validam a integridade e a origem de um documento usando criptografia."
+    },
+    {
+      "question": "O que são ACLs (listas de controle de acesso)?",
+      "difficulty": "Fácil",
+      "options": [
+        "Conjuntos de regras que determinam quem pode acessar recursos",
+        "Ferramentas de backup de dados",
+        "Técnicas de encriptação de rede",
+        "Métodos de autenticação multifator"
+      ],
+      "correct": 0,
+      "explanation": "ACLs definem as permissões de acesso a recursos específicos."
+    },
+    {
+      "question": "O que é sniffing de rede?",
+      "difficulty": "Médio",
+      "options": [
+        "Monitoramento e captura de pacotes de dados em uma rede",
+        "Técnica de backup de informações",
+        "Método de autenticação por voz",
+        "Sistema de encriptação de dados"
+      ],
+      "correct": 0,
+      "explanation": "Sniffing intercepta e analisa o tráfego de rede, podendo expor informações sensíveis."
+    },
+    {
+      "question": "O que é port scanning?",
+      "difficulty": "Fácil",
+      "options": [
+        "Técnica para identificar portas abertas em um sistema",
+        "Método para acelerar conexões de rede",
+        "Ferramenta de backup de dados",
+        "Técnica para encriptação de comunicações"
+      ],
+      "correct": 0,
+      "explanation": "Port scanning é utilizado para descobrir serviços ativos e identificar vulnerabilidades."
+    },
+    {
+      "question": "O que é um scanner de vulnerabilidades?",
+      "difficulty": "Médio",
+      "options": [
+        "Ferramenta que identifica falhas e vulnerabilidades em sistemas",
+        "Sistema de backup automático",
+        "Método de autenticação biométrica",
+        "Ferramenta para criptografar dados"
+      ],
+      "correct": 0,
+      "explanation": "Scanners avaliam sistemas para detectar pontos fracos que podem ser explorados."
+    },
+    {
+      "question": "Qual a importância das políticas de segurança?",
+      "difficulty": "Fácil",
+      "options": [
+        "Estabelecer regras e diretrizes para proteger ativos e orientar comportamentos",
+        "Aumentar a velocidade dos sistemas",
+        "Substituir a necessidade de firewalls",
+        "Garantir uso exclusivo de uma ferramenta de segurança"
+      ],
+      "correct": 0,
+      "explanation": "Políticas de segurança definem normas que ajudam a proteger a organização contra ameaças."
+    },
+    {
+      "question": "O que é uma auditoria de segurança?",
+      "difficulty": "Médio",
+      "options": [
+        "Revisão sistemática das práticas e controles de segurança",
+        "Processo de backup de dados",
+        "Método para acelerar a rede",
+        "Ferramenta de criptografia de senhas"
+      ],
+      "correct": 0,
+      "explanation": "Auditorias verificam a eficácia dos controles e identificam vulnerabilidades."
+    },
+    {
+      "question": "O que é modelagem de ameaças (threat modeling)?",
+      "difficulty": "Difícil",
+      "options": [
+        "Processo de identificar e analisar ameaças e vulnerabilidades",
+        "Técnica para encriptar dados em trânsito",
+        "Método de backup de dados críticos",
+        "Ferramenta para monitorar a rede sem intervenção"
+      ],
+      "correct": 0,
+      "explanation": "Threat modeling antecipa riscos identificando vulnerabilidades e ameaças potenciais."
+    },
+    {
+      "question": "O que são práticas de codificação segura?",
+      "difficulty": "Médio",
+      "options": [
+        "Diretrizes para evitar vulnerabilidades durante o desenvolvimento de software",
+        "Métodos para acelerar o desenvolvimento sem testes",
+        "Técnicas de encriptação aplicadas ao código fonte",
+        "Ferramentas de backup de código"
+      ],
+      "correct": 0,
+      "explanation": "Práticas de codificação segura reduzem vulnerabilidades e melhoram a robustez do software."
+    },
+    {
+      "question": "O que é segurança de containers?",
+      "difficulty": "Difícil",
+      "options": [
+        "Implementar controles e monitoramento em ambientes de containers e microserviços",
+        "Armazenar containers em servidores dedicados",
+        "Utilizar apenas firewalls tradicionais",
+        "Gerenciar backups de dados em containers"
+      ],
+      "correct": 0,
+      "explanation": "Segurança de containers protege ambientes isolados onde aplicações são executadas."
+    },
+    {
+      "question": "O que é um hypervisor em segurança de virtualização?",
+      "difficulty": "Difícil",
+      "options": [
+        "Software que gerencia máquinas virtuais e pode ser alvo de ataques se comprometido",
+        "Ferramenta para acelerar a rede virtual",
+        "Sistema de backup de máquinas virtuais",
+        "Método para encriptar dados de virtualização"
+      ],
+      "correct": 0,
+      "explanation": "O hypervisor controla as VMs; sua segurança é essencial para ambientes virtualizados."
+    },
+    {
+      "question": "O que é um ataque por canal lateral (side-channel attack)?",
+      "difficulty": "Difícil",
+      "options": [
+        "Explorar informações físicas, como consumo de energia, para quebrar a segurança",
+        "Técnica para interceptar tráfego de rede",
+        "Método para acelerar operações criptográficas",
+        "Ferramenta para gerenciamento de senhas"
+      ],
+      "correct": 0,
+      "explanation": "Ataques por canal lateral exploram informações físicas não convencionais para comprometer a segurança."
+    },
+    {
+      "question": "O que é um ataque de vazamento de memória?",
+      "difficulty": "Difícil",
+      "options": [
+        "Explorar falhas na alocação de memória para causar instabilidade",
+        "Técnica para aumentar a velocidade de processamento",
+        "Método para criptografar dados em memória",
+        "Sistema de backup de RAM"
+      ],
+      "correct": 0,
+      "explanation": "Ataques de vazamento de memória exploram falhas no gerenciamento de memória, causando instabilidade."
+    },
+    {
+      "question": "Qual é o objetivo do monitoramento de integridade de arquivos?",
+      "difficulty": "Médio",
+      "options": [
+        "Detectar alterações não autorizadas em arquivos críticos",
+        "Aumentar a velocidade do acesso a dados",
+        "Melhorar a compressão dos arquivos",
+        "Gerenciar backups automaticamente"
+      ],
+      "correct": 0,
+      "explanation": "Monitorar a integridade dos arquivos ajuda a identificar modificações suspeitas."
+    },
+    {
+      "question": "O que é isolamento de rede?",
+      "difficulty": "Médio",
+      "options": [
+        "Dividir a rede em segmentos para limitar a propagação de ataques",
+        "Aumentar a velocidade da rede",
+        "Concentrar todos os dados em um único servidor",
+        "Permitir acesso irrestrito entre todos os dispositivos"
+      ],
+      "correct": 0,
+      "explanation": "Isolamento de rede restringe a comunicação entre segmentos, mitigando riscos de ataques."
+    },
+    {
+      "question": "O que é uma mantrap em segurança física?",
+      "difficulty": "Difícil",
+      "options": [
+        "Área de controle que exige dupla verificação de identidade para acesso",
+        "Um tipo de firewall físico",
+        "Dispositivo para monitoramento de temperatura",
+        "Método para encriptar dados físicos"
+      ],
+      "correct": 0,
+      "explanation": "Mantraps verificam a identidade dos indivíduos antes de permitir a passagem, aumentando a segurança física."
+    },
+    {
+      "question": "Qual a principal diferença entre um IPS e um IDS?",
+      "difficulty": "Difícil",
+      "options": [
+        "IPS bloqueia tráfego malicioso, enquanto IDS apenas detecta e alerta sobre incidentes",
+        "IDS impede o acesso, enquanto IPS armazena logs",
+        "IPS é usado apenas em redes sem fio, enquanto IDS é para redes cabeadas",
+        "Não há diferença; são termos intercambiáveis"
+      ],
+      "correct": 0,
+      "explanation": "IPS atua ativamente bloqueando ataques, enquanto IDS apenas alerta sobre atividades suspeitas."
+    },
+    {
+      "question": "O que é correlação em SIEM?",
+      "difficulty": "Difícil",
+      "options": [
+        "Integração e análise conjunta de logs para identificar padrões de ataque",
+        "Armazenamento de logs sem análise",
+        "Técnica para criptografar logs",
+        "Método para acelerar a rede"
+      ],
+      "correct": 0,
+      "explanation": "Correlação em SIEM combina dados de diversas fontes para detectar incidentes que isoladamente passariam despercebidos."
+    },
+    {
+      "question": "O que é detecção de anomalias em segurança?",
+      "difficulty": "Difícil",
+      "options": [
+        "Identificação de padrões atípicos que podem indicar ataques",
+        "Monitoramento da velocidade da rede",
+        "Armazenamento de dados em múltiplas camadas",
+        "Gerenciamento de senhas com criptografia"
+      ],
+      "correct": 0,
+      "explanation": "Detecção de anomalias identifica comportamentos fora do comum que podem sinalizar atividades maliciosas."
+    },
+    {
+      "question": "O que é um bot herder?",
+      "difficulty": "Difícil",
+      "options": [
+        "Controlador centralizado de uma botnet",
+        "Sistema de backup automatizado",
+        "Ferramenta de criptografia de dados",
+        "Método para acelerar a rede"
+      ],
+      "correct": 0,
+      "explanation": "Um bot herder gerencia dispositivos infectados para coordenar ataques em larga escala."
+    },
+    {
+      "question": "Qual é a importância da gestão de chaves criptográficas?",
+      "difficulty": "Difícil",
+      "options": [
+        "Garantir que as chaves sejam protegidas para manter a segurança dos dados",
+        "Aumentar a velocidade de encriptação",
+        "Armazenar dados de forma redundante",
+        "Substituir a necessidade de senhas complexas"
+      ],
+      "correct": 0,
+      "explanation": "A gestão de chaves é essencial para evitar vazamentos e assegurar a eficácia da criptografia."
+    },
+    {
+      "question": "O que é mitigação de risco?",
+      "difficulty": "Médio",
+      "options": [
+        "Implementar medidas para reduzir a probabilidade e o impacto de ameaças",
+        "Ignorar ameaças menores",
+        "Aumentar o orçamento de segurança",
+        "Substituir backups tradicionais por soluções em nuvem"
+      ],
+      "correct": 0,
+      "explanation": "Mitigação de risco envolve controles que minimizam os efeitos de potenciais ameaças."
+    },
+    {
+      "question": "O que é um controle compensatório?",
+      "difficulty": "Difícil",
+      "options": [
+        "Medidas alternativas que reduzem o risco quando controles primários não são viáveis",
+        "Ferramentas que aceleram a rede",
+        "Sistemas de backup redundante",
+        "Métodos de criptografia sem chave"
+      ],
+      "correct": 0,
+      "explanation": "Controles compensatórios são soluções alternativas para mitigar riscos na ausência de controles ideais."
+    },
+    {
+      "question": "O que é uma linha de base de segurança?",
+      "difficulty": "Médio",
+      "options": [
+        "Conjunto mínimo de configurações e controles que um sistema deve ter",
+        "Método para acelerar o processamento de dados",
+        "Técnica para aumentar a velocidade da rede",
+        "Ferramenta de backup de arquivos"
+      ],
+      "correct": 0,
+      "explanation": "Uma linha de base define os padrões mínimos de segurança que devem ser implementados."
+    },
+    {
+      "question": "O que é multi-tenancy em ambientes de nuvem?",
+      "difficulty": "Difícil",
+      "options": [
+        "Compartilhamento de recursos entre múltiplos clientes com isolamento de dados",
+        "Uso de um único servidor para todos os clientes sem isolamento",
+        "Armazenamento de dados sem criptografia",
+        "Acesso irrestrito a recursos de nuvem"
+      ],
+      "correct": 0,
+      "explanation": "Multi-tenancy permite que diversos clientes compartilhem a mesma infraestrutura mantendo o isolamento dos dados."
+    },
+    {
+      "question": "O que é CASB?",
+      "difficulty": "Médio",
+      "options": [
+        "Ferramenta que monitora e protege o uso de serviços em nuvem",
+        "Um tipo de backup em nuvem",
+        "Sistema de encriptação de dados em repouso",
+        "Técnica de autenticação multifator"
+      ],
+      "correct": 0,
+      "explanation": "CASB aplica políticas de segurança no acesso a serviços em nuvem, protegendo as informações."
+    },
+    {
+      "question": "Além de prevenir perda de dados, qual a outra finalidade do DLP?",
+      "difficulty": "Médio",
+      "options": [
+        "Monitorar e controlar a movimentação de informações sensíveis",
+        "Aumentar a velocidade da rede",
+        "Gerenciar backups automaticamente",
+        "Substituir o uso de firewalls"
+      ],
+      "correct": 0,
+      "explanation": "DLP também monitora o fluxo de dados sensíveis para evitar vazamentos."
+    },
+    {
+      "question": "O que é gerenciamento de dispositivos móveis (MDM) em segurança?",
+      "difficulty": "Médio",
+      "options": [
+        "Ferramenta para gerenciar e proteger dispositivos móveis corporativos",
+        "Sistema de backup de dispositivos móveis",
+        "Método para acelerar conexões móveis",
+        "Técnica de encriptação exclusiva para smartphones"
+      ],
+      "correct": 0,
+      "explanation": "MDM permite controlar e proteger dispositivos móveis utilizados pelos funcionários."
+    },
+    {
+      "question": "Como se define um incidente de segurança?",
+      "difficulty": "Fácil",
+      "options": [
+        "Qualquer evento que comprometa a confidencialidade, integridade ou disponibilidade de informações",
+        "Apenas ataques de malware",
+        "Qualquer atualização de software",
+        "Uma falha de hardware sem impacto em dados"
+      ],
+      "correct": 0,
+      "explanation": "Um incidente de segurança é qualquer evento que afete a proteção das informações."
+    },
+    {
+      "question": "O que é remediação em segurança?",
+      "difficulty": "Médio",
+      "options": [
+        "Ações tomadas para corrigir ou mitigar uma vulnerabilidade ou incidente",
+        "Apenas o backup dos dados",
+        "Monitoramento passivo do sistema",
+        "Aceleração de conexões de rede"
+      ],
+      "correct": 0,
+      "explanation": "Remediação envolve corrigir falhas e restaurar a segurança após um incidente."
+    },
+    {
+      "question": "Como se define um exploit?",
+      "difficulty": "Médio",
+      "options": [
+        "Técnica ou código que tira vantagem de uma vulnerabilidade",
+        "Método de backup automatizado",
+        "Técnica para acelerar a rede",
+        "Ferramenta para monitoramento de logs"
+      ],
+      "correct": 0,
+      "explanation": "Exploit é um código que explora uma vulnerabilidade para causar comportamento indesejado."
+    },
+    {
+      "question": "O que é uma vulnerabilidade?",
+      "difficulty": "Fácil",
+      "options": [
+        "Uma fraqueza em um sistema que pode ser explorada por atacantes",
+        "Um método de criptografia",
+        "Uma técnica de backup",
+        "Uma atualização de software"
+      ],
+      "correct": 0,
+      "explanation": "Vulnerabilidade é uma falha que pode ser explorada para comprometer a segurança."
+    },
+    {
+      "question": "O que é implantação de patches?",
+      "difficulty": "Médio",
+      "options": [
+        "Aplicar atualizações de segurança para corrigir vulnerabilidades",
+        "Técnica para aumentar a velocidade do sistema",
+        "Método de backup de dados",
+        "Forma de autenticação sem senha"
+      ],
+      "correct": 0,
+      "explanation": "Implantar patches é atualizar sistemas para corrigir falhas conhecidas."
+    },
+    {
+      "question": "O que é a cyber kill chain?",
+      "difficulty": "Difícil",
+      "options": [
+        "Modelo que descreve as etapas de um ataque cibernético",
+        "Técnica para acelerar a rede",
+        "Método de backup distribuído",
+        "Ferramenta de encriptação avançada"
+      ],
+      "correct": 0,
+      "explanation": "A cyber kill chain detalha as fases de um ataque, permitindo a interrupção do mesmo em pontos críticos."
+    },
+    {
+      "question": "O que é movimento lateral em ataques de rede?",
+      "difficulty": "Difícil",
+      "options": [
+        "Técnica de invasor se mover para acessar outros sistemas na rede",
+        "Método para acelerar a transmissão de dados",
+        "Forma de backup segmentado",
+        "Técnica de encriptação de rede"
+      ],
+      "correct": 0,
+      "explanation": "Movimento lateral permite que um invasor se desloque na rede para comprometer outros sistemas."
+    },
+    {
+      "question": "O que é escalada de privilégios?",
+      "difficulty": "Médio",
+      "options": [
+        "Processo de adquirir níveis de acesso superiores aos inicialmente concedidos",
+        "Método para aumentar a velocidade do sistema",
+        "Técnica para criptografar senhas",
+        "Forma de backup de dados"
+      ],
+      "correct": 0,
+      "explanation": "Escalada de privilégios ocorre quando um invasor obtém acesso a recursos além dos permitidos."
+    },
+    {
+      "question": "O que é forense de rede?",
+      "difficulty": "Difícil",
+      "options": [
+        "Processo de coletar e analisar dados de rede para investigar incidentes",
+        "Técnica para acelerar a rede",
+        "Método de backup de tráfego",
+        "Forma de encriptação de dados em trânsito"
+      ],
+      "correct": 0,
+      "explanation": "Forense de rede investiga tráfego e logs para reconstruir eventos e identificar a origem dos incidentes."
+    }
+  ]
