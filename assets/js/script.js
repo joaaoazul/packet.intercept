@@ -33,7 +33,7 @@ favoriteButtons.forEach(btn => {
   const articleId = btn.parentElement.id;
   if (localStorage.getItem('favorite-' + articleId) === 'true') {
     btn.classList.add('favorite');
-    btn.innerHTML = '&#9733;'; // estrela cheia
+    btn.innerHTML = '&#9733;';
   }
   btn.addEventListener('click', function() {
     this.classList.toggle('favorite');
@@ -43,7 +43,7 @@ favoriteButtons.forEach(btn => {
   });
 });
 
-// Sistema de Progresso: marcar artigo como concluído e salvar no localStorage
+// Sistema de Progresso: marcar artigo como concluído e salvar em localStorage
 const progressButtons = document.querySelectorAll('.progress-btn');
 progressButtons.forEach(btn => {
   const articleId = btn.parentElement.id;
