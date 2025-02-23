@@ -118,6 +118,24 @@ section {
   border-radius: 12px;
 }
 
+.heat-map-img {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin: 15px auto; /* Centraliza horizontalmente */
+  max-width: 700px;
+  height: auto;
+}
+
+.heat-map-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
 section h2 {
   border-bottom: 2px solid #004d99;
   padding-bottom: 10px;
