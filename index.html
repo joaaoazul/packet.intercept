@@ -247,152 +247,6 @@
       </section>
       
       <!-- Seção: Continuidade de Negócios e Recuperação de Desastres -->
-<<<<<<< HEAD
-  <!-- Seção: Continuidade de Negócios e Recuperação de Desastres -->
-  <section id="continuidade">
-    <h2>Continuidade de Negócios e Recuperação de Desastres (DR)</h2>
-    
-    <!-- Artigo: Business Continuity (BC) -->
-    <article id="business-continuity">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3>Business Continuity (BC)</h3>
-      <p>
-        <strong>Definição:</strong><br>
-        Business Continuity é o conjunto de estratégias, planos e procedimentos que garantem que as funções críticas de uma organização continuem operando durante e após um incidente, minimizando interrupções e perdas.
-      </p>
-      <p>
-        <strong>Componentes Principais:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Análise de Impacto nos Negócios (BIA):</strong> Identifica as funções críticas, avalia o impacto que uma interrupção pode causar e define os prazos críticos e os recursos necessários para a recuperação.
-        </li>
-        <li>
-          <strong>Plano de Continuidade de Negócios (BCP):</strong> Documenta os procedimentos, responsabilidades, processos e contatos de emergência necessários para manter ou retomar as operações essenciais.
-        </li>
-        <li>
-          <strong>Estratégias de Mitigação:</strong> Incluem medidas como redundância de hardware, replicação de dados e a utilização de centros de dados alternativos para reduzir a vulnerabilidade a falhas.
-        </li>
-        <li>
-          <strong>Testes e Exercícios:</strong> Simulações periódicas para validar a eficácia do plano e identificar áreas que precisam de melhorias.
-        </li>
-        <li>
-          <strong>Comunicação e Coordenação:</strong> Definição clara de papéis, responsabilidades e canais de comunicação para atuação rápida em caso de crise.
-        </li>
-      </ul>
-      <p>
-        <strong>Exemplo Prático:</strong><br>
-        Uma empresa de serviços financeiros realiza um BIA que identifica seus sistemas de transação como críticos. Em seguida, implementa um BCP que inclui servidores redundantes em um data center secundário e realiza exercícios semestrais para validar a transferência automática dos serviços em caso de falha.
-      </p>
-      <div class="test-container">
-        <details>
-          <summary><strong>Exercício:</strong> Elabore um esboço de BCP para uma pequena empresa de e-commerce.</summary>
-          <ol>
-            <li>Identifique três funções críticas (ex.: processamento de pedidos, gerenciamento de estoque, atendimento ao cliente).</li>
-            <li>Defina quais recursos (hardware, software, pessoal) são essenciais para cada função.</li>
-            <li>Liste as ações a serem tomadas em caso de interrupção (ex.: migração para um data center secundário, comunicação com clientes).</li>
-            <li>Estabeleça um cronograma para testar e revisar o plano periodicamente.</li>
-          </ol>
-        </details>
-      </div>
-    </article>
-    
-    <!-- Artigo: Disaster Recovery (DR) -->
-    <article id="disaster-recovery">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3>Disaster Recovery (DR)</h3>
-      <p>
-        <strong>Definição:</strong><br>
-        Disaster Recovery é o conjunto de estratégias e procedimentos voltados para a restauração dos sistemas de TI e dados após um desastre ou falha grave, com o objetivo de retomar as operações o mais rápido possível.
-      </p>
-      <p>
-        <strong>Componentes Principais:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>RTO (Recovery Time Objective):</strong> O tempo máximo tolerável para restaurar os sistemas críticos.
-        </li>
-        <li>
-          <strong>RPO (Recovery Point Objective):</strong> A quantidade máxima de dados que pode ser perdida, expressa em tempo (por exemplo, 30 minutos ou 4 horas).
-        </li>
-        <li>
-          <strong>Soluções de Backup e Replicação:</strong> Estratégias que podem incluir backups diários (ou mais frequentes) e replicação de dados em tempo real para um data center secundário ou serviço em nuvem.
-        </li>
-        <li>
-          <strong>Procedimentos de Restauração:</strong> Passos detalhados para recuperar sistemas e restaurar dados, definindo a ordem de prioridades e os responsáveis pela execução do plano.
-        </li>
-        <li>
-          <strong>Infraestrutura Alternativa:</strong> Centros de dados ou serviços em nuvem que podem ser ativados caso o data center principal sofra um desastre.
-        </li>
-      </ul>
-      <p>
-        <strong>Exemplo Prático:</strong><br>
-        Uma empresa de saúde mantém backups diários e utiliza replicação em nuvem. Em caso de um incêndio em seu data center principal, o plano de DR prevê que os sistemas sejam automaticamente restaurados a partir da cópia na nuvem, com um RTO de 2 horas e um RPO de 1 hora.
-      </p>
-      <div class="test-container">
-        <details>
-          <summary><strong>Exercício:</strong> Crie um mini plano de DR para uma organização que dependa fortemente de um banco de dados de clientes.</summary>
-          <ol>
-            <li>Defina um RTO adequado (por exemplo, 2 horas) e um RPO aceitável (por exemplo, 30 minutos), justificando suas escolhas.</li>
-            <li>Liste as medidas de backup e replicação necessárias, como backups automatizados a cada 30 minutos e replicação em tempo real para um data center secundário ou nuvem.</li>
-            <li>Descreva o procedimento de restauração: desde a identificação do backup mais recente, passando pela restauração do banco de dados, até a validação da integridade dos dados.</li>
-            <li>Explique como testar o plano regularmente, definindo a frequência dos testes e os indicadores de sucesso (por exemplo, cumprimento dos valores de RTO e RPO).</li>
-          </ol>
-        </details>
-      </div>
-    </article>
-    
-    <!-- Artigo: Resposta a Incidentes -->
-    <article id="resposta-incidentes">
-      <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-      <h3>Resposta a Incidentes</h3>
-      <p>
-        <strong>Definição:</strong><br>
-        Resposta a Incidentes é o conjunto de ações e procedimentos adotados para identificar, conter, erradicar e recuperar de um incidente de segurança, minimizando o impacto e restaurando a normalidade dos serviços.
-      </p>
-      <p>
-        <strong>Fases do Processo de Resposta a Incidentes:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Preparação:</strong> Desenvolvimento e teste de um plano de resposta, treinamento da equipe e instalação de ferramentas de monitoramento.
-        </li>
-        <li>
-          <strong>Identificação:</strong> Monitoramento contínuo para detectar atividades suspeitas e identificar incidentes rapidamente.
-        </li>
-        <li>
-          <strong>Contenção:</strong> Ações imediatas para isolar os sistemas afetados e evitar a propagação do incidente.
-        </li>
-        <li>
-          <strong>Erradicação:</strong> Remoção da causa raiz do incidente, como a eliminação de malware ou o fechamento de brechas de segurança.
-        </li>
-        <li>
-          <strong>Recuperação:</strong> Restauração dos sistemas e validação da integridade dos dados, garantindo que o ambiente esteja seguro para retomar as operações.
-        </li>
-        <li>
-          <strong>Lições Aprendidas:</strong> Revisão pós-incidente para identificar falhas e aprimorar o plano de resposta.
-        </li>
-      </ul>
-      <p>
-        <strong>Exemplo Prático:</strong><br>
-        Durante um ataque de ransomware, a equipe de resposta a incidentes isola a rede afetada, remove o malware, restaura os sistemas a partir de backups e, posteriormente, realiza uma análise para fortalecer as medidas de segurança.
-      </p>
-      <div class="test-container">
-        <details>
-          <summary><strong>Exercício:</strong> Simule um cenário de resposta a incidentes para um ataque de phishing que comprometeu contas de e-mail corporativas.</summary>
-          <ol>
-            <li>Liste as ações imediatas que a equipe deve tomar para conter o ataque (por exemplo, isolar contas comprometidas e bloquear e-mails suspeitos).</li>
-            <li>Descreva o procedimento para identificar as contas comprometidas e erradicar o phishing.</li>
-            <li>Explique como os sistemas seriam restaurados e como a integridade dos dados seria verificada.</li>
-            <li>Proponha medidas para prevenir futuros ataques semelhantes.</li>
-          </ol>
-        </details>
-      </div>
-    </article>
-  </section>
-  
-
-=======
       <section id="continuidade">
         <h2>Continuidade de Negócios e Recuperação de Desastres (DR)</h2>
         
@@ -479,7 +333,6 @@
           </div>
         </article>
       </section>
->>>>>>> d7b6942428f300fa5184cb48d58f6bca44b9ba49
       
       <!-- Seção: Controle de Acesso -->
       <section id="controle">
@@ -562,9 +415,13 @@
   <!-- Botão para iniciar o Quiz de Exame -->
   <a href="quiz.html"><button id="startQuizBtn">Iniciar Quiz de Exame</button></a>
 </section>
-
     </div>
   </main>
+  <div class="scroll-to-top">
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+      Voltar ao Início
+    </button>
+  </div>
   <footer>
     <p>&copy; 2025 joaoDev. Todos os direitos reservados. v1.2</p>
   </footer>

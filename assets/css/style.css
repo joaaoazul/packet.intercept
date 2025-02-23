@@ -244,6 +244,30 @@ footer {
   font-family: 'Outfit', sans-serif;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-to-top button {
+  padding: 10px 15px;
+  background: #101357;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+.scroll-to-top button:hover {
+  background: #0e0b56;
+}
+
+
 /* Responsividade */
 @media (max-width: 600px) {
   nav ul {
