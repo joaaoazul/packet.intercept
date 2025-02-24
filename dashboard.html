@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - ISC2 CC Study System</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    /* Estilos básicos para a página do dashboard */
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    .auth-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .auth-container h2 {
+      text-align: center;
+    }
+    .hidden {
+      display: none;
+    }
+    #dashboard-content {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="login-container" class="auth-container">
+    <h2>Login para Dashboard</h2>
+    <p>Digite a senha para acessar seu Dashboard:</p>
+    <input type="password" id="passwordInput" placeholder="Senha">
+    <button id="loginBtn">Entrar</button>
+    <p id="loginError" style="color: red; display: none;">Senha incorreta. Tente novamente.</p>
+  </div>
+  <div id="dashboard-content" class="hidden">
+    <h1>Bem-vindo ao seu Dashboard</h1>
+    <!-- Aqui você pode exibir o progresso do aluno, os favoritos e outras métricas -->
+    <div id="progress-dashboard">
+      <h3>Seu Progresso</h3>
+      <p>Total de Artigos Concluídos: <span id="completedCount">0</span></p>
+      <p>Percentual de Conclusão: <span id="completionPercent">0%</span></p>
+    </div>
+    <div id="favorites-dashboard">
+      <h3>Seus Favoritos</h3>
+      <ul id="favoritesList">
+        <!-- Itens adicionados dinamicamente -->
+      </ul>
+    </div>
+  </div>
+  <script>
+    // Simulação de autenticação simples
+    const loginBtn = document.getElementById('loginBtn');
+    const passwordInput = document.getElementById('passwordInput');
+    const loginContainer = document.getElementById('login-container');
+    const dashboardContent = document.getElementById('dashboard-content');
+    const loginError = document.getElementById('loginError');
+
+    // Simulação: senha correta definida (para testes)
+    const correctPassword = "senha123";
+
+    loginBtn.addEventListener('click', () => {
+      if(passwordInput.value === correctPassword) {
+        loginContainer.classList.add('hidden');
+        dashboardContent.classList.remove('hidden');
+      } else {
+        loginError.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

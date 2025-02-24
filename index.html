@@ -10,6 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="icon" href="./assets/img/favico_logo.png">
   <link rel="manifest" href="manifest.json">
+  <style>
+    /* Adição de estilo para as notas oficiais ISC2 */
+    .isc2-note {
+      font-style: italic;
+      color: #555;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,12 +27,13 @@
   </header>
   <nav>
     <ul>
-      <li><a href="#principios">Princípios de Segurança</a></li>
-      <li><a href="#continuidade">Continuidade &amp; DR</a></li>
-      <li><a href="#controle">Controle de Acesso</a></li>
-      <li><a href="#redes">Segurança de Redes</a></li>
-      <li><a href="#operacoes">Operações de Segurança</a></li>
-    </ul>
+          <li><a href="#principios">Princípios de Segurança</a></li>
+          <li><a href="#continuidade">Continuidade &amp; DR</a></li>
+          <li><a href="#controle">Controle de Acesso</a></li>
+          <li><a href="#redes">Segurança de Redes</a></li>
+          <li><a href="#operacoes">Operações de Segurança</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>   
   </nav>
   <main>
     <div class="search-container">
@@ -75,6 +85,7 @@
           <div class="cia-triad-img">
             <img src="./assets/img/cia-triad.jpg" alt="CIA Triad">
           </div>
+          <p class="isc2-note">Nota: Conteúdo alinhado ao material oficial da ISC2, reforçando os fundamentos da Confidencialidade, Integridade e Disponibilidade.</p>
         </article>
         
         <!-- Artigo: Autenticação e MFA -->
@@ -100,6 +111,7 @@
           <p>
             <strong>Pergunta para reflexão:</strong> Quais são as vantagens de usar autenticação multifator em comparação com a autenticação baseada apenas em senha?
           </p>
+          <p class="isc2-note">Nota: As informações sobre autenticação e MFA seguem as diretrizes e recomendações presentes no guia oficial da ISC2.</p>
         </article>
         
         <!-- Artigo: Privacidade e Não-repúdio -->
@@ -133,6 +145,7 @@
             <li><strong>Assinaturas Digitais:</strong> Utilizando criptografia para validar a autoria de uma transação ou mensagem.</li>
             <li><strong>Logs de Auditoria:</strong> Registrando todas as atividades relevantes, garantindo rastreabilidade.</li>
           </ul>
+          <p class="isc2-note">Nota: Este conteúdo está em conformidade com os princípios de proteção de dados e diretrizes do curso oficial da ISC2.</p>
         </article>
         
         <!-- Artigo: Gestão de Riscos (Atualizado) -->
@@ -195,6 +208,7 @@
               </ol>
             </details>
           </div>
+          <p class="isc2-note">Nota: O processo de gestão de riscos apresentado aqui reflete as práticas recomendadas pelo material oficial da ISC2, incluindo análise qualitativa e quantitativa.</p>
         </article>
         
         <!-- Artigo: Controles de Segurança -->
@@ -220,6 +234,7 @@
           <p>
             <strong>Exemplo Prático:</strong> Uma organização protege seu data center implementando controles técnicos (firewalls e VPNs para acesso seguro), administrativos (políticas de uso aceitável e treinamentos periódicos) e físicos (controle de acesso por biometria e vigilância por CFTV).
           </p>
+          <p class="isc2-note">Nota: As categorias de controles de segurança foram adaptadas conforme as recomendações do curso oficial da ISC2.</p>
         </article>
         
         <!-- Artigo: Código de Ética da ISC2 -->
@@ -243,6 +258,7 @@
           <p>
             <strong>Exemplo Prático:</strong> Um profissional certificado pela ISC2 se recusa a participar de atividades que possam comprometer a segurança dos dados, mesmo sob pressão, demonstrando integridade e responsabilidade.
           </p>
+          <p class="isc2-note">Nota: Os princípios éticos destacados são parte integrante do compromisso dos profissionais certificados pela ISC2.</p>
         </article>
       </section>
       
@@ -273,6 +289,7 @@
             <strong>Exemplo Prático:</strong><br>
             Uma empresa de serviços financeiros realiza um BIA e identifica que seus sistemas de transação são críticos. Ela implementa um BCP que inclui servidores redundantes em um data center secundário e realiza exercícios semestrais para validar a transferência automática de operações em caso de falha.
           </p>
+          <p class="isc2-note">Nota: As práticas de continuidade de negócios estão alinhadas com os requisitos e recomendações do material oficial da ISC2.</p>
         </article>
         
         <!-- Artigo: Disaster Recovery (DR) -->
@@ -298,6 +315,7 @@
             <strong>Exemplo Prático:</strong><br>
             Uma empresa de saúde mantém backups diários e utiliza um serviço de replicação em nuvem. Em caso de um incêndio em seu data center principal, o plano de DR prevê que os sistemas sejam automaticamente restaurados a partir da cópia na nuvem, com um RTO de 2 horas e um RPO de 1 hora.
           </p>
+          <p class="isc2-note">Nota: Este conteúdo de Disaster Recovery incorpora conceitos fundamentais do guia oficial da ISC2 para restauração de sistemas.</p>
         </article>
         
         <!-- Artigo: Resposta a Incidentes -->
@@ -331,90 +349,172 @@
               </ol>
             </details>
           </div>
+          <p class="isc2-note">Nota: O procedimento de resposta a incidentes segue as melhores práticas descritas no material oficial da ISC2.</p>
         </article>
       </section>
       
       <!-- Seção: Controle de Acesso -->
       <section id="controle">
         <h2>Controle de Acesso</h2>
+        <!-- Artigo: Controles Físicos -->
         <article id="controles-fisicos">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Controles Físicos</h3>
-          <p>Métodos para restringir o acesso físico a ambientes e ativos, como uso de crachás e monitoramento por CFTV.</p>
+          <p>
+            Os controles físicos englobam medidas estruturais e tecnológicas para prevenir o acesso não autorizado às instalações e ativos. Isso inclui o uso de crachás, sistemas biométricos, fechaduras eletrônicas, sensores de movimento, monitoramento por CFTV, além da segregação de áreas sensíveis, alarmes e barreiras físicas.
+          </p>
+          <p class="isc2-note">Nota: Os controles físicos devem ser projetados e mantidos de acordo com as melhores práticas de segurança e normas internacionais.</p>
         </article>
+        
+        <!-- Artigo: Controles Lógicos -->
         <article id="controles-logicos">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Controles Lógicos</h3>
-          <p>Gerenciamento de acesso digital, utilizando modelos como RBAC, DAC, MAC e ABAC.</p>
+          <p>
+            Os controles lógicos gerenciam o acesso digital a sistemas e informações, utilizando modelos como:
+          </p>
+          <ul>
+            <li><strong>RBAC (Role-Based Access Control):</strong> onde as permissões são atribuídas com base na função do usuário.</li>
+            <li><strong>DAC (Discretionary Access Control):</strong> onde o proprietário do recurso determina quem tem acesso.</li>
+            <li><strong>MAC (Mandatory Access Control):</strong> que impõe regras baseadas em classificações e políticas de segurança definidas pela organização.</li>
+            <li><strong>ABAC (Attribute-Based Access Control):</strong> que utiliza atributos do usuário e condições para definir permissões.</li>
+          </ul>
+          <p>
+            Mecanismos como autenticação multifator, autorizações dinâmicas e auditorias constantes complementam esses controles, garantindo uma gestão de acesso robusta.
+          </p>
+          <p class="isc2-note">Nota: A aplicação dos controles lógicos deve seguir os padrões e diretrizes estabelecidos pela ISC2, com ênfase na redução da superfície de ataque e na manutenção de registros de auditoria.</p>
         </article>
+        
+        <!-- Artigo: Princípio do Menor Privilégio -->
         <article id="menor-privilegio">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Princípio do Menor Privilégio</h3>
-          <p>Garantir que cada usuário tenha apenas os acessos estritamente necessários para suas funções.</p>
+          <p>
+            Esse princípio determina que cada usuário, processo ou sistema receba apenas as permissões estritamente necessárias para a realização de suas funções, evitando acessos excessivos.
+          </p>
+          <p>
+            A aplicação rigorosa do menor privilégio envolve revisões periódicas das permissões, automação na atribuição de acessos e monitoramento contínuo para detectar eventuais excessos, reduzindo assim o risco de comprometimento de dados críticos.
+          </p>
+          <p class="isc2-note">Nota: Este princípio é fundamental nas recomendações oficiais da ISC2, ajudando a limitar os danos em caso de violação de segurança.</p>
         </article>
       </section>
       
       <!-- Seção: Segurança de Redes -->
       <section id="redes">
         <h2>Segurança de Redes</h2>
+        <!-- Artigo: Infraestrutura de Segurança -->
         <article id="infraestrutura-seguranca">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Infraestrutura de Segurança</h3>
-          <p>Uso de firewalls, VPNs, IDS/IPS e segmentação para proteger a rede contra ameaças.</p>
+          <p>
+            Uma infraestrutura de segurança robusta integra dispositivos e tecnologias como firewalls de próxima geração, VPNs, sistemas de detecção e prevenção de intrusos (IDS/IPS) e segmentação de rede. Tais elementos monitoram, filtram e protegem o tráfego, garantindo que apenas comunicações autorizadas cheguem aos ativos críticos.
+          </p>
+          <p>
+            Soluções de monitoramento contínuo, análise de tráfego e gerenciamento centralizado são essenciais para identificar e mitigar ameaças em tempo real.
+          </p>
+          <p class="isc2-note">Nota: A infraestrutura de segurança deve ser planejada de forma holística, considerando tecnologias emergentes e as melhores práticas internacionais.</p>
         </article>
+        
+        <!-- Artigo: Ameaças e Ataques à Rede -->
         <article id="ameacas-ataques">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Ameaças e Ataques à Rede</h3>
-          <p>Exemplos de ataques (DDoS, phishing, MitM) e as técnicas de mitigação associadas.</p>
+          <p>
+            Este módulo aborda a identificação de diversas ameaças que podem comprometer a segurança das redes, como:
+          </p>
+          <ul>
+            <li><strong>Ataques DDoS:</strong> Visam sobrecarregar sistemas e interromper a disponibilidade dos serviços.</li>
+            <li><strong>Phishing:</strong> Técnicas de engenharia social para obter credenciais e informações sensíveis.</li>
+            <li><strong>Man-in-the-Middle (MitM):</strong> Interceptação e possível alteração das comunicações entre partes.</li>
+            <li><strong>Malware e Ransomware:</strong> Softwares maliciosos que exploram vulnerabilidades para infectar sistemas e sequestrar dados.</li>
+          </ul>
+          <p>
+            As diretrizes da ISC2 recomendam uma abordagem em camadas para prevenção, detecção e resposta, combinando tecnologias e políticas para minimizar os riscos.
+          </p>
+          <p class="isc2-note">Nota: A análise das ameaças deve ser atualizada constantemente para refletir o cenário dinâmico do ambiente digital.</p>
         </article>
+        
+        <!-- Artigo: Protocolos Seguros -->
         <article id="protocolos-seguros">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Protocolos Seguros</h3>
-          <p>Implementação de protocolos como TLS e IPSec para garantir comunicações seguras.</p>
+          <p>
+            A implementação de protocolos seguros como TLS e IPSec é essencial para proteger a integridade e confidencialidade dos dados em trânsito. Configurações corretas de certificados digitais e parâmetros robustos de criptografia ajudam a evitar vulnerabilidades.
+          </p>
+          <p class="isc2-note">Nota: A utilização de protocolos seguros deve estar alinhada com as diretrizes do curso oficial da ISC2 para comunicações protegidas.</p>
         </article>
       </section>
       
       <!-- Seção: Operações de Segurança -->
       <section id="operacoes">
         <h2>Operações de Segurança</h2>
+        <!-- Artigo: Segurança de Dados -->
         <article id="seguranca-dados">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Segurança de Dados</h3>
-          <p>Técnicas para proteger informações sensíveis, incluindo criptografia e políticas de DLP.</p>
+          <p>
+            Técnicas para proteger informações sensíveis incluem o uso de criptografia para dados em repouso e em trânsito, políticas de prevenção contra perda de dados (DLP) e controle rigoroso de acesso, além do monitoramento contínuo da integridade das informações.
+          </p>
+          <p>
+            A implementação de backups regulares, segmentação de dados e sistemas de recuperação rápida são medidas essenciais para garantir a disponibilidade e resiliência dos ativos.
+          </p>
+          <p class="isc2-note">Nota: As estratégias para proteger dados sensíveis seguem as diretrizes da ISC2, enfatizando a confidencialidade, integridade e disponibilidade.</p>
         </article>
+        
+        <!-- Artigo: Endurecimento do Sistema -->
         <article id="endurecimento-sistema">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Endurecimento do Sistema</h3>
-          <p>Práticas para reduzir vulnerabilidades, como aplicação de patches e configurações seguras.</p>
+          <p>
+            O endurecimento do sistema é um processo contínuo que visa reduzir vulnerabilidades e minimizar a superfície de ataque. Isso inclui a remoção de serviços desnecessários, aplicação regular de patches e configurações seguras, além de auditorias e testes de penetração.
+          </p>
+          <p class="isc2-note">Nota: As práticas de endurecimento seguem as recomendações do guia oficial da ISC2, integrando-se ao ciclo de desenvolvimento e manutenção dos sistemas.</p>
         </article>
+        
+        <!-- Artigo: Treinamento em Conscientização de Segurança -->
         <article id="treinamento">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Treinamento em Conscientização de Segurança</h3>
-          <p>Estratégias e iniciativas para educar os usuários sobre boas práticas de segurança.</p>
+          <p>
+            Estratégias e iniciativas para educar os usuários sobre boas práticas de segurança são fundamentais. Programas de treinamento que abordem identificação de phishing, engenharia social, uso seguro de dispositivos e simulações de incidentes ajudam a construir uma cultura de segurança.
+          </p>
+          <p class="isc2-note">Nota: A capacitação dos colaboradores é essencial para reduzir o erro humano, frequentemente apontado como uma das principais vulnerabilidades exploradas por atacantes.</p>
         </article>
       </section>
       
       <!-- Seção: Dashboard de Progresso e Tarefas -->
-   <!-- Seção: Dashboard de Progresso e Tarefas -->
-<section id="dashboard">
-  <h2>Dashboard de Progresso e Tarefas</h2>
-  <p>Aqui você pode ver seu progresso e gerenciar suas tarefas de estudo.</p>
-  <ul id="taskList"></ul>
-  <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
-  <button id="addTaskBtn">Adicionar Tarefa</button>
-  <br><br>
-  <!-- Botão para iniciar o Quiz de Exame -->
-  <a href="quiz.html"><button id="startQuizBtn">Iniciar Quiz de Exame</button></a>
-</section>
+      <section id="dashboard">
+        <h2>Dashboard de Progresso e Tarefas</h2>
+        <p>Aqui você pode ver seu progresso e gerenciar suas tarefas de estudo.</p>
+        <ul id="taskList"></ul>
+        <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+        <button id="addTaskBtn">Adicionar Tarefa</button>
+        <br><br>
+        <!-- Botão para iniciar o Quiz de Exame -->
+        <a href="quiz.html"><button id="startQuizBtn">Iniciar Quiz de Exame</button></a>
+      </section>
+      
+      <!-- Seção: Recursos Adicionais ISC2 -->
+      <section id="recursos">
+        <h2>Recursos Adicionais ISC2</h2>
+        <p>Explore materiais complementares e oficiais da ISC2 para aprofundar seus conhecimentos e se preparar ainda melhor para o exame:</p>
+        <ul>
+          <li><a href="https://www.isc2.org/" target="_blank">Site Oficial da ISC2</a></li>
+          <li><a href="https://www.isc2.org/Certifications" target="_blank">Certificações ISC2</a></li>
+          <li><a href="https://www.isc2.org/News-and-Events" target="_blank">Eventos e Webinars</a></li>
+          <li><a href="https://www.isc2.org/Newsroom/Articles" target="_blank">Artigos e Publicações</a></li>
+        </ul>
+      </section>
+      
     </div>
   </main>
   <div class="scroll-to-top">
@@ -422,7 +522,6 @@
       Voltar ao Início
     </button>
   </div>
-
   
   <footer>
     <p>&copy; 2025 joaoDev. Todos os direitos reservados. v1.2</p>

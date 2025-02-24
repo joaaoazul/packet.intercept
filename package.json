@@ -1,0 +1,20 @@
+{
+  "name": "cc.secondbrain",
+  "version": "1.0.0",
+  "description": "Este projeto é um site \"Second Brain\" desenvolvido para auxiliar nos estudos para o exame ISC2 CC, com foco no domínio dos **Princípios de Segurança**. O site foi construído utilizando HTML, CSS e JavaScript, e inclui funcionalidades avançadas para tornar a experiência de estudo mais interativa e organizada.",
+  "main": "service-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaaoazul/CC-Second-Brain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaaoazul/CC-Second-Brain/issues"
+  },
+  "homepage": "https://github.com/joaaoazul/CC-Second-Brain#readme"
+}
