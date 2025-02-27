@@ -32,7 +32,6 @@
           <li><a href="#controle">Controle de Acesso</a></li>
           <li><a href="#redes">Segurança de Redes</a></li>
           <li><a href="#operacoes">Operações de Segurança</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
         </ul>   
   </nav>
   <main>
@@ -52,35 +51,58 @@
           <p>
             A tríade CIA é o modelo clássico que orienta as práticas de segurança da informação, composto por:
             <br><br>
-            <span class="CIA">Confidencialidade:</span>
-            <br>
-            <span><strong>O que é:</strong></span> Assegurar que apenas pessoas autorizadas tenham acesso a dados e informações sensíveis.
-            <br>
-            <span><strong>Como proteger:</strong></span> Utilizando criptografia, controles de acesso, autenticação forte e políticas de privacidade.
-            <br>
-            <strong>Exemplo:</strong> Um banco que armazena dados dos clientes em servidores criptografados e limita o acesso apenas a funcionários autorizados.
-            <br>
-            <strong>Pergunta para reflexão:</strong> Quais métodos podem ser implementados para garantir que dados confidenciais não sejam acessados por pessoas não autorizadas?
-            <br><br>
-            <span class="CIA">Integridade:</span>
-            <br>
-            <span><strong>O que é:</strong></span> Garantir que os dados não sejam alterados de maneira não autorizada, mantendo sua exatidão e confiabilidade.
-            <br>
-            <span><strong>Como proteger:</strong></span> Utilizando funções hash (como SHA-256), assinaturas digitais e controles de versionamento.
-            <br>
-            <strong>Exemplo:</strong> Um sistema de controle de versões que registra todas as alterações em um documento importante, permitindo identificar modificações não autorizadas.
-            <br>
-            <strong>Pergunta para reflexão:</strong> Como as assinaturas digitais ajudam a assegurar a integridade dos dados?
-            <br><br>
-            <span class="CIA">Disponibilidade:</span>
-            <br>
-            <span><strong>O que é:</strong></span> Assegurar que os dados e sistemas estejam acessíveis quando necessários pelos usuários autorizados.
-            <br>
-            <span><strong>Como proteger:</strong></span> Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.
-            <br>
-            <strong>Exemplo:</strong> Um site de e-commerce que utiliza servidores em clusters e redes de distribuição de conteúdo (CDNs) para manter o serviço ativo mesmo durante picos de acesso.
-            <br>
-            <strong>Pergunta para reflexão:</strong> Que estratégias podem ser adotadas para minimizar o impacto de um ataque de negação de serviço (DDoS) e garantir a disponibilidade?
+            <div class="triad-container">
+              <!-- Confidencialidade -->
+              <div class="triad-section" style="background-color: #B3DDF2;">
+                <span class="CIA" id="confidenciality">Confidencialidade:</span>
+                <p><strong>O que é:</strong> Significa permitir o acesso autorizado à informação, ao mesmo tempo em que protege contra divulgação inadequada.</p>
+                <p><strong>Como proteger:</strong> Utilizando criptografia, controles de acesso, autenticação forte e políticas de privacidade.</p>
+                <p><strong>Exemplo:</strong> Um banco que armazena dados dos clientes em servidores criptografados e limita o acesso apenas a funcionários autorizados.</p>
+                <p><strong>Pergunta para reflexão:</strong> Quais métodos podem ser implementados para garantir que dados confidenciais não sejam acessados por pessoas não autorizadas?</p>
+                <p><strong>Principais preocupações:</strong></p>
+                <ul class="concerns">
+                  <li>Snooping</li>
+                  <li>Dumpster diving</li>
+                  <li>Eavesdropping</li>
+                  <li>Wiretapping</li>
+                  <li>Social Engineering</li>
+                </ul>
+              </div>
+            
+              <!-- Integridade -->
+              <div class="triad-section" style="background-color: #FFF9C4;">
+                <span class="CIA" id="integrity">Integridade:</span>
+                <p><strong>O que é:</strong> Propriedade da informação que garante que ela seja registrada, utilizada e mantida de forma a assegurar sua completude, exatidão, consistência interna e utilidade para um propósito declarado.</p>
+                <p><strong>Como proteger:</strong> Utilizando funções hash (como SHA-256), assinaturas digitais e controles de versionamento.</p>
+                <p><strong>Exemplo:</strong> Um sistema de controle de versões que registra todas as alterações em um documento importante, permitindo identificar modificações não autorizadas.</p>
+                <p><strong>Pergunta para reflexão:</strong> Como as assinaturas digitais ajudam a assegurar a integridade dos dados?</p>
+                <p><strong>Principais preocupações:</strong></p>
+                <ul class="concerns">
+                  <li>Unauthorized modifications</li>
+                  <li>Impersonation</li>
+                  <li>Man-in-the-Middle (MitM)</li>
+                  <li>Replay</li>
+                </ul>
+              </div>
+            
+              <!-- Disponibilidade -->
+              <div class="triad-section" style="background-color: #FFD1A9;">
+                <span class="CIA" id="availability">Disponibilidade:</span>
+                <p><strong>O que é:</strong> Significa que os sistemas e dados estão disponíveis sempre que necessário.</p>
+                <p><strong>Como proteger:</strong> Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.</p>
+                <p><strong>Exemplo:</strong> Um site de e-commerce que utiliza servidores em clusters e redes de distribuição de conteúdo (CDNs) para manter o serviço ativo mesmo durante picos de acesso.</p>
+                <p><strong>Pergunta para reflexão:</strong> Que estratégias podem ser adotadas para minimizar o impacto de um ataque de negação de serviço (DDoS) e garantir a disponibilidade?</p>
+                <p><strong>Principais preocupações:</strong></p>
+                <ul class="concerns">
+                  <li>Denial of Service (DoS)</li>
+                  <li>Power outages</li>
+                  <li>Hardware failures</li>
+                  <li>Destruction</li>
+                  <li>Service outages</li>
+                </ul>
+              </div>
+            </div>
+            
           </p>
           <div class="cia-triad-img">
             <img src="./assets/img/cia-triad.jpg" alt="CIA Triad">
@@ -92,19 +114,47 @@
         <article id="autenticacao-mfa">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
-          <h3>Autenticação e MFA</h3>
+          <h3>Identificação, Autenticação e Autorização</h3>
+          <h4 style="background-color: #a7c7e7; border-radius: 2px; width: 105px; padding: 3px;">   Identificação</h4>
           <p>
+          É o primeiro passo no processo de controle de acesso e refere-se ao ato de um usuário, sistema ou dispositivo se apresentar ao sistema com uma identidade única.
+          <br>
+          <strong>Definição:</strong><br>
+          A identificação é o processo pelo qual um indivíduo ou entidade reivindica uma identidade específica para obter acesso a um sistema ou recurso. Isso geralmente é feito fornecendo um identificador único, como:
+          <ul>
+              <li>Nome de usuário (joaosilva)</li>
+              <li>Número de identificação (ID)</li>
+              <li>Endereço de e-mail</li>
+              <li>Cartão de acesso</li>
+              <li>Identificação biométrica (como um número associado a uma impressão digital)</li>
+            </ul>
+            </p>
+          <h4 style="background-color: #FFD1A9; border-radius: 2px; width: 105px; padding: 3px;">Autenticação</h4>
+          <p>
+            É o segundo passo no processo de controle de acesso. Ela ocorre após a identificação e tem o objetivo de verificar se a identidade fornecida pelo usuário é legítima.
+          <br>
             <strong>Definição:</strong><br>
-            A autenticação é o processo de verificar a identidade de um usuário ou sistema, enquanto a autenticação multifator (MFA) exige que o usuário apresente dois ou mais fatores de autenticação.
+            É o processo de validação da identidade de um usuário, sistema ou dispositivo através de credenciais. O sistema verifica se o usuário realmente é quem diz ser antes de conceder acesso.
           </p>
           <p>
             <strong>Fatores de Autenticação:</strong>
           </p>
           <ul>
-            <li><strong>Algo que você sabe:</strong> Senhas, PINs ou respostas a perguntas secretas.</li>
-            <li><strong>Algo que você tem:</strong> Tokens físicos, smartphones (para receber códigos via SMS ou aplicativos autenticadores) ou smart cards.</li>
-            <li><strong>Algo que você é:</strong> Características biométricas, como impressões digitais, reconhecimento facial ou leitura da íris.</li>
+            <li><strong>Algo que você sabe <span style="background-color: tomato; color: #ffff; border-radius: 2px;"> (Knowledge-based)</span>:</strong> Senhas, PINs ou respostas a perguntas secretas.</li>
+            <li><strong>Algo que você tem <span style="background-color: #37474F; color: #ffff; border-radius: 2px;"> (Possesion-based)</span>:</strong> Tokens físicos, smartphones (para receber códigos via SMS ou aplicativos autenticadores) ou smart cards.</li>
+            <li><strong>Algo que você é <span style="background-color: #5C9276; color: #ffff; border-radius: 2px;"> (Biométrico)</span>:</strong> Características biométricas, como impressões digitais, reconhecimento facial ou leitura da íris.</li>
+            <li><strong>Algo que você faz <span style="background-color: #3F6D80; color: #ffff; border-radius: 2px;"> (Behavior-based)</span>:</strong> Padrão de digitação, forma de movimento do mouse, etc. </li>
+          <li><strong>Algo onde você está <span style="background-color: #C95C6D; color: #ffff; border-radius: 2px;"> (Location Based)</span>:</strong> Autenticação baseada em geolocalização; Verificação por endereço IP.</li>
           </ul>
+          <h4 style="background-color: #FFF9C4; border-radius: 2px; width: 100px; padding: 3px;">Autorização</h4>
+          <p>
+            É o último passo no processo de controle de acesso segundo a (ISC)².
+          </p>
+          
+          ------------------------------------------ <br>
+          Under Maintenance <br>
+          ------------------------------------------
+          
           <p>
             <strong>Exemplo Prático:</strong> Um serviço de e-mail pode exigir que, além da senha, o usuário insira um código temporário gerado por um aplicativo autenticador (como Google Authenticator).
           </p>
@@ -121,18 +171,17 @@
           <h3>Privacidade e Não-repúdio</h3>
           <p>
             <strong>Privacidade:</strong><br>
-            <strong>O que é:</strong> Proteção dos dados pessoais e sensíveis para que o uso, o armazenamento e a transmissão desses dados estejam em conformidade com as leis e regulamentações (como GDPR, LGPD).
+            <strong>O que é:</strong> A privacidade é um componente essencial da segurança da informação. Ao compreendermos o nível de privacidade da informação, podemos implementar os controles adequados. Diversos padrões, políticas e procedimentos regulam a privacidade no ambiente de trabalho, variando por região geográfica.
           </p>
           <p>
-            <strong>Como Proteger:</strong>
+            <strong>Regulamentações:</strong>
           </p>
           <ul>
-            <li><strong>Criptografia:</strong> Tanto para dados em repouso quanto em trânsito.</li>
-            <li><strong>Anonimização e Pseudonimização:</strong> Tornar os dados menos identificáveis sem comprometer a utilidade da informação.</li>
-            <li><strong>Consentimento Informado:</strong> Garantir que os usuários saibam como seus dados serão usados.</li>
+            <li><strong>HIPAA (EUA):</strong> Regula como a privacidade das informações médicas deve ser mantida.</li>
+            <li><strong>GDPR (União Europeia):</strong> Garante que qualquer pessoa dentro das fronteiras da UE tenha controle sobre quais informações pessoais podem ser coletadas e armazenadas pelas empresas.</li>
           </ul>
           <p>
-            <strong>Exemplo:</strong> Um aplicativo de saúde que coleta dados biométricos informa os usuários sobre a finalidade do uso desses dados e adota técnicas de anonimização para proteger a identidade dos pacientes.
+            Como profissionais de segurança, é essencial estarmos cientes das leis e regulamentações de privacidade em todas as jurisdições onde nossa empresa opera. Ao conduzir negócios em outros países, devemos respeitar seus padrões e regulamentos de privacidade.
           </p>
           <p>
             <strong>Não-repúdio:</strong><br>
@@ -147,8 +196,7 @@
           </ul>
           <p class="isc2-note">Nota: Este conteúdo está em conformidade com os princípios de proteção de dados e diretrizes do curso oficial da ISC2.</p>
         </article>
-        
-        <!-- Artigo: Gestão de Riscos (Atualizado) -->
+
         <article id="gestao-riscos">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
@@ -162,8 +210,27 @@
             Envolve a aplicação de métodos, políticas e procedimentos para gerenciar riscos, minimizando sua probabilidade e/ou impacto e garantindo a continuidade dos negócios.
           </p>
           <p>
+            Profissionais de segurança utilizam seu conhecimento e habilidades para examinar a gestão de riscos operacionais, determinar como usar dados de risco de forma eficaz, trabalhar de maneira colaborativa entre diferentes áreas e relatar informações e descobertas acionáveis para os stakeholders envolvidos. Termos como ameaças, vulnerabilidades e ativos são familiares para a maioria dos profissionais de cibersegurança.
+          </p>
+          <p>
+            <strong>Risk Management Terminology:</strong><br>
+            Quando falamos em ameaças e vulnerabilidades, uma vulnerabilidade refere-se a uma lacuna ou fraqueza nos esforços de proteção dos ativos valiosos de uma organização, incluindo informações. Uma ameaça, por outro lado, é qualquer coisa ou pessoa que visa explorar essa vulnerabilidade para obter acesso não autorizado. A ameaça pode causar danos a um ativo. Por exemplo, um desastre natural como uma tempestade severa pode ameaçar o fornecimento de energia elétrica, tornando vulnerável um ambiente de TI onde ocorrem processos de produção. Se a energia for interrompida, o ativo pode ficar indisponível, pois os componentes de TI não funcionarão sem eletricidade. O nosso papel é avaliar a probabilidade de esses eventos ocorrerem e tomar medidas adequadas para mitigar os riscos.
+          </p>
+          <ul>
+            <li><strong>Um ativo:</strong> Algo que precisa de proteção.</li>
+            <li><strong>Uma vulnerabilidade:</strong> Uma lacuna ou fraqueza nos esforços de proteção.</li>
+            <li><strong>Uma ameaça:</strong> Algo ou alguém que busca explorar uma vulnerabilidade para comprometer os esforços de proteção.</li>
+          </ul>
+          <p>
             <strong>Risk Assessment and Identification:</strong><br>
             Consiste na identificação de vulnerabilidades e ameaças, seguida da avaliação dos riscos associados. Essa etapa envolve a coleta de dados e a realização de análises — tanto qualitativas quanto quantitativas — para determinar a criticidade dos riscos.
+          </p>
+          <p>
+            <strong>Regulamentações e Normas:</strong><br>
+            Regulamentações e leis afetam as operações diárias de muitas organizações. Um exemplo de lei com impacto amplo é o Regulamento Geral de Proteção de Dados (GDPR), que garante proteção de dados e controle para indivíduos dentro dos limites territoriais da UE, independentemente da cidadania. Nos Estados Unidos, informações médicas de pacientes são reguladas pela Lei de Portabilidade e Responsabilidade do Seguro de Saúde (HIPAA) e devem ser protegidas com altos padrões de segurança. O não cumprimento dessas normas pode resultar em penalidades financeiras e criminais tanto para organizações quanto para indivíduos envolvidos.
+          </p>
+          <p>
+            Felizmente, existem frameworks e padrões publicados que orientam as políticas organizacionais para garantir conformidade com essas regulamentações. A Organização Internacional de Normalização (ISO) é um dos organismos que publicam padrões reconhecidos, como diretrizes para a destruição segura de dados.
           </p>
           <p>
             <strong>Risk Treatment:</strong><br>
@@ -174,6 +241,9 @@
             <li><strong>Transferência:</strong> Transferir o risco para terceiros, por exemplo, por meio de seguros ou terceirização.</li>
             <li><strong>Aceitação:</strong> Decidir não agir se o risco for considerado aceitável dentro do contexto da organização.</li>
           </ul>
+          <p>
+            Ao tomar decisões com base nas prioridades de risco, as organizações devem avaliar a probabilidade e o impacto do risco, bem como sua tolerância para diferentes tipos de ameaças. Por exemplo, uma empresa no Havaí se preocupará mais com erupções vulcânicas do que uma empresa em Chicago, que, por sua vez, precisará planejar para nevascas. <span style="background-color: #FFD1A9; border-radius: 2px;"><strong>  A determinação da tolerância ao risco cabe à gestão executiva e ao conselho de administração.</strong> </span> Se uma empresa decidir ignorar ou aceitar um risco significativo, como expor trabalhadores ao amianto, ela se coloca em uma posição de grande responsabilidade legal.
+          </p>
           <p>
             <strong>Qualitative and Quantitative Risk Analysis:</strong><br>
             A análise qualitativa avalia os riscos com base em critérios subjetivos (como probabilidade e impacto) sem a atribuição de valores numéricos precisos, enquanto a análise quantitativa utiliza dados numéricos para calcular o valor do risco. Ambas as abordagens ajudam a priorizar os riscos e a definir as estratégias de tratamento.
@@ -193,24 +263,17 @@
               <li>Descreva a diferença entre análise qualitativa e quantitativa de riscos.</li>
               <li>Liste e explique as estratégias de tratamento de riscos.</li>
               <li>Por que é importante identificar e classificar os riscos antes de tratá-los?</li>
+              <li><strong>Quem é responsável por determinar a tolerância ao risco em uma organização?</strong></li>
             </ol>
             <p>
               Responda às perguntas e revise suas respostas com base nos estudos e nas referências oficiais. Essa prática ajudará a consolidar seu entendimento sobre o tema.
             </p>
-            <details>
-              <summary>Mostrar Respostas ao Teste</summary>
-              <ol>
-                <li><strong>Resposta:</strong> Risco é a probabilidade de ocorrência de um evento negativo associado ao impacto que ele pode causar nos objetivos da organização.</li>
-                <li><strong>Resposta:</strong> Identificação, avaliação, tratamento e monitoramento/revisão dos riscos.</li>
-                <li><strong>Resposta:</strong> A análise qualitativa utiliza critérios subjetivos para avaliar riscos, enquanto a quantitativa emprega dados numéricos para mensurar o valor do risco.</li>
-                <li><strong>Resposta:</strong> Mitigação, transferência e aceitação.</li>
-                <li><strong>Resposta:</strong> Porque isso permite priorizar os riscos e definir estratégias adequadas para minimizar seu impacto.</li>
-              </ol>
-            </details>
           </div>
           <p class="isc2-note">Nota: O processo de gestão de riscos apresentado aqui reflete as práticas recomendadas pelo material oficial da ISC2, incluindo análise qualitativa e quantitativa.</p>
         </article>
-        
+
+
+
         <!-- Artigo: Controles de Segurança -->
         <article id="controles-seguranca">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
@@ -502,6 +565,13 @@
         <!-- Botão para iniciar o Quiz de Exame -->
         <a href="quiz.html"><button id="startQuizBtn">Iniciar Quiz de Exame</button></a>
       </section>
+
+      <section id="infografico">
+        <h2>Infográfico: Conceitos do CIA Triad</h2>
+        <!-- Substitua "yourvideoID" pelo ID do vídeo no YouTube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yourvideoID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      
       
       <!-- Seção: Recursos Adicionais ISC2 -->
       <section id="recursos">
@@ -524,7 +594,7 @@
   </div>
   
   <footer>
-    <p>&copy; 2025 joaoDev. Todos os direitos reservados. v1.2</p>
+    <p>&copy; 2025 joaoDev. Todos os direitos reservados. v1.5.0</p>
   </footer>
   <script src="./assets/js/script.js"></script>
 </body>
