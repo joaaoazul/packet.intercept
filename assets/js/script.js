@@ -6,7 +6,7 @@ toggleBtn.addEventListener('click', () => {
   if (container) {
     container.classList.toggle('dark-mode');
   }
-  toggleBtn.textContent = document.body.classList.contains('dark-mode') ? 'Stealth Off' : 'Stealth Mode';
+  toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '🌞 Stealth Off' : '🌚 Stealth Mode';
 });
 
 // Navegação suave
