@@ -115,21 +115,22 @@
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
           <h3>Identificação, Autenticação e Autorização</h3>
-          <h4 style="background-color: #a7c7e7; border-radius: 2px; width: 105px; padding: 3px;">   Identificação</h4>
+          <h4 style="background-color: #a7c7e7; border-radius: 4px; width: 140px; padding: 3px;">🔍 Identificação</h4>
           <p>
           É o primeiro passo no processo de controle de acesso e refere-se ao ato de um usuário, sistema ou dispositivo se apresentar ao sistema com uma identidade única.
           <br>
           <strong>Definição:</strong><br>
           A identificação é o processo pelo qual um indivíduo ou entidade reivindica uma identidade específica para obter acesso a um sistema ou recurso. Isso geralmente é feito fornecendo um identificador único, como:
           <ul>
-              <li>Nome de usuário (joaosilva)</li>
-              <li>Número de identificação (ID)</li>
-              <li>Endereço de e-mail</li>
-              <li>Cartão de acesso</li>
-              <li>Identificação biométrica (como um número associado a uma impressão digital)</li>
+              <li>🔹Nome de usuário (joaosilva);</li>
+              <li>🔹Número de identificação (ID);</li>
+              <li>🔹Endereço de e-mail;</li>
+              <li>🔹Cartão de acesso;</li>
+              <li>🔹Identificação biométrica (como um número associado a uma impressão digital).</li>
             </ul>
             </p>
-          <h4 style="background-color: #FFD1A9; border-radius: 2px; width: 105px; padding: 3px;">Autenticação</h4>
+            <br>
+          <h4 style="background-color: #FFD1A9; border-radius: 4px; width: 140px; padding: 3px;">🔐 Autenticação</h4>
           <p>
             É o segundo passo no processo de controle de acesso. Ela ocorre após a identificação e tem o objetivo de verificar se a identidade fornecida pelo usuário é legítima.
           <br>
@@ -140,23 +141,49 @@
             <strong>Fatores de Autenticação:</strong>
           </p>
           <ul>
-            <li><strong>Algo que você sabe <span style="background-color: tomato; color: #ffff; border-radius: 2px;"> (Knowledge-based)</span>:</strong> Senhas, PINs ou respostas a perguntas secretas.</li>
-            <li><strong>Algo que você tem <span style="background-color: #37474F; color: #ffff; border-radius: 2px;"> (Possesion-based)</span>:</strong> Tokens físicos, smartphones (para receber códigos via SMS ou aplicativos autenticadores) ou smart cards.</li>
-            <li><strong>Algo que você é <span style="background-color: #5C9276; color: #ffff; border-radius: 2px;"> (Biométrico)</span>:</strong> Características biométricas, como impressões digitais, reconhecimento facial ou leitura da íris.</li>
-            <li><strong>Algo que você faz <span style="background-color: #3F6D80; color: #ffff; border-radius: 2px;"> (Behavior-based)</span>:</strong> Padrão de digitação, forma de movimento do mouse, etc. </li>
-          <li><strong>Algo onde você está <span style="background-color: #C95C6D; color: #ffff; border-radius: 2px;"> (Location Based)</span>:</strong> Autenticação baseada em geolocalização; Verificação por endereço IP.</li>
+            <li><strong>Algo que você sabe <span style="background-color: tomato; color: #ffff; border-radius: 4px;"> (Knowledge-based)</span>:</strong> Senhas, PINs ou respostas a perguntas secretas.</li>
+            <li><strong>Algo que você tem <span style="background-color: #37474F; color: #ffff; border-radius: 4px;"> (Possesion-based)</span>:</strong> Tokens físicos, smartphones (para receber códigos via SMS ou aplicativos autenticadores) ou smart cards.</li>
+            <li><strong>Algo que você é <span style="background-color: #5C9276; color: #ffff; border-radius: 4px;"> (Biométrico)</span>:</strong> Características biométricas, como impressões digitais, reconhecimento facial ou leitura da íris.</li>
+            <li><strong>Algo que você faz <span style="background-color: #3F6D80; color: #ffff; border-radius: 4px;"> (Behavior-based)</span>:</strong> Padrão de digitação; forma de movimento do mouse, etc. </li>
+          <li><strong>Algo onde você está <span style="background-color: #C95C6D; color: #ffff; border-radius: 4px;"> (Location Based)</span>:</strong> Autenticação baseada em geolocalização; Verificação por endereço IP.</li>
           </ul>
-          <h4 style="background-color: #FFF9C4; border-radius: 2px; width: 100px; padding: 3px;">Autorização</h4>
+          <br>
+          <h4 style="background-color: #FFF9C4; border-radius: 4px; width: 140px; padding: 3px;">🔑 Autorização</h4>
           <p>
-            É o último passo no processo de controle de acesso segundo a (ISC)².
+            É o último passo no processo de controle de acesso segundo a (ISC)². Depois de identificação e autenticação, a autorização determina o que o usuário pode ou não fazer dentro do sistema.
+           <br><strong>Definição:</strong><br>
+            É o processo que verifica se um usuário autenticado tem permissões adequadas para acessar determinados recursos ou executar ações dentro de um sistema.
+  
+            <h4>📌 Exemplos</h4>
+            <ul>
+              <li>🔹 Um utilizador comum pode visualizar arquivos, mas não pode apagá-los.</li>
+              <li>🔹 Um administrador pode adicionar e remover utilizadores.</li>
+              <li>🔹 No Linux, o comando sudo dá permissões elevadas a usuários autorizados.</li>
+            </ul>
+           <h4>🔄 Como funciona?</h4>
+            Depois que a identidade do usuário é <strong> verificada (autenticação),</strong> o sistema verifica as <strong> regras de acesso </strong>para conceder ou negar permissões.<br>
+            <br>
+            <h4>🛡️ Métodos de Autorização</h4>
+            <ul>
+              <li>✅ Listas de Controle de Acesso (ACLs) → Define quem pode acessar o quê.</li>
+              <li>✅ RBAC (Role-Based Access Control) → Permissões baseadas em funções (exemplo: Admin, Usuário, Convidado).</li>
+              <li>✅ ABAC (Attribute-Based Access Control) → Baseado em atributos como horário, localização, dispositivo, etc.</li>
+              <li>✅ MAC (Mandatory Access Control) → Sistema impõe regras rígidas de acesso (exemplo: segurança militar).</li>
+             </ul>
+             <br>
+            <h4 style="background-color: #C95C6D; color: #ffff; border-radius: 4px; padding: 3px; text-align: center;">Fluxo Completo segundo a (ISC)²</h4>
+              <ul>
+                <li>1️⃣ Identificação → "Quem és?" (Exemplo: Nome de utilizador)</li>
+                <li>2️⃣ Autenticação → "Podes provar?" (Exemplo: Senha, 2FA)</li>
+                <li>3️⃣ Autorização → "O que podes fazer?" (Exemplo: Permissões e restrições)</li>
+              </ul>
           </p>
-          
-          ------------------------------------------ <br>
-          Under Maintenance <br>
-          ------------------------------------------
-          
+          <br>
+          <h4 style="background-color: #FFD1A9; border-radius: 4px; width: 270px; padding: 3px;  text-align: center;">MFA - Multi-Factor Authentication</h4>
           <p>
-            <strong>Exemplo Prático:</strong> Um serviço de e-mail pode exigir que, além da senha, o usuário insira um código temporário gerado por um aplicativo autenticador (como Google Authenticator).
+            <strong>Definição:</strong><br>
+          O MFA é um método de segurança que exige que um utilizador forneça <strong> dois ou mais fatores para provar a sua identidade </strong> antes de obter acesso a um sistema.<br>
+           <strong>Exemplo Prático:</strong> Um serviço de e-mail pode exigir que, além da senha, o usuário insira um código temporário gerado por um aplicativo autenticador (como Google Authenticator).
           </p>
           <p>
             <strong>Pergunta para reflexão:</strong> Quais são as vantagens de usar autenticação multifator em comparação com a autenticação baseada apenas em senha?
