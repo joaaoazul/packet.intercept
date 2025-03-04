@@ -141,9 +141,16 @@ section {
 
 
 section h2 {
-  border-bottom: 2px solid #004d99;
-  padding-bottom: 10px;
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2C3E50; /* Azul escuro elegante */
+border-left: #2980B9 solid 5px;
+padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 30px;
   margin-bottom: 20px;
+  
 }
 
 article {
@@ -156,9 +163,18 @@ article {
   transition: box-shadow 0.3s;
 }
 
+article mark {
+  border-radius: 4px;
+  background-color: #ffeb99;
+}
+
 article h3 {
-  color: #004d99;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #4A90E2; /* Azul vibrante */
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 article p {
@@ -425,6 +441,48 @@ color: #2980B9;
   margin-bottom: 4px;
 }
 
+.low-risk{
+  color: #3498db; /* Azul para representar menor risco */
+  font-weight: bold
+}
+
+.high-risk{
+  color: #e74c3c; /* Vermelho para alto risco */
+  font-weight: bold;
+}
+
+.low-priority{
+    background-color: #d4edda; /* Verde claro para baixa prioridade */
+    color: #155724;
+    padding: 2px 6px;
+    border-radius: 4px; 
+}
+
+.high-priority{
+    background-color: #f8d7da; /* Vermelho claro para alta prioridade */
+    color: #721c24;
+    padding: 2px 6px;
+    border-radius: 4px; 
+}
+
+.quant{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2C3E50; /* Azul escuro, elegante */
+  border-left: 4px solid #3498db; /* Destaque na esquerda */
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #e74c3c; /* Vermelho para destaque */
+  background: #fbeee6; /* Fundo suave */
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
 
 
 /* Responsividade */
