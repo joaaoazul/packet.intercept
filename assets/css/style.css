@@ -141,7 +141,6 @@ section {
 
 
 section h2 {
-
     font-size: 2rem;
     font-weight: 700;
     color: #2C3E50; /* Azul escuro elegante */
@@ -150,7 +149,8 @@ padding-left: 10px;
     padding-bottom: 5px;
     margin-top: 30px;
   margin-bottom: 20px;
-  
+  border-radius: 4px;
+  font-weight: 700;
 }
 
 article {
@@ -175,6 +175,7 @@ article h3 {
   margin-top: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
+  font-weight: 600;
 }
 
 article p {
@@ -418,6 +419,21 @@ color: #2980B9;
 #availability{
   color: #D35400;
 }
+
+mark {
+  background-color: #fff3cd; /* Fundo amarelo pastel suave */
+  color: #856404; /* Cor de texto em tom mais escuro para contraste */
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  border-bottom: 2px solid var(--accent-color); /* Sublinhado usando a cor de acento */
+  transition: var(--transition);
+}
+
+mark:hover {
+  background-color: #ffe8a1;
+  border-bottom-color: #e6c200;
+}
+
   
 
 
@@ -472,16 +488,52 @@ color: #2980B9;
   border-left: 4px solid #3498db; /* Destaque na esquerda */
   padding-left: 10px;
   margin-top: 20px;
+  background-color: #ecf0f1; /* Fundo suave */
+  border-radius: 4px;
+}
+
+.quano,
+.qualo {
+  font-size: 1.1rem;      /* Um pouco menor que o h4 */
+  font-weight: 600;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: #f9f9f9; /* Fundo suave */
+  border-radius: 4px;
+  border-left: #004d99;
+}
+
+.qualo {
+  color: #6C63FF; /* Roxo pastel */
+  border-left: 15px solid #A7C7E7; /* Azul pastel suave para contraste */
+}
+
+.quano {
+  color: #e74c3c; /* Amarelo pastel */
+  border-left: 15px solid #e74c3c; }
+
+.quant1{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2C3E50; /* Azul escuro, elegante */
+  border-left: 4px solid #00a0a0; /* Destaque na esquerda */
+  padding-left: 10px;
+  margin-top: 20px;
+  background-color: #ecf0f1; /* Fundo suave */
+  border-radius: 4px;
+  padding: 0.2rem 0.3rem;
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   font-weight: bold;
   color: #e74c3c; /* Vermelho para destaque */
   background: #fbeee6; /* Fundo suave */
   padding: 6px 10px;
-  border-radius: 5px;
+  border-radius: 5px !important;
   margin-top: 20px;
+  border-left: #e74c3c solid 5px;
 }
 
 
