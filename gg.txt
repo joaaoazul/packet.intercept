@@ -1,0 +1,27 @@
+<article id="password-policy">
+          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
+          <h3>🔑 Política de Senhas</h3>
+          <p>
+            Quando defines uma <strong>política de senhas</strong> para a tua organização, tens vários <mark style="background-color: #ffeb99;">controlos técnicos</mark> disponíveis para definir como os utilizadores devem escolher e manter as suas senhas.
+          </p>
+          <p>
+            O controlo mais simples e comum é o <strong>comprimento da senha</strong>, que define o <mark style="background-color: #ffeb99;">número mínimo de caracteres</mark>. É recomendado um mínimo de <strong>oito caracteres</strong>, embora algumas organizações exijam senhas ainda mais longas para aumentar a segurança.
+          </p>
+          <p>
+            As organizações podem também definir <mark style="background-color: #ffeb99;">requisitos de complexidade</mark>, obrigando os utilizadores a incluir diferentes tipos de caracteres: <strong>letras maiúsculas e minúsculas</strong>, <strong>dígitos</strong> e <strong>caracteres especiais</strong>. Quanto mais diversa for a composição da senha, mais difícil será de adivinhar.
+          </p>
+          <p>
+            Algumas políticas exigem a <mark style="background-color: #ffeb99;">expiração periódica das senhas</mark>, forçando os utilizadores a mudá-las a cada <strong>180 dias</strong>, por exemplo. No entanto, muitas organizações modernas permitem manter a mesma senha indefinidamente, desde que não haja suspeita de comprometimento.
+          </p>
+          <p>
+            Para evitar a <mark style="background-color: #ffeb99;">reutilização de senhas antigas</mark>, algumas organizações configuram sistemas que armazenam um <strong>histórico das senhas anteriores</strong> dos utilizadores, impedindo que voltem a ser usadas.
+          </p>
+          <p>
+            É fundamental permitir que os utilizadores <strong>alterem as suas senhas rapidamente e de forma privada</strong>, sempre que suspeitem que possam ter sido comprometidas. Contudo, os processos de <mark style="background-color: #ffeb99;">recuperação de senha</mark> devem ser bem projetados para evitar que atacantes explorem falhas nesse processo.
+          </p>
+          <p>
+            Finalmente, é recomendado que os utilizadores <mark style="background-color: #ffeb99;">não reutilizem a mesma senha em múltiplos sites</mark>. Embora seja difícil impor essa regra, é uma prática essencial para aumentar a segurança. Para ajudar na gestão de senhas únicas e seguras, os <strong>gestores de senhas</strong> são ferramentas valiosas, permitindo armazenar credenciais de forma segura e preenchê-las automaticamente em sites.
+          </p>
+
+          </article>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packet.Intercept | Estudo ISC2 CC</title>
+  <!-- Meta tags para SEO e compartilhamento social -->
+  <meta name="description" content="Sistema de estudo completo para certificação ISC2 CC. Aprenda sobre princípios de segurança, controle de acesso, continuidade de negócios e mais.">
+  <meta property="og:title" content="Packet.Intercept | Estudo ISC2 CC">
+  <meta property="og:description" content="Sistema de estudo completo para certificação ISC2 CC com material organizado, quizzes e recursos interativos.">
+  <meta property="og:image" content="./assets/img/logo_ciber.webp">
+  <meta property="og:url" content="https://packetintercept.com">
+  <!-- Preload de recursos críticos -->
+  <link rel="preload" href="./assets/css/style.css" as="style">
+  <link rel="preload" href="./assets/fonts/outfit-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Estilos e fontes -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/img/logo_ciber.webp">
+  <link rel="manifest" href="manifest.json">
+  <!-- PWA metadata -->
+  <meta name="theme-color" content="#2c3e50">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="./assets/img/logo_ciber.webp">
+  <style>
+    /* Adicão de estilos para novas funcionalidades */
+    /* Skip to content para acessibilidade */
+    .skip-to-content {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: white;
+      padding: 8px;
+      z-index: 100;
+      transition: top 0.3s;
+    }
+    
+    .skip-to-content:focus {
+      top: 0;
+    }
+    
+    /* Sumário fixo */
+    .toc {
+      position: fixed;
+      top: 80px;
+      right: -300px;
+      width: 250px;
+      height: auto;
+      max-height: 80vh;
+      overflow-y: auto;
+      background: #fff;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: right 0.3s ease;
+      z-index: 99;
+      border-radius: 8px 0 0 8px;
+    }
+    
+    .toc.visible {
+      right: 0;
+    }
+    
+    .toc-btn {
+      position: fixed;
+      top: 120px;
+      right: 0;
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 100;
+      border-radius: 4px 0 0 4px;
+    }
+    
+    /* Barra de progresso */
+    .progress-bar {
+      height: 5px;
+      background: #ddd;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    
+    .progress-value {
+      height: 100%;
+      background: #4CAF50;
+      width: 0%;
+      transition: width 0.3s;
+    }
+    
+    /* Melhorias de layout para mobile */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+      }
+      
+      nav ul.show {
+        display: flex;
+      }
+      
+      .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+      
+      .triad-container {
+        flex-direction: column;
+      }
+      
+      .triad-section {
+        margin-bottom: 15px;
+      }
+    }
+    
+    /* Menu hambúrguer para mobile */
+    .hamburger {
+      display: none;
+      width: 30px;
+      height: 20px;
+      position: relative;
+    }
+    
+    .hamburger span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: white;
+      border-radius: 3px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+    }
+    
+    .hamburger span:nth-child(1) {
+      top: 0px;
+    }
+    
+    .hamburger span:nth-child(2) {
+      top: 8px;
+    }
+    
+    .hamburger span:nth-child(3) {
+      top: 16px;
+    }
+    
+    /* Tooltip com explicações adicionais */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted #000;
+      cursor: help;
+    }
+    
+    .tooltip .tooltip-text {
+      visibility: hidden;
+      width: 200px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -100px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    .tooltip:hover .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    /* Estilo para o modo leitura */
+    .reading-mode {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+    
+    .reading-mode nav,
+    .reading-mode .search-container,
+    .reading-mode footer,
+    .reading-mode .favorite-btn,
+    .reading-mode .progress-btn {
+      display: none;
+    }
+    
+    .reading-mode main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .reading-mode-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 100;
+    }
+    
+    /* Sistema de notas */
+    .notes-container {
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+    }
+    
+    .note-input {
+      width: 100%;
+      min-height: 100px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .save-note {
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    /* Animações sutis para feedback */
+    .animate-fade {
+      animation: fadeIn 0.5s;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    /* Navegação entre artigos */
+    .article-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+    }
+    
+    .prev-article, .next-article {
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .prev-article:disabled, .next-article:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    
+    /* Estilo para as notas oficiais ISC2 - melhorado */
+    .isc2-note {
+      font-style: italic;
+      color: #555;
+      margin-left: 20px;
+      margin-top: 10px;
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-left: 3px solid #2c3e50;
+      border-radius: 0 5px 5px 0;
+    }
+    
+    /* Melhorias para acessibilidade nos controles de favorito/progresso */
+    .favorite-btn, .progress-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      background: white;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s;
+    }
+    
+    .favorite-btn:hover, .progress-btn:hover {
+      background: #f0f0f0;
+    }
+    
+    .favorite-btn[aria-pressed="true"] {
+      color: gold;
+      text-shadow: 0 0 1px #000;
+    }
+    
+    .progress-btn[aria-pressed="true"] {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip link para acessibilidade -->
+  <a href="#main-content" class="skip-to-content">Pular para o conteúdo</a>
+  
+  <!-- Barra de progresso de leitura -->
+  <div class="progress-bar">
+    <div class="progress-value" id="readingProgress"></div>
+  </div>
+  
+  <header>
+    <h1><a href="#" aria-label="Home">Packet.Intercept</a></h1>
+    
+    <!-- Botão para modo escuro aprimorado -->
+    <button class="toggle-mode" aria-label="Alternar modo escuro">🌚 Stealth Mode</button>
+    
+    <!-- Botão para modo leitura -->
+    <button class="reading-mode-toggle" aria-label="Ativar modo leitura">📖 Modo Leitura</button>
+  </header>
+  
+  <nav>
+    <!-- Botão hamburger para mobile -->
+    <div class="hamburger" aria-label="Menu de navegação" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul>
+      <li><a href="#principios">Princípios de Segurança</a></li>
+      <li><a href="#continuidade">Continuidade &amp; DR</a></li>
+      <li><a href="#controle">Controle de Acesso</a></li>
+      <li><a href="#redes">Segurança de Redes</a></li>
+      <li><a href="#operacoes">Operações de Segurança</a></li>
+      <li><a href="quiz.html">Quiz de Exame</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+  </nav>
+  
+  // Manipular favoritos
+  favoriteButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const article = button.closest('article');
+      const articleId = article.id;
+      
+      let favoritedArticles = JSON.parse(localStorage.getItem('favoritedArticles') || '[]');
+      
+      if (button.classList.contains('favorited')) {
+        // Desmarcar como favorito
+        button.innerHTML = '&#9734;';
+        button.classList.remove('favorited');
+        button.setAttribute('aria-pressed', 'false');
+        
+        favoritedArticles = favoritedArticles.filter(id => id !== articleId);
+      } else {
+        // Marcar como favorito
+        button.innerHTML = '&#9733;';
+        button.classList.add('favorited');
+        button.setAttribute('aria-pressed', 'true');
+        
+        if (!favoritedArticles.includes(articleId)) {
+          favoritedArticles.push(articleId);
+        }
+      }
+      
+      localStorage.setItem('favoritedArticles', JSON.stringify(favoritedArticles));
+      
+      // Feedback visual
+      const feedbackMessage = document.createElement('div');
+      feedbackMessage.classList.add('feedback-message');
+      feedbackMessage.classList.add('animate-fade');
+      
+      if (button.classList.contains('favorited')) {
+        feedbackMessage.textContent = 'Artigo adicionado aos favoritos!';
+        feedbackMessage.classList.add('success-feedback');
+      } else {
+        feedbackMessage.textContent = 'Artigo removido dos favoritos.';
+        feedbackMessage.classList.add('info-feedback');
+      }
+      
+      article.appendChild(feedbackMessage);
+      
+      // Remover mensagem após 2 segundos
+      setTimeout(() => {
+        if (feedbackMessage && feedbackMessage.parentNode) {
+          feedbackMessage.parentNode.removeChild(feedbackMessage);
+        }
+      }, 2000);
+      
+      // Atualizar painel de favoritos se existir
+      updateFavoritesPanel();
+    });
+  });

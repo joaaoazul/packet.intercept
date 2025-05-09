@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PacketIntercept</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -44,238 +44,1033 @@
         <h2>Princípios de Segurança</h2>
         
         <!-- Artigo: CIA Triad -->
-        <article id="cia-triad">
-          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
-          <h3><span>CIA Triad</span></h3>
-          <p>
-            A tríade CIA é o modelo clássico que orienta as práticas de segurança da informação, composto por:
-            <br><br>
-            <div class="triad-container">
-              <!-- Confidencialidade -->
-              <div class="triad-section" style="background-color: #B3DDF2;">
-                <span class="CIA" id="confidenciality">Confidencialidade:</span>
-                <p><strong>O que é:</strong> Significa permitir o acesso autorizado à informação, ao mesmo tempo em que protege contra divulgação inadequada.</p>
-                <p><strong>Como proteger:</strong> Utilizando criptografia, controles de acesso, autenticação forte e políticas de privacidade.</p>
-                <p><strong>Exemplo:</strong> Um banco que armazena dados dos clientes em servidores criptografados e limita o acesso apenas a funcionários autorizados.</p>
-                <p><strong>Pergunta para reflexão:</strong> Quais métodos podem ser implementados para garantir que dados confidenciais não sejam acessados por pessoas não autorizadas?</p>
-                <p><strong>Principais preocupações:</strong></p>
-                <ul class="concerns">
-                  <li>Snooping</li>
-                  <li>Dumpster diving</li>
-                  <li>Eavesdropping</li>
-                  <li>Wiretapping</li>
-                  <li>Social Engineering</li>
-                </ul>
-              </div>
-            
-              <!-- Integridade -->
-              <div class="triad-section" style="background-color: #FFF9C4;">
-                <span class="CIA" id="integrity">Integridade:</span>
-                <p><strong>O que é:</strong> Propriedade da informação que garante que ela seja registrada, utilizada e mantida de forma a assegurar sua completude, exatidão, consistência interna e utilidade para um propósito declarado.</p>
-                <p><strong>Como proteger:</strong> Utilizando funções hash (como SHA-256), assinaturas digitais e controles de versionamento.</p>
-                <p><strong>Exemplo:</strong> Um sistema de controle de versões que registra todas as alterações em um documento importante, permitindo identificar modificações não autorizadas.</p>
-                <p><strong>Pergunta para reflexão:</strong> Como as assinaturas digitais ajudam a assegurar a integridade dos dados?</p>
-                <p><strong>Principais preocupações:</strong></p>
-                <ul class="concerns">
-                  <li>Unauthorized modifications</li>
-                  <li>Impersonation</li>
-                  <li>Man-in-the-Middle (MitM)</li>
-                  <li>Replay</li>
-                </ul>
-              </div>
-            
-              <!-- Disponibilidade -->
-              <div class="triad-section" style="background-color: #FFD1A9;">
-                <span class="CIA" id="availability">Disponibilidade:</span>
-                <p><strong>O que é:</strong> Significa que os sistemas e dados estão disponíveis sempre que necessário.</p>
-                <p><strong>Como proteger:</strong> Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.</p>
-                <p><strong>Exemplo:</strong> Um site de e-commerce que utiliza servidores em clusters e redes de distribuição de conteúdo (CDNs) para manter o serviço ativo mesmo durante picos de acesso.</p>
-                <p><strong>Pergunta para reflexão:</strong> Que estratégias podem ser adotadas para minimizar o impacto de um ataque de negação de serviço (DDoS) e garantir a disponibilidade?</p>
-                <p><strong>Principais preocupações:</strong></p>
-                <ul class="concerns">
-                  <li>Denial of Service (DoS)</li>
-                  <li>Power outages</li>
-                  <li>Hardware failures</li>
-                  <li>Destruction</li>
-                  <li>Service outages</li>
-                </ul>
+      <article id="cia-triad">
+  <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+  <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
+  
+  <!-- Cabeçalho principal com estilo renovado -->
+  <h3 style="border-bottom: 2px solid #2c3e50; padding-bottom: 10px; margin-bottom: 20px; color: #2c3e50;">
+    <span style="position: relative; background-color: #4682B4; color: white; padding: 8px 16px; border-radius: 4px; font-size: 1.2em;">CIA Triad</span>
+  </h3>
+  
+  <!-- Introdução com estilo melhorado -->
+  <div style="background-color: #f5f9fd; border-radius: 8px; padding: 15px; margin-bottom: 25px;">
+    <p style="margin: 0;">
+      A tríade CIA é o modelo clássico que orienta as práticas de segurança da informação, composto por:
+    </p>
+  </div>
+  
+  <!-- Container principal do CIA Triad -->
+  <div class="triad-container" style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 30px;">
+    
+    <!-- Confidencialidade -->
+    <div class="triad-section" style="background-color: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+      <!-- Cabeçalho do cartão -->
+      <div style="background-color: #f5f9fd; padding: 15px; display: flex; align-items: center;">
+        <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #7fb3d5; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <span style="color: white; font-size: 18px;">C</span>
+        </div>
+        <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Confidencialidade</h4>
+      </div>
+      
+      <!-- Conteúdo do cartão -->
+      <div style="padding: 15px; background-color: #ebf5fb;">
+        <p><strong style="color: #7fb3d5;">O que é:</strong> Significa permitir o acesso autorizado à informação, ao mesmo tempo em que protege contra divulgação inadequada.</p>
+        <p><strong style="color: #7fb3d5;">Como proteger:</strong> Utilizando criptografia, controles de acesso, autenticação forte e políticas de privacidade.</p>
+        
+        <!-- Exemplo destacado -->
+        <div style="background-color: white; padding: 12px; border-radius: 5px; margin: 10px 0; border: 3px dotted #7fb3d5;">
+          <p style="margin: 0;"><strong style="color: #7fb3d5;">Exemplo:</strong> Um banco que armazena dados dos clientes em servidores criptografados e limita o acesso apenas a funcionários autorizados.</p>
+        </div>
+        
+        <!-- Reflexão destacada -->
+        <div style="background-color: rgba(127, 179, 213, 0.1); padding: 12px; border-radius: 5px; margin: 10px 0;">
+          <p style="margin: 0;"><strong style="color: #7fb3d5;">Pergunta para reflexão:</strong> <span style="font-style: italic;">Quais métodos podem ser implementados para garantir que dados confidenciais não sejam acessados por pessoas não autorizadas?</span></p>
+        </div>
+        
+        <p><strong style="color: #7fb3d5;">Principais preocupações:</strong></p>
+        <ul class="concerns" style="display: flex; flex-wrap: wrap; gap: 8px; padding-left: 0; list-style: none;">
+          <li style="background-color: #d6eaf8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Snooping</li>
+          <li style="background-color: #d6eaf8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Dumpster diving</li>
+          <li style="background-color: #d6eaf8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Eavesdropping</li>
+          <li style="background-color: #d6eaf8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Wiretapping</li>
+          <li style="background-color: #d6eaf8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Social Engineering</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Integridade -->
+    <div class="triad-section" style="background-color: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+      <!-- Cabeçalho do cartão -->
+      <div style="background-color: #fef9ec; padding: 15px; display: flex; align-items: center;">
+        <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #f5b041; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <span style="color: white; font-size: 18px;">I</span>
+        </div>
+        <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Integridade</h4>
+      </div>
+      
+      <!-- Conteúdo do cartão -->
+      <div style="padding: 15px; background-color: #fef5e7;">
+        <p><strong style="color: #f5b041;">O que é:</strong> Propriedade da informação que garante que ela seja registrada, utilizada e mantida de forma a assegurar sua completude, exatidão, consistência interna e utilidade para um propósito declarado.</p>
+        <p><strong style="color: #f5b041;">Como proteger:</strong> Utilizando funções hash (como SHA-256), assinaturas digitais e controlo de versão.</p>
+        
+        <!-- Exemplo destacado -->
+        <div style="background-color: white; padding: 12px; border-radius: 5px; margin: 10px 0; border: 3px dotted #f5b041;">
+          <p style="margin: 0;"><strong style="color: #f5b041;">Exemplo:</strong> Um sistema de controlo de versões que registra todas as alterações em um documento importante, permitindo identificar modificações não autorizadas.</p>
+        </div>
+        
+        <!-- Reflexão destacada -->
+        <div style="background-color: rgba(245, 176, 65, 0.1); padding: 12px; border-radius: 5px; margin: 10px 0;">
+          <p style="margin: 0;"><strong style="color: #f5b041;">Pergunta para reflexão:</strong> <span style="font-style: italic;">Como as assinaturas digitais ajudam a assegurar a integridade dos dados?</span></p>
+        </div>
+        
+        <p><strong style="color: #f5b041;">Principais preocupações:</strong></p>
+        <ul class="concerns" style="display: flex; flex-wrap: wrap; gap: 8px; padding-left: 0; list-style: none;">
+          <li style="background-color: #fdebd0; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Unauthorized modifications</li>
+          <li style="background-color: #fdebd0; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Impersonation</li>
+          <li style="background-color: #fdebd0; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Man-in-the-Middle (MitM)</li>
+          <li style="background-color: #fdebd0; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Replay</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Disponibilidade -->
+    <div class="triad-section" style="background-color: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+      <!-- Cabeçalho do cartão -->
+      <div style="background-color: #fdf5f5; padding: 15px; display: flex; align-items: center;">
+        <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #f1948a; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <span style="color: white; font-size: 18px;">A</span>
+        </div>
+        <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Disponibilidade</h4>
+      </div>
+      
+      <!-- Conteúdo do cartão -->
+      <div style="padding: 15px; background-color: #fdedec;">
+        <p><strong style="color: #f1948a;">O que é:</strong> Significa que os sistemas e dados estão disponíveis sempre que necessário.</p>
+        <p><strong style="color: #f1948a;">Como proteger:</strong> Implementando redundância de sistemas, balanceamento de carga, backups regulares e planos de recuperação de desastres.</p>
+        
+        <!-- Exemplo destacado -->
+        <div style="background-color: white; padding: 12px; border-radius: 5px; margin: 10px 0; border: 3px dotted #f1948a;">
+          <p style="margin: 0;"><strong style="color: #f1948a;">Exemplo:</strong> Um site de e-commerce que utiliza servidores em clusters e redes de distribuição de conteúdo (CDNs) para manter o serviço ativo mesmo durante picos de acesso.</p>
+        </div>
+        
+        <!-- Reflexão destacada -->
+        <div style="background-color: rgba(241, 148, 138, 0.1); padding: 12px; border-radius: 5px; margin: 10px 0;">
+          <p style="margin: 0;"><strong style="color: #f1948a;">Pergunta para reflexão:</strong> <span style="font-style: italic;">Que estratégias podem ser adotadas para minimizar o impacto de um ataque de negação de serviço (DDoS) e garantir a disponibilidade?</span></p>
+        </div>
+        
+        <p><strong style="color: #f1948a;">Principais preocupações:</strong></p>
+        <ul class="concerns" style="display: flex; flex-wrap: wrap; gap: 8px; padding-left: 0; list-style: none;">
+          <li style="background-color: #fadbd8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Denial of Service (DoS)</li>
+          <li style="background-color: #fadbd8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Power outages</li>
+          <li style="background-color: #fadbd8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Hardware failures</li>
+          <li style="background-color: #fadbd8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Destruction</li>
+          <li style="background-color: #fadbd8; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Service outages</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Imagem da CIA Triad com borda e legenda melhorada -->
+  <div class="cia-triad-img" style="text-align: center; margin: 30px 0; padding: 20px; background-color: #f8f9fa; border-radius: 8px;">
+    <div style="max-width: 500px; margin: 0 auto; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+      <img src="./assets/img/cia-triad.jpg" alt="CIA Triad" style="width: 100%; height: auto; display: block;">
+    </div>
+    <p style="margin-top: 15px; font-style: italic; color: #666;">Figura: Representação visual da Tríade CIA - os três pilares fundamentais da segurança da informação.</p>
+  </div>
+  
+  <!-- Seção de resumo e conteúdo do exame -->
+  <div style="background-color: #f5f7fa; border-radius: 8px; padding: 15px; margin: 25px 0;">
+    <div style="background-color: #f5f7fa; padding: 15px; display: flex; align-items: center;">
+      <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #5d6d7e; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 18px;">📝</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Pontos-chave para o exame CC</h4>
+    </div>
+    <ul style="margin: 0; padding-left: 20px;">
+      <li style="margin-bottom: 8px;">Reconheça a <strong>CIA Triad</strong> como o modelo fundamental da segurança da informação</li>
+      <li style="margin-bottom: 8px;">Saiba diferenciar claramente os três princípios: <strong>Confidencialidade</strong>, <strong>Integridade</strong> e <strong>Disponibilidade</strong></li>
+      <li style="margin-bottom: 8px;">Identifique as <strong>ameaças específicas</strong> para cada um dos três princípios</li>
+      <li style="margin-bottom: 8px;">Compreenda as <strong>medidas de proteção</strong> que ajudam a assegurar cada pilar da tríade</li>
+      <li>Associe <strong>exemplos práticos</strong> a cada um dos princípios para contextualizar sua aplicação</li>
+    </ul>
+  </div>
+  
+  <!-- Nota final ISC2 - mantendo a classe original -->
+  <p class="isc2-note" style="font-style: italic; color: #555; margin-top: 30px; padding-left: 20px; border-left: 4px solid #2c3e50; font-size: 16px; line-height: 1.5;">
+    Nota: Conteúdo alinhado ao material oficial da ISC2, reforçando os fundamentos da Confidencialidade, Integridade e Disponibilidade.
+  </p>
+</article>
+       <article id="autenticacao-mfa">
+  <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+  <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
+
+  <!-- Cabeçalho principal -->
+  <h3 style="border-bottom: 2px solid #2c3e50; padding-bottom: 10px; margin-bottom: 20px; color: #2c3e50;">
+    Identificação, Autenticação e Autorização
+  </h3>
+
+  <!-- Visão geral do processo - introdução simples -->
+  <div style="background-color: #f5f9fd; border-radius: 8px; padding: 15px; margin-bottom: 25px;">
+    <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+      O processo de controle de acesso segue um fluxo de três etapas fundamentais, conforme definido pela ISC²: identificação, autenticação e autorização. Cada etapa tem um propósito específico para garantir a segurança do acesso a sistemas e recursos.
+    </p>
+  </div>
+
+  <!-- Fluxo Completo - formato simples e compatível -->
+  <div style="background-color: #f5f7fa; border-radius: 8px; padding: 15px; margin: 20px 0; border: 5px solid #2c3e50;">
+    <h4 style="margin: 0 0 15px 0; color: #2c3e50; text-align: center; font-size: 18px; background-color: lightgray;">
+      Fluxo Completo segundo a (ISC)²
+    </h4>
+    
+    <ul style="margin: 0; padding-left: 25px; font-size: 16px; line-height: 1.7;">
+      <li style="margin-bottom: 10px;">
+        <strong style="color: #7fb3d5;">1️⃣ Identificação</strong> → "Quem és?" (Exemplo: Nome de utilizador)
+      </li>
+      <li style="margin-bottom: 10px;">
+        <strong style="color: #f1948a;">2️⃣ Autenticação</strong> → "Podes provar?" (Exemplo: Senha, 2FA)
+      </li>
+      <li>
+        <strong style="color: #f5b041;">3️⃣ Autorização</strong> → "O que podes fazer?" (Exemplo: Permissões e restrições)
+      </li>
+    </ul>
+  </div>
+
+  <!-- IDENTIFICAÇÃO -->
+  <div style="margin: 25px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <!-- Cabeçalho da seção -->
+    <div style="background-color: #f5f9fd; padding: 15px; display: flex; align-items: center;">
+      <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #7fb3d5; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 18px;">🔍</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Identificação</h4>
+    </div>
+    
+    <!-- Conteúdo da seção -->
+    <div style="padding: 15px; background-color: #ebf5fb;">
+      <p style="margin-bottom: 15px; font-size: 16px; line-height: 1.5;">
+        É o <strong>primeiro passo</strong> no processo de controle de acesso e refere-se ao ato de um usuário, sistema ou dispositivo se apresentar ao sistema com uma identidade única.
+      </p>
+      
+      <div style="background-color: white; padding: 15px; border-radius: 8px; margin-top: 15px; ">
+        <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.5;">
+          <strong style="color: #7fb3d5;">Definição:</strong><br>
+          A identificação é o processo pelo qual um indivíduo ou entidade reivindica uma identidade específica para obter acesso a um sistema ou recurso. Isso geralmente é feito fornecendo um identificador único, como:
+        </p>
+        <ul style="padding-left: 20px; margin: 0; font-size: 16px; line-height: 1.6;">
+          <li style="margin-bottom: 8px;"><span style="color: #7fb3d5;">🔹</span> Nome de usuário (joaosilva)</li>
+          <li style="margin-bottom: 8px;"><span style="color: #7fb3d5;">🔹</span> Número de identificação (ID)</li>
+          <li style="margin-bottom: 8px;"><span style="color: #7fb3d5;">🔹</span> Endereço de e-mail</li>
+          <li style="margin-bottom: 8px;"><span style="color: #7fb3d5;">🔹</span> Cartão de acesso</li>
+          <li><span style="color: #7fb3d5;">🔹</span> Identificação biométrica (como um número associado a uma impressão digital)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTENTICAÇÃO -->
+  <div style="margin: 25px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <!-- Cabeçalho da seção -->
+    <div style="background-color: #fdf5f5; padding: 15px; display: flex; align-items: center;">
+      <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #f1948a; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 18px;">🔐</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Autenticação</h4>
+    </div>
+    
+    <!-- Conteúdo da seção -->
+    <div style="padding: 15px; background-color: #fdedec;">
+      <p style="margin-bottom: 15px; font-size: 16px; line-height: 1.5;">
+        É o <strong>segundo passo</strong> no processo de controle de acesso. Ela ocorre após a identificação e tem o objetivo de verificar se a identidade fornecida pelo usuário é legítima.
+      </p>
+      
+      <div style="background-color: white; padding: 15px; border-radius: 8px; margin-top: 15px; ">
+        <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+          <strong style="color: #f1948a;">Definição:</strong><br>
+          É o processo de validação da identidade de um usuário, sistema ou dispositivo através de credenciais. O sistema verifica se o usuário realmente é quem diz ser antes de conceder acesso.
+        </p>
+      </div>
+      
+      <!-- Fatores de Autenticação em Cards -->
+      <div style="margin-top: 20px;">
+        <h5 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #f1948a; border-bottom: 2px solid #f1948a; padding-bottom: 8px;">
+          Fatores de Autenticação
+        </h5>
+        
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <!-- Card 1: Algo que você sabe - AZUL PASTEL -->
+          <div style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div style="background-color: #7fb3d5; padding: 10px 15px; display: flex; align-items: center;">
+              <span style="background-color: white; color: #7fb3d5; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 12px; font-weight: bold; font-size: 16px;">1</span>
+              <h6 style="margin: 0; color: white; font-size: 16px;">Algo que você sabe <span style="font-size: 14px; opacity: 0.9;">(Knowledge-based)</span></h6>
+            </div>
+            <div style="padding: 15px; background-color: #ebf5fb;">
+              <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+                Senhas, PINs ou respostas a perguntas secretas.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+                <span style="background-color: #d6eaf8; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #5499c7;">Senha</span>
+                <span style="background-color: #d6eaf8; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #5499c7;">PIN</span>
+                <span style="background-color: #d6eaf8; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #5499c7;">Pergunta secreta</span>
               </div>
             </div>
-            
-          </p>
-          <div class="cia-triad-img">
-            <img src="./assets/img/cia-triad.jpg" alt="CIA Triad">
           </div>
-          <p class="isc2-note">Nota: Conteúdo alinhado ao material oficial da ISC2, reforçando os fundamentos da Confidencialidade, Integridade e Disponibilidade.</p>
-        </article>
-        
-        <!-- Artigo: Autenticação e MFA -->
-        <article id="autenticacao-mfa">
-          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
-          <h3>Identificação, Autenticação e Autorização</h3>
-          <h4 style="background-color: #a7c7e7; border-radius: 4px; width: 140px; padding: 3px;">🔍 Identificação</h4>
-          <p>
-          É o primeiro passo no processo de controle de acesso e refere-se ao ato de um usuário, sistema ou dispositivo se apresentar ao sistema com uma identidade única.
-          <br>
-          <strong>Definição:</strong><br>
-          A identificação é o processo pelo qual um indivíduo ou entidade reivindica uma identidade específica para obter acesso a um sistema ou recurso. Isso geralmente é feito fornecendo um identificador único, como:
-          <ul>
-              <li>🔹Nome de usuário (joaosilva);</li>
-              <li>🔹Número de identificação (ID);</li>
-              <li>🔹Endereço de e-mail;</li>
-              <li>🔹Cartão de acesso;</li>
-              <li>🔹Identificação biométrica (como um número associado a uma impressão digital).</li>
-            </ul>
-            </p>
-            <br>
-          <h4 style="background-color: #FFD1A9; border-radius: 4px; width: 140px; padding: 3px;">🔐 Autenticação</h4>
-          <p>
-            É o segundo passo no processo de controle de acesso. Ela ocorre após a identificação e tem o objetivo de verificar se a identidade fornecida pelo usuário é legítima.
-          <br>
-            <strong>Definição:</strong><br>
-            É o processo de validação da identidade de um usuário, sistema ou dispositivo através de credenciais. O sistema verifica se o usuário realmente é quem diz ser antes de conceder acesso.
-          </p>
-          <p>
-            <strong>Fatores de Autenticação:</strong>
-          </p>
-          <ul>
-            <li><strong>Algo que você sabe <span style="background-color: tomato; color: #ffff; border-radius: 4px;"> (Knowledge-based)</span>:</strong> Senhas, PINs ou respostas a perguntas secretas.</li>
-            <li><strong>Algo que você tem <span style="background-color: #37474F; color: #ffff; border-radius: 4px;"> (Possesion-based)</span>:</strong> Tokens físicos, smartphones (para receber códigos via SMS ou aplicativos autenticadores) ou smart cards.</li>
-            <li><strong>Algo que você é <span style="background-color: #5C9276; color: #ffff; border-radius: 4px;"> (Biométrico)</span>:</strong> Características biométricas, como impressões digitais, reconhecimento facial ou leitura da íris.</li>
-            <li><strong>Algo que você faz <span style="background-color: #3F6D80; color: #ffff; border-radius: 4px;"> (Behavior-based)</span>:</strong> Padrão de digitação; forma de movimento do mouse, etc. </li>
-          <li><strong>Algo onde você está <span style="background-color: #C95C6D; color: #ffff; border-radius: 4px;"> (Location Based)</span>:</strong> Autenticação baseada em geolocalização; Verificação por endereço IP.</li>
-          </ul>
-          <br>
-          <h4 style="background-color: #FFF9C4; border-radius: 4px; width: 140px; padding: 3px;">🔑 Autorização</h4>
-          <p>
-            É o último passo no processo de controle de acesso segundo a (ISC)². Depois de identificação e autenticação, a autorização determina o que o usuário pode ou não fazer dentro do sistema.
-           <br><strong>Definição:</strong><br>
-            É o processo que verifica se um usuário autenticado tem permissões adequadas para acessar determinados recursos ou executar ações dentro de um sistema.
-  
-            <h4>📌 Exemplos</h4>
-            <ul>
-              <li>🔹 Um utilizador comum pode visualizar arquivos, mas não pode apagá-los.</li>
-              <li>🔹 Um administrador pode adicionar e remover utilizadores.</li>
-              <li>🔹 No Linux, o comando sudo dá permissões elevadas a usuários autorizados.</li>
-            </ul>
-           <h4>🔄 Como funciona?</h4>
-            Depois que a identidade do usuário é <strong> verificada (autenticação),</strong> o sistema verifica as <strong> regras de acesso </strong>para conceder ou negar permissões.<br>
-            <br>
-            <h4>🛡️ Métodos de Autorização</h4>
-            <ul>
-              <li>✅ Listas de Controle de Acesso (ACLs) → Define quem pode acessar o quê.</li>
-              <li>✅ RBAC (Role-Based Access Control) → Permissões baseadas em funções (exemplo: Admin, Usuário, Convidado).</li>
-              <li>✅ ABAC (Attribute-Based Access Control) → Baseado em atributos como horário, localização, dispositivo, etc.</li>
-              <li>✅ MAC (Mandatory Access Control) → Sistema impõe regras rígidas de acesso (exemplo: segurança militar).</li>
-             </ul>
-             <br>
-            <h4 style="background-color: #C95C6D; color: #ffff; border-radius: 4px; padding: 3px; text-align: center;">Fluxo Completo segundo a (ISC)²</h4>
-              <ul>
-                <li>1️⃣ Identificação → "Quem és?" (Exemplo: Nome de utilizador)</li>
-                <li>2️⃣ Autenticação → "Podes provar?" (Exemplo: Senha, 2FA)</li>
-                <li>3️⃣ Autorização → "O que podes fazer?" (Exemplo: Permissões e restrições)</li>
-              </ul>
-          </p>
-          <br>
-          <h4 style="background-color: #FFD1A9; border-radius: 4px; width: 270px; padding: 3px;  text-align: center;">MFA - Multi-Factor Authentication</h4>
-          <p>
-            <strong>Definição:</strong><br>
-          O MFA é um método de segurança que exige que um utilizador forneça <strong> dois ou mais fatores para provar a sua identidade </strong> antes de obter acesso a um sistema.<br>
-           <strong>Exemplo Prático:</strong> Um serviço de e-mail pode exigir que, além da senha, o usuário insira um código temporário gerado por um aplicativo autenticador (como Google Authenticator).
-          </p>
-          <p>
-            <strong>Pergunta para reflexão:</strong> Quais são as vantagens de usar autenticação multifator em comparação com a autenticação baseada apenas em senha?
-          </p>
-          <p class="isc2-note">Nota: As informações sobre autenticação e MFA seguem as diretrizes e recomendações presentes no guia oficial da ISC2.</p>
-        </article>
+          
+          <!-- Card 2: Algo que você tem - VERDE PASTEL -->
+          <div style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div style="background-color: #7dcea0; padding: 10px 15px; display: flex; align-items: center;">
+              <span style="background-color: white; color: #7dcea0; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 12px; font-weight: bold; font-size: 16px;">2</span>
+              <h6 style="margin: 0; color: white; font-size: 16px;">Algo que você tem <span style="font-size: 14px; opacity: 0.9;">(Possession-based)</span></h6>
+            </div>
+            <div style="padding: 15px; background-color: #eafaf1;">
+              <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+                Tokens físicos, smartphones (para receber códigos via SMS ou aplicativos autenticadores) ou smart cards.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+                <span style="background-color: #d5f5e3; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #58b678;">Token físico</span>
+                <span style="background-color: #d5f5e3; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #58b678;">Smartphone</span>
+                <span style="background-color: #d5f5e3; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #58b678;">Smart card</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 3: Algo que você é - ROXO/LILÁS PASTEL -->
+          <div style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div style="background-color: #bb8fce; padding: 10px 15px; display: flex; align-items: center;">
+              <span style="background-color: white; color: #bb8fce; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 12px; font-weight: bold; font-size: 16px;">3</span>
+              <h6 style="margin: 0; color: white; font-size: 16px;">Algo que você é <span style="font-size: 14px; opacity: 0.9;">(Biométrico)</span></h6>
+            </div>
+            <div style="padding: 15px; background-color: #f4ecf7;">
+              <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+                Características biométricas, como impressões digitais, reconhecimento facial ou leitura da íris.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+                <span style="background-color: #ebdef0; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #9b59b6;">Impressão digital</span>
+                <span style="background-color: #ebdef0; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #9b59b6;">Reconhecimento facial</span>
+                <span style="background-color: #ebdef0; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #9b59b6;">Íris</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 4: Algo que você faz - LARANJA PASTEL -->
+          <div style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div style="background-color: #f5b041; padding: 10px 15px; display: flex; align-items: center;">
+              <span style="background-color: white; color: #f5b041; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 12px; font-weight: bold; font-size: 16px;">4</span>
+              <h6 style="margin: 0; color: white; font-size: 16px;">Algo que você faz <span style="font-size: 14px; opacity: 0.9;">(Behavior-based)</span></h6>
+            </div>
+            <div style="padding: 15px; background-color: #fef5e7;">
+              <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+                Padrão de digitação; forma de movimento do mouse, etc.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+                <span style="background-color: #fdebd0; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #d68910;">Padrão de digitação</span>
+                <span style="background-color: #fdebd0; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #d68910;">Movimento do mouse</span>
+                <span style="background-color: #fdebd0; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #d68910;">Comportamento de uso</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 5: Algo onde você está - ROSA/SALMÃO PASTEL -->
+          <div style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div style="background-color: #f1948a; padding: 10px 15px; display: flex; align-items: center;">
+              <span style="background-color: white; color: #f1948a; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 12px; font-weight: bold; font-size: 16px;">5</span>
+              <h6 style="margin: 0; color: white; font-size: 16px;">Algo onde você está <span style="font-size: 14px; opacity: 0.9;">(Location-based)</span></h6>
+            </div>
+            <div style="padding: 15px; background-color: #fdedec;">
+              <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+                Autenticação baseada em geolocalização; Verificação por endereço IP.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+                <span style="background-color: #fadbd8; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #cd6155;">Geolocalização</span>
+                <span style="background-color: #fadbd8; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #cd6155;">Endereço IP</span>
+                <span style="background-color: #fadbd8; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: #cd6155;">Rede conhecida</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <article id="password-policy">
+  <!-- AUTORIZAÇÃO -->
+  <div style="margin: 25px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <!-- Cabeçalho da seção -->
+    <div style="background-color: #fef9ec; padding: 15px; display: flex; align-items: center;">
+      <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #f5b041; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 18px;">🔑</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Autorização</h4>
+    </div>
+    
+    <!-- Conteúdo da seção -->
+    <div style="padding: 15px; background-color: #fef5e7;">
+      <p style="margin-bottom: 15px; font-size: 16px; line-height: 1.5;">
+        É o <strong>último passo</strong> no processo de controle de acesso segundo a (ISC)². Depois de identificação e autenticação, a autorização determina o que o usuário pode ou não fazer dentro do sistema.
+      </p>
+      
+      <div style="background-color: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+        <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+          <strong style="color: #f5b041;">Definição:</strong><br>
+          É o processo que verifica se um usuário autenticado tem permissões adequadas para acessar determinados recursos ou executar ações dentro de um sistema.
+        </p>
+      </div>
+      
+      <!-- Exemplos práticos -->
+      <div style="margin-top: 20px;">
+        <h5 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #f5b041;">📌 Exemplos</h5>
+        
+        <ul style="background-color: white; border-radius: 8px; padding: 15px; margin: 0; font-size: 16px; line-height: 1.6; list-style-type: none;">
+          <li style="margin-bottom: 8px;"><span style="color: #f5b041;">🔹</span> Um utilizador comum pode visualizar arquivos, mas não pode apagá-los.</li>
+          <li style="margin-bottom: 8px;"><span style="color: #f5b041;">🔹</span> Um administrador pode adicionar e remover utilizadores.</li>
+          <li><span style="color: #f5b041;">🔹</span> No Linux, o comando sudo dá permissões elevadas a usuários autorizados.</li>
+        </ul>
+      </div>
+      
+      <!-- Como funciona -->
+      <div style="margin-top: 20px;">
+        <h5 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #f5b041;">🔄 Como funciona?</h5>
+        
+        <div style="background-color: white; border-radius: 8px; padding: 15px;">
+          <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+            Depois que a identidade do usuário é <strong>verificada (autenticação),</strong> o sistema verifica as <strong>regras de acesso</strong> para conceder ou negar permissões.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Métodos de Autorização -->
+      <div style="margin-top: 20px;">
+        <h5 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #f5b041;">🛡️ Métodos de Autorização</h5>
+        
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="background-color: white; border-radius: 8px; padding: 12px; display: flex; align-items: center;">
+            <span style="background-color: #f5b041; color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-size: 14px;">✓</span>
+            <div>
+              <strong>Listas de Controle de Acesso (ACLs)</strong>
+              <p style="margin: 2px 0 0 0; font-size: 14px; color: #666;">Define quem pode acessar o quê.</p>
+            </div>
+          </div>
+          
+          <div style="background-color: white; border-radius: 8px; padding: 12px; display: flex; align-items: center;">
+            <span style="background-color: #f5b041; color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-size: 14px;">✓</span>
+            <div>
+              <strong>RBAC (Role-Based Access Control)</strong>
+              <p style="margin: 2px 0 0 0; font-size: 14px; color: #666;">Permissões baseadas em funções (exemplo: Admin, Usuário, Convidado).</p>
+            </div>
+          </div>
+          
+          <div style="background-color: white; border-radius: 8px; padding: 12px; display: flex; align-items: center;">
+            <span style="background-color: #f5b041; color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-size: 14px;">✓</span>
+            <div>
+              <strong>ABAC (Attribute-Based Access Control)</strong>
+              <p style="margin: 2px 0 0 0; font-size: 14px; color: #666;">Baseado em atributos como horário, localização, dispositivo, etc.</p>
+            </div>
+          </div>
+          
+          <div style="background-color: white; border-radius: 8px; padding: 12px; display: flex; align-items: center;">
+            <span style="background-color: #f5b041; color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-size: 14px;">✓</span>
+            <div>
+              <strong>MAC (Mandatory Access Control)</strong>
+              <p style="margin: 2px 0 0 0; font-size: 14px; color: #666;">Sistema impõe regras rígidas de acesso (exemplo: segurança militar).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MFA - Multi-Factor Authentication -->
+  <div style="margin: 25px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <!-- Cabeçalho da seção -->
+    <div style="background-color: #fdf5f5; padding: 15px; display: flex; align-items: center;">
+      <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #f1948a; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 18px;">🔒</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">MFA - Multi-Factor Authentication</h4>
+    </div>
+    
+    <!-- Conteúdo da seção -->
+    <div style="padding: 15px; background-color: #fdedec;">
+      <div style="background-color: white; padding: 15px; border-radius: 8px; ">
+        <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.5;">
+          <strong style="color: #f1948a;">Definição:</strong><br>
+          O MFA é um método de segurança que exige que um utilizador forneça <strong>dois ou mais fatores para provar a sua identidade</strong> antes de obter acesso a um sistema.
+        </p>
+        <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+          <strong style="color: #f1948a;">Exemplo Prático:</strong><br>
+          Um serviço de e-mail pode exigir que, além da senha, o usuário insira um código temporário gerado por um aplicativo autenticador (como Google Authenticator).
+        </p>
+      </div>
+      
+      <!-- Ilustração visual do MFA -->
+      <div style="margin-top: 20px; text-align: center; background-color: white; border-radius: 8px; padding: 20px;">
+        <h5 style="margin: 0 0 15px 0; font-size: 16px; font-weight: bold; color: #f1948a;">Como funciona o MFA</h5>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 15px; max-width: 600px; margin: 0 auto;">
+          <!-- Senha (Primeiro Fator) -->
+          <div style="border: 2px solid #7fb3d5; border-radius: 10px; padding: 15px; text-align: center; width: 120px;">
+            <div style="background-color: #7fb3d5; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 10px auto;">
+              <span style="font-size: 30px; color: white;">🔑</span>
+            </div>
+            <p style="margin: 0; font-weight: bold; color: #7fb3d5; font-size: 14px;">Senha</p>
+            <p style="margin: 5px 0 0 0; font-size: 12px; color: #666;">Algo que você sabe</p>
+          </div>
+          
+          <!-- Símbolo de Mais -->
+          <div style="font-size: 24px; font-weight: bold; color: #666;">
+            +
+          </div>
+          
+          <!-- App Autenticador (Segundo Fator) -->
+          <div style="border: 2px solid #7dcea0; border-radius: 10px; padding: 15px; text-align: center; width: 120px;">
+            <div style="background-color: #7dcea0; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 10px auto;">
+             <span style="font-size: 30px; color: white;">📱</span>
+            </div>
+            <p style="margin: 0; font-weight: bold; color: #7dcea0; font-size: 14px;">App Autenticador</p>
+            <p style="margin: 5px 0 0 0; font-size: 12px; color: #666;">Algo que você tem</p>
+          </div>
+          
+          <!-- Símbolo de Igual -->
+          <div style="font-size: 24px; font-weight: bold; color: #666;">
+            =
+          </div>
+          
+          <!-- Acesso Seguro (Resultado) -->
+          <div style="border: 2px solid #27ae60; border-radius: 10px; padding: 15px; text-align: center; width: 120px;">
+            <div style="background-color: #27ae60; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 10px auto;">
+              <span style="font-size: 30px; color: white;">✅</span>
+            </div>
+            <p style="margin: 0; font-weight: bold; color: #27ae60; font-size: 14px;">Acesso Seguro</p>
+            <p style="margin: 5px 0 0 0; font-size: 12px; color: #666;">Proteção Multi-fator</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Reflexão -->
+      <div style="margin-top: 20px; background-color: #f8f8f8; padding: 15px; border-radius: 8px; border: 7px dotted #f1948a;">
+        <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+          <strong style="color: #f1948a;">Pergunta para reflexão:</strong><br>
+          <span style="font-style: italic;">Quais são as vantagens de usar autenticação multifator em comparação com a autenticação baseada apenas em senha?</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Pontos-chave para o exame -->
+  <div style="margin: 25px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <!-- Cabeçalho da seção -->
+    <div style="background-color: #f5f7fa; padding: 15px; display: flex; align-items: center;">
+      <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #5d6d7e; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 18px;">📝</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Pontos-chave para o exame CC</h4>
+    </div>
+    
+    <!-- Conteúdo dos pontos-chave -->
+    <div style="padding: 15px; background-color: #f5f7fa;">
+      <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.6;">
+        <li style="margin-bottom: 8px;">A <strong>sequência correta</strong> é sempre: <span style="color: #7fb3d5;">Identificação</span> → <span style="color: #f1948a;">Autenticação</span> → <span style="color: #f5b041;">Autorização</span></li>
+        <li style="margin-bottom: 8px;">Saiba reconhecer e diferenciar os <strong>cinco tipos de fatores</strong> de autenticação</li>
+        <li style="margin-bottom: 8px;">Compreenda que o MFA requer <strong>pelo menos dois</strong> fatores diferentes (não do mesmo tipo)</li>
+        <li style="margin-bottom: 8px;">Entenda as diferenças entre os <strong>métodos de autorização</strong> (ACL, RBAC, ABAC, MAC)</li>
+        <li>Identifique a diferença entre <strong>autenticação</strong> (verificar identidade) e <strong>autorização</strong> (definir permissões)</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Nota final ISC2 - mantém a classe original -->
+  <p class="isc2-note" style="font-style: italic; color: #555; margin-top: 20px; padding-left: 20px; border-left: 4px solid #2c3e50; font-size: 16px; line-height: 1.5;">
+    Nota: As informações sobre autenticação e MFA seguem as diretrizes e recomendações presentes no guia oficial da ISC2.
+  </p>
+</article>
+        <article id="password-policy" style="">
           <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
           <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
-          <h3>🔑 Política de Senhas</h3>
-          <p>
-            Quando defines uma <strong>política de senhas</strong> para a tua organização, tens vários <mark style="background-color: #ffeb99;">controlos técnicos</mark> disponíveis para definir como os utilizadores devem escolher e manter as suas senhas.
-          </p>
-          <p>
-            O controlo mais simples e comum é o <strong>comprimento da senha</strong>, que define o <mark style="background-color: #ffeb99;">número mínimo de caracteres</mark>. É recomendado um mínimo de <strong>oito caracteres</strong>, embora algumas organizações exijam senhas ainda mais longas para aumentar a segurança.
-          </p>
-          <p>
-            As organizações podem também definir <mark style="background-color: #ffeb99;">requisitos de complexidade</mark>, obrigando os utilizadores a incluir diferentes tipos de caracteres: <strong>letras maiúsculas e minúsculas</strong>, <strong>dígitos</strong> e <strong>caracteres especiais</strong>. Quanto mais diversa for a composição da senha, mais difícil será de adivinhar.
-          </p>
-          <p>
-            Algumas políticas exigem a <mark style="background-color: #ffeb99;">expiração periódica das senhas</mark>, forçando os utilizadores a mudá-las a cada <strong>180 dias</strong>, por exemplo. No entanto, muitas organizações modernas permitem manter a mesma senha indefinidamente, desde que não haja suspeita de comprometimento.
-          </p>
-          <p>
-            Para evitar a <mark style="background-color: #ffeb99;">reutilização de senhas antigas</mark>, algumas organizações configuram sistemas que armazenam um <strong>histórico das senhas anteriores</strong> dos utilizadores, impedindo que voltem a ser usadas.
-          </p>
-          <p>
-            É fundamental permitir que os utilizadores <strong>alterem as suas senhas rapidamente e de forma privada</strong>, sempre que suspeitem que possam ter sido comprometidas. Contudo, os processos de <mark style="background-color: #ffeb99;">recuperação de senha</mark> devem ser bem projetados para evitar que atacantes explorem falhas nesse processo.
-          </p>
-          <p>
-            Finalmente, é recomendado que os utilizadores <mark style="background-color: #ffeb99;">não reutilizem a mesma senha em múltiplos sites</mark>. Embora seja difícil impor essa regra, é uma prática essencial para aumentar a segurança. Para ajudar na gestão de senhas únicas e seguras, os <strong>gestores de senhas</strong> são ferramentas valiosas, permitindo armazenar credenciais de forma segura e preenchê-las automaticamente em sites.
-          </p>
+  
+          <!-- Passwords -->
+
+<!-- Cabeçalho da seção -->
+<div style="background-color: #ecf0f9; padding: 15px; display: flex; align-items: center;">
+  <div style="width: 36px; height: 36px; border-radius: 50%; background-color: #3498db; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <span style="color: white; font-size: 18px;">🔑</span>
+  </div>
+  <h4 style="margin: 0; color: #2c3e50; font-size: 18px; font-weight: 600;">Política de Senhas</h4>
+</div>
+
+<!-- Conteúdo da seção -->
+<div style="padding: 15px; background-color: #eaf2f8;">
+  <p style="margin-bottom: 15px; font-size: 16px; line-height: 1.5;">
+    Um dos <strong>controlos técnicos fundamentais</strong> para a segurança da informação que estabelece como os utilizadores devem criar, modificar e manter as suas senhas para proteger o acesso aos sistemas.
+  </p>
+  
+  <div style="background-color: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+    <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+      <strong style="color: #3498db;">Definição:</strong><br>
+      É um conjunto de regras e práticas estabelecidas para garantir que as credenciais de acesso dos utilizadores sejam suficientemente fortes para resistir a tentativas de quebra ou adivinhação.
+    </p>
+  </div>
+  
+  <!-- Elementos essenciais -->
+  <div style="margin-top: 20px;">
+    <h5 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #3498db;">📌 Elementos Essenciais</h5>
+    
+    <ul style="background-color: white; border-radius: 8px; padding: 15px; margin: 0; font-size: 16px; line-height: 1.6; list-style-type: none;">
+      <li style="margin-bottom: 8px;"><span style="color: #3498db;">🔹</span> <strong>Comprimento mínimo:</strong> Recomenda-se pelo menos 8 caracteres, idealmente 12 ou mais.</li>
+      <li style="margin-bottom: 8px;"><span style="color: #3498db;">🔹</span> <strong>Complexidade:</strong> Combinação de letras maiúsculas, minúsculas, números e caracteres especiais.</li>
+      <li style="margin-bottom: 8px;"><span style="color: #3498db;">🔹</span> <strong>Periodicidade de alteração:</strong> Tradicionalmente a cada 90-180 dias, embora práticas modernas possam variar.</li>
+      <li><span style="color: #3498db;">🔹</span> <strong>Histórico:</strong> Impede a reutilização de senhas anteriores.</li>
+    </ul>
+  </div>
+  
+  <!-- Como funciona -->
+  <div style="margin-top: 20px;">
+    <h5 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #3498db;">🔄 Como funciona?</h5>
+    
+    <div style="background-color: white; border-radius: 8px; padding: 15px;">
+      <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+        Quando um utilizador cria ou altera uma senha, o sistema verifica se ela cumpre todos os <strong>requisitos definidos na política</strong>. Se não cumprir, o sistema rejeita a senha e solicita uma nova que esteja em conformidade.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Métodos de Implementação -->
+  <div style="margin-top: 20px;">
+    <h5 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #3498db;">🛡️ Métodos de Implementação</h5>
+    
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="background-color: white; border-radius: 8px; padding: 12px; display: flex; align-items: center;">
+        <span style="background-color: #3498db; color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-size: 14px;">✓</span>
+        <div>
+          <strong>Configuração de Domínio</strong>
+          <p style="margin: 2px 0 0 0; font-size: 14px; color: #666;">Em ambientes Windows, através de Políticas de Grupo (GPO).</p>
+        </div>
+      </div>
+      
+      <div style="background-color: white; border-radius: 8px; padding: 12px; display: flex; align-items: center;">
+        <span style="background-color: #3498db; color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-size: 14px;">✓</span>
+        <div>
+          <strong>Configurações de Sistemas</strong>
+          <p style="margin: 2px 0 0 0; font-size: 14px; color: #666;">Definidas diretamente em aplicações, bases de dados e serviços.</p>
+        </div>
+      </div>
+      
+      <div style="background-color: white; border-radius: 8px; padding: 12px; display: flex; align-items: center;">
+        <span style="background-color: #3498db; color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-size: 14px;">✓</span>
+        <div>
+          <strong>Gestores de Senhas</strong>
+          <p style="margin: 2px 0 0 0; font-size: 14px; color: #666;">Ferramentas que ajudam os utilizadores a manter senhas fortes e únicas.</p>
+        </div>
+      </div>
+      
+      <div style="background-color: white; border-radius: 8px; padding: 12px; display: flex; align-items: center;">
+        <span style="background-color: #3498db; color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-size: 14px;">✓</span>
+        <div>
+          <strong>Autenticação Multifator (MFA)</strong>
+          <p style="margin: 2px 0 0 0; font-size: 14px; color: #666;">Complementa senhas com camadas adicionais de verificação.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Boas Práticas -->
+  <div style="margin-top: 20px;">
+    <h5 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #3498db;">✨ Boas Práticas</h5>
+    
+    <ul style="background-color: white; border-radius: 8px; padding: 15px; margin: 0; font-size: 16px; line-height: 1.6; list-style-type: none;">
+      <li style="margin-bottom: 8px;"><span style="color: #3498db;">🔹</span> Evitar a reutilização de senhas em múltiplos serviços.</li>
+      <li style="margin-bottom: 8px;"><span style="color: #3498db;">🔹</span> Procedimentos rápidos e privados para alteração de senhas quando necessário.</li>
+      <li style="margin-bottom: 8px;"><span style="color: #3498db;">🔹</span> Processos seguros de recuperação de senha para evitar exploração por atacantes.</li>
+      <li><span style="color: #3498db;">🔹</span> Formação regular aos utilizadores sobre a importância e criação de senhas seguras.</li>
+    </ul>
+  </div>
+  
+  <!-- Diagrama da Política de Senhas -->
+  <div style="margin-top: 20px;">
+    <h5 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #3498db;">📊 Diagrama Visual</h5>
+    
+    <div style="background-color: #eaf2f8; border-radius: 8px; padding: 20px; margin: 0;">
+      <!-- Nodo principal -->
+      <div style="display: flex; justify-content: center; margin-bottom: 15px;">
+        <div style="background-color: #3498db; color: white; border-radius: 8px; padding: 10px 20px; font-weight: bold; text-align: center; width: 200px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          Política de Senhas
+        </div>
+      </div>
+      
+      <!-- Linha de conexão vertical -->
+      <div style="display: flex; justify-content: center; margin-bottom: 15px;">
+        <div style="width: 2px; height: 20px; background-color: #95a5a6;"></div>
+      </div>
+      
+      <!-- Nodos secundários -->
+      <div style="display: flex; justify-content: space-around; margin-bottom: 15px;">
+        <div style="width: 30%; text-align: center;">
+          <div style="background-color: #5dade2; color: white; border-radius: 8px; padding: 8px 10px; font-weight: bold; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            Elementos Básicos
+          </div>
+        </div>
+        
+        <div style="width: 30%; text-align: center;">
+          <div style="background-color: #5dade2; color: white; border-radius: 8px; padding: 8px 10px; font-weight: bold; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            Implementação
+          </div>
+        </div>
+        
+        <div style="width: 30%; text-align: center;">
+          <div style="background-color: #5dade2; color: white; border-radius: 8px; padding: 8px 10px; font-weight: bold; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            Boas Práticas
+          </div>
+        </div>
+      </div>
+      
+      <!-- Linhas de conexão para os elementos de terceiro nível -->
+      <div style="display: flex; justify-content: space-around; margin-bottom: 10px;">
+        <div style="width: 30%; display: flex; justify-content: center;">
+          <div style="width: 2px; height: 15px; background-color: #95a5a6;"></div>
+        </div>
+        
+        <div style="width: 30%; display: flex; justify-content: center;">
+          <div style="width: 2px; height: 15px; background-color: #95a5a6;"></div>
+        </div>
+        
+        <div style="width: 30%; display: flex; justify-content: center;">
+          <div style="width: 2px; height: 15px; background-color: #95a5a6;"></div>
+        </div>
+      </div>
+      
+      <!-- Elementos de terceiro nível -->
+      <div style="display: flex; justify-content: space-around;">
+        <!-- Elementos Básicos -->
+        <div style="width: 30%;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Comprimento Mínimo
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Complexidade
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Periodicidade
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Histórico
+            </div>
+          </div>
+        </div>
+        
+        <!-- Implementação -->
+        <div style="width: 30%;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Configuração de Domínio
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Configurações de Sistemas
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Gestores de Senhas
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Autenticação Multifator
+            </div>
+          </div>
+        </div>
+        
+        <!-- Boas Práticas -->
+        <div style="width: 30%;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Evitar Reutilização
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Alteração Rápida
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Recuperação Segura
+            </div>
+            <div style="background-color: white; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #5dade2;">
+              Formação de Utilizadores
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
           </article>
         
         <!-- Artigo: Privacidade e Não-repúdio -->
-        <article id="privacidade">
-          <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
-          <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
-          <h3>Privacidade e Não-repúdio</h3>
-          <p>
-            <strong class="quant1">Privacidade:</strong><br>
-            <strong>O que é:</strong> A privacidade é um componente essencial da segurança da informação. Ao compreendermos o nível de privacidade da informação, podemos implementar os controles adequados. Diversos padrões, políticas e procedimentos regulam a privacidade no ambiente de trabalho, variando por região geográfica.
-          </p>
-          <p>
-            <strong class="quant1">Considerações sobre Privacidade:</strong><br>
-            No mundo digital, as organizações coletam uma grande quantidade de informações sobre indivíduos e suas ações. De transações com cartões de crédito a registros educacionais, todos nós deixamos um rastro significativo de dados. É essencial que entendamos como essas informações são coletadas e utilizadas. Como profissionais de TI, temos três principais responsabilidades:
-          </p>
-          <ul>
-            <li>Compreender quem possui informações sobre nós e como elas são utilizadas.</li>
-            <li>Educar os usuários sobre como proteger suas próprias informações pessoais.</li>
-            <li>Ajudar os oficiais de privacidade das organizações a proteger as informações confidenciais sob nossa responsabilidade.</li>
-          </ul>
-          <p>
-            O conceito de <strong>expectativa razoável de privacidade</strong> fundamenta muitos dos princípios legais sobre proteção de dados. Algumas situações onde a privacidade é esperada incluem e-mails pessoais e documentos confidenciais submetidos a instituições governamentais. Em contraste, publicações em redes sociais são consideradas informais e sem expectativa de privacidade.
-          </p>
-          <p>
-            <strong class="quant1">Regulamentações:</strong>
-          </p>
-          <ul>
-            <li><strong>HIPAA (EUA):</strong> Regula como a privacidade das informações médicas deve ser mantida.</li>
-            <li><strong>GDPR (União Europeia):</strong> Garante que qualquer pessoa dentro das fronteiras da UE tenha controle sobre quais informações pessoais podem ser coletadas e armazenadas pelas empresas.</li>
-          </ul>
-          <p>
-            Como profissionais de segurança, é essencial estarmos cientes das leis e regulamentações de privacidade em todas as jurisdições onde nossa empresa opera. Ao conduzir negócios em outros países, devemos respeitar seus padrões e regulamentos de privacidade.
-          </p>
-          <p>
-            <strong class="quant1">Não-repúdio:</strong><br>
-            <strong>O que é:</strong> Garante que uma ação ou transação não possa ser negada pelo autor posteriormente, criando um registro verificável da ação.
-          </p>
-          <p>
-            <strong>Como Proteger:</strong>
-          </p>
-          <ul>
-            <li><strong>Assinaturas Digitais:</strong> Utilizando criptografia para validar a autoria de uma transação ou mensagem.</li>
-            <li><strong>Logs de Auditoria:</strong> Registrando todas as atividades relevantes, garantindo rastreabilidade.</li>
-          </ul>
-          <p class="isc2-note">Nota: Este conteúdo está em conformidade com os princípios de proteção de dados e diretrizes do curso oficial da ISC2.</p>
+   <article id="privacidade">
+  <button class="favorite-btn" title="Marcar como favorito">&#9734;</button>
+  <button class="progress-btn" title="Marcar como concluído">&#10003;</button>
+  
+  <!-- Cabeçalho principal com estilo renovado -->
+  <h3 style="border-bottom: 2px solid #2c3e50; padding-bottom: 10px; margin-bottom: 20px; color: #2c3e50; font-size: 1.8rem;">
+    <span style="position: relative; background-color: #4682B4; color: white; padding: 8px 16px; border-radius: 4px; font-size: 1.4em;">Privacidade e Não-repúdio</span>
+  </h3>
+  
+  <!-- Introdução com estilo melhorado -->
+  <div style="background-color: #f5f9fd; border-radius: 8px; padding: 20px; margin-bottom: 30px;">
+    <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">
+      Neste artigo, exploraremos dois conceitos fundamentais para a segurança da informação: <strong>privacidade</strong> e <strong>não-repúdio</strong>. Ambos são pilares essenciais para estruturas de segurança robustas em qualquer organização.
+    </p>
+  </div>
+  
+  <!-- Seção de Privacidade -->
+  <div class="triad-section" style="background-color: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 30px;">
+    <!-- Cabeçalho do cartão -->
+    <div style="background-color: #f5f9fd; padding: 20px; display: flex; align-items: center;">
+      <div style="width: 48px; height: 48px; border-radius: 50%; background-color: #7fb3d5; display: flex; justify-content: center; align-items: center; margin-right: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 24px;">P</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 22px; font-weight: 600;">Privacidade</h4>
+    </div>
+    
+    <!-- Conteúdo do cartão -->
+    <div style="padding: 20px; background-color: #ebf5fb;">
+      <p style="font-size: 1.1rem; line-height: 1.6;"><strong style="color: #7fb3d5; font-size: 1.2rem;">O que é:</strong> A privacidade é um componente essencial da segurança da informação. Ao compreendermos o nível de privacidade da informação, podemos implementar os controles adequados. Diversos padrões, políticas e procedimentos regulam a privacidade no ambiente de trabalho, variando por região geográfica.</p>
+      
+      <!-- Modelo de Camadas de Privacidade - Diagrama SVG - AUMENTADO -->
+      <div style="text-align: center; margin: 30px 0; background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <h5 style="color: #7fb3d5; margin-top: 0; margin-bottom: 20px; font-size: 1.3rem;">Modelo de Camadas de Privacidade</h5>
+        <svg width="700" height="450" viewBox="0 0 500 320" style="max-width: 100%; height: auto;">
+          <!-- Fundo com gradiente suave -->
+          <defs>
+            <linearGradient id="privacyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#ebf5fb; stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#d6eaf8; stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#privacyGradient)" rx="10" ry="10" />
           
-          <!-- Seção para Pontos Importantes do Exame -->
-          <section id="exam-highlights">
-            <h4>Pontos a Sublinha para o Exame</h4>
-            <ul>
-              <li><u>Definições Básicas:</u> Entender que a <strong>privacidade</strong> protege informações pessoais, enquanto o <strong>não-repúdio</strong> assegura que uma ação não pode ser negada.</li>
-              <li><u>Regulamentações e Legislação:</u> Conhecer as principais leis como <strong>HIPAA</strong> e <strong>GDPR</strong>, e compreender o conceito de <strong>expectativa razoável de privacidade</strong>.</li>
-              <li><u>Responsabilidades dos Profissionais de TI:</u> Proteger as próprias informações, educar usuários e auxiliar os oficiais de privacidade.</li>
-              <li><u>Exemplos Práticos:</u> Redes sociais geralmente não têm expectativa de privacidade; e-mails e mensagens diretas têm maior expectativa de privacidade.</li>
-              <li><u>Ferramentas de Proteção:</u> Assinaturas digitais, logs de auditoria e criptografia são essenciais para garantir a segurança e o não-repúdio.</li>
-              <li><u>Contexto Organizacional:</u> Em ambientes corporativos, a expectativa de privacidade é reduzida e políticas internas, como a <strong>AUP</strong>, devem ser claras.</li>
-            </ul>
-          </section>
-        </article>
+          <!-- Camadas de privacidade (círculos concêntricos) -->
+          <circle cx="250" cy="160" r="140" fill="#f5f9fd" stroke="#7fb3d5" stroke-width="2" />
+          <circle cx="250" cy="160" r="105" fill="#d6eaf8" stroke="#5499c7" stroke-width="2" />
+          <circle cx="250" cy="160" r="70" fill="#aed6f1" stroke="#3498db" stroke-width="2" />
+          <circle cx="250" cy="160" r="35" fill="#85c1e9" stroke="#2e86c1" stroke-width="2" />
+          
+          <!-- Ícone central representando o indivíduo -->
+          <circle cx="250" cy="160" r="20" fill="#2874a6" />
+          <text x="250" y="165" font-family="Arial" font-size="14" fill="white" text-anchor="middle">EU</text>
+          
+          <!-- Texto para cada camada -->
+          <text x="250" y="40" font-family="Arial" font-size="16" fill="#2c3e50" text-anchor="middle" font-weight="bold">CAMADAS DE PRIVACIDADE</text>
+          
+          <!-- Textos nas camadas -->
+          <text x="250" y="83" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Informações Pessoais Sensíveis</text>
+          <text x="250" y="118" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Dados Confidenciais</text>
+          <text x="250" y="210" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Dados Compartilhados Limitados</text>
+          <text x="250" y="245" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Informações Públicas</text>
+          
+          <!-- Exemplos de informações em cada camada -->
+          <text x="250" y="98" font-family="Arial" font-size="12" fill="#5499c7" text-anchor="middle" font-style="italic">Senhas, Dados Médicos, Documentos Legais</text>
+          <text x="250" y="135" font-family="Arial" font-size="12" fill="#5499c7" text-anchor="middle" font-style="italic">E-mails Pessoais, Histórico Financeiro</text>
+          <text x="250" y="225" font-family="Arial" font-size="12" fill="#5499c7" text-anchor="middle" font-style="italic">Lista de Amigos, Local de Trabalho</text>
+          <text x="250" y="260" font-family="Arial" font-size="12" fill="#5499c7" text-anchor="middle" font-style="italic">Nome, Foto de Perfil Pública</text>
+          
+          <!-- Seta para direção de privacidade -->
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+            </marker>
+          </defs>
+          <line x1="400" y1="290" x2="430" y2="290" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+          <text x="370" y="295" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="end">Menos Privado</text>
+          
+          <line x1="100" y1="290" x2="70" y2="290" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+          <text x="130" y="295" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="start">Mais Privado</text>
+        </svg>
+        <p style="margin-top: 15px; font-size: 1rem; color: #666; font-style: italic;">Figura 1: Diferentes níveis de privacidade de informações pessoais, da mais sensível (centro) à mais pública (exterior).</p>
+      </div>
+      
+      <div style="background-color: white; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #7fb3d5;">
+        <h5 style="color: #7fb3d5; margin-top: 0; margin-bottom: 15px; font-size: 1.3rem;">Considerações sobre Privacidade</h5>
+        <p style="margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6;">
+          No mundo digital, as organizações coletam uma grande quantidade de informações sobre indivíduos e suas ações. De transações com cartões de crédito a registros educacionais, todos nós deixamos um rastro significativo de dados. É essencial que entendamos como essas informações são coletadas e utilizadas.
+        </p>
+        <p style="margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6;">
+          Como profissionais de TI, temos três principais responsabilidades:
+        </p>
+        <ul style="margin-bottom: 0; font-size: 1.1rem; line-height: 1.6;">
+          <li>Compreender quem possui informações sobre nós e como elas são utilizadas.</li>
+          <li>Educar os usuários sobre como proteger suas próprias informações pessoais.</li>
+          <li>Ajudar os oficiais de privacidade das organizações a proteger as informações confidenciais sob nossa responsabilidade.</li>
+        </ul>
+      </div>
+      
+      <!-- Conceito destacado -->
+      <div style="background-color: #d6eaf8; padding: 20px; border-radius: 5px; margin: 20px 0;">
+        <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;"><strong style="color: #7fb3d5; font-size: 1.2rem;">Conceito-chave:</strong> O conceito de <strong>expectativa razoável de privacidade</strong> fundamenta muitos dos princípios legais sobre proteção de dados. Algumas situações onde a privacidade é esperada incluem e-mails pessoais e documentos confidenciais submetidos a instituições governamentais. Em contraste, publicações em redes sociais são consideradas informais e sem expectativa de privacidade.</p>
+      </div>
+      
+      <h5 style="color: #7fb3d5; margin-top: 25px; margin-bottom: 15px; border-bottom: 1px solid #d6eaf8; padding-bottom: 8px; font-size: 1.3rem;">Regulamentações Importantes</h5>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <div style="flex: 1; min-width: 250px; background-color: white; padding: 15px; border-radius: 5px; border-left: 4px solid #ec7063;">
+          <h6 style="margin-top: 0; margin-bottom: 10px; color: #ec7063; font-size: 1.1rem;">HIPAA (EUA)</h6>
+          <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Regula como a privacidade das informações médicas deve ser mantida.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px; background-color: white; padding: 15px; border-radius: 5px; border-left: 4px solid #5dade2;">
+          <h6 style="margin-top: 0; margin-bottom: 10px; color: #5dade2; font-size: 1.1rem;">GDPR (União Europeia)</h6>
+          <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Garante que qualquer pessoa dentro das fronteiras da UE tenha controle sobre quais informações pessoais podem ser coletadas e armazenadas pelas empresas.</p>
+        </div>
+      </div>
+      
+      <div style="background-color: #f5f5f5; padding: 20px; border-radius: 5px; margin-top: 20px;">
+        <p style="margin: 0; font-style: italic; font-size: 1.1rem; line-height: 1.6;">Como profissionais de segurança, é essencial estarmos cientes das leis e regulamentações de privacidade em todas as jurisdições onde nossa empresa opera. Ao conduzir negócios em outros países, devemos respeitar seus padrões e regulamentos de privacidade.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Seção de Não-repúdio -->
+  <div class="triad-section" style="background-color: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 30px;">
+    <!-- Cabeçalho do cartão -->
+    <div style="background-color: #fef9ec; padding: 20px; display: flex; align-items: center;">
+      <div style="width: 48px; height: 48px; border-radius: 50%; background-color: #f5b041; display: flex; justify-content: center; align-items: center; margin-right: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 24px;">N</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 22px; font-weight: 600;">Não-repúdio</h4>
+    </div>
+    
+    <!-- Conteúdo do cartão -->
+    <div style="padding: 20px; background-color: #fef5e7;">
+      <p style="font-size: 1.1rem; line-height: 1.6;"><strong style="color: #f5b041; font-size: 1.2rem;">O que é:</strong> Garante que uma ação ou transação não possa ser negada pelo autor posteriormente, criando um registro verificável da ação.</p>
+      
+      <!-- Diagrama de Assinatura Digital - SVG - AUMENTADO -->
+      <div style="text-align: center; margin: 30px 0; background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <h5 style="color: #f5b041; margin-top: 0; margin-bottom: 20px; font-size: 1.3rem;">Funcionamento da Assinatura Digital</h5>
+        <svg width="700" height="450" viewBox="0 0 500 330" style="max-width: 100%; height: auto;">
+          <!-- Fundo com gradiente suave -->
+          <defs>
+            <linearGradient id="nonRepudiationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#fef5e7; stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#fdebd0; stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#nonRepudiationGradient)" rx="10" ry="10" />
+          
+          <!-- Título -->
+          <text x="250" y="30" font-family="Arial" font-size="16" fill="#2c3e50" text-anchor="middle" font-weight="bold">PROCESSO DE ASSINATURA DIGITAL</text>
+          
+          <!-- Personagens -->
+          <circle cx="80" cy="90" r="25" fill="#f5b041" />
+          <text x="80" y="95" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Alice</text>
+          
+          <circle cx="420" cy="90" r="25" fill="#5dade2" />
+          <text x="420" y="95" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Bob</text>
+          
+          <!-- Caixas de documentos -->
+          <rect x="40" y="140" width="80" height="40" rx="5" ry="5" fill="white" stroke="#f5b041" stroke-width="2" />
+          <text x="80" y="165" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Documento</text>
+          
+          <rect x="380" y="140" width="80" height="40" rx="5" ry="5" fill="white" stroke="#5dade2" stroke-width="2" />
+          <text x="420" y="165" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Documento</text>
+          
+          <!-- Processo de hash -->
+          <rect x="40" y="200" width="80" height="40" rx="5" ry="5" fill="#f8f9fa" stroke="#f5b041" stroke-width="2" />
+          <text x="80" y="225" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Hash</text>
+          
+          <!-- Chave privada -->
+          <polygon points="60,260 100,260 90,280 70,280" fill="#e67e22" stroke="#d35400" stroke-width="1" />
+          <text x="80" y="273" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Chave Privada</text>
+          
+          <!-- Assinatura -->
+          <rect x="40" y="300" width="80" height="40" rx="5" ry="5" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" />
+          <text x="80" y="325" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Assinatura</text>
+          
+          <!-- Processo de verificação -->
+          <rect x="380" y="200" width="80" height="40" rx="5" ry="5" fill="#f8f9fa" stroke="#5dade2" stroke-width="2" />
+          <text x="420" y="225" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Hash</text>
+          
+          <!-- Chave pública -->
+          <polygon points="400,260 440,260 430,280 410,280" fill="#3498db" stroke="#2980b9" stroke-width="1" />
+          <text x="420" y="273" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Chave Pública</text>
+          
+          <!-- Verificação -->
+          <rect x="380" y="300" width="80" height="40" rx="5" ry="5" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" />
+          <text x="420" y="323" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Verificação</text>
+          <text x="420" y="335" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle">Não-repúdio</text>
+          
+          <!-- Setas e fluxo do processo -->
+          <defs>
+            <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+            </marker>
+          </defs>
+          
+          <!-- De documento para hash (Alice) -->
+          <line x1="80" y1="185" x2="80" y2="195" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
+          
+          <!-- De hash para chave privada -->
+          <line x1="80" y1="245" x2="80" y2="255" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
+          
+          <!-- De chave privada para assinatura -->
+          <line x1="80" y1="285" x2="80" y2="295" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
+          
+          <!-- De assinatura para Bob -->
+          <path d="M 125 320 C 200 320, 300 320, 375 320" stroke="#2c3e50" stroke-width="1.5" fill="transparent" marker-end="url(#arrowhead2)" />
+          <text x="250" y="310" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle">Envio seguro</text>
+          
+          <!-- De documento para hash (Bob) -->
+          <line x1="420" y1="185" x2="420" y2="195" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
+          
+          <!-- De hash para chave pública -->
+          <line x1="420" y1="245" x2="420" y2="255" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
+          
+          <!-- De chave pública para verificação -->
+          <line x1="420" y1="285" x2="420" y2="295" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
+          
+          <!-- De Alice para Bob (documento) -->
+          <path d="M 125 160 C 200 160, 300 160, 375 160" stroke="#2c3e50" stroke-width="1.5" fill="transparent" marker-end="url(#arrowhead2)" />
+          <text x="250" y="150" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle">Documento original</text>
+          
+          <!-- Linha central -->
+          <line x1="250" y1="50" x2="250" y2="290" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5" />
+          
+          <!-- Legenda dos lados -->
+          <text x="80" y="55" font-family="Arial" font-size="14" fill="#d35400" text-anchor="middle" font-style="italic">Enviando</text>
+          <text x="420" y="55" font-family="Arial" font-size="14" fill="#2980b9" text-anchor="middle" font-style="italic">Verificando</text>
+        </svg>
+        <p style="margin-top: 15px; font-size: 1rem; color: #666; font-style: italic;">Figura 2: Processo de assinatura digital que garante o não-repúdio em comunicações eletrônicas.</p>
+      </div>
+      
+      <div style="background-color: white; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #f5b041;">
+        <h5 style="color: #f5b041; margin-top: 0; margin-bottom: 15px; font-size: 1.3rem;">Como Proteger o Não-repúdio</h5>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+          <div style="flex: 1; min-width: 250px; padding: 15px; border-radius: 5px; background-color: #fdebd0;">
+            <h6 style="margin-top: 0; margin-bottom: 10px; color: #e67e22; font-size: 1.1rem;">Assinaturas Digitais</h6>
+            <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Utilizando criptografia para validar a autoria de uma transação ou mensagem.</p>
+          </div>
+          <div style="flex: 1; min-width: 250px; padding: 15px; border-radius: 5px; background-color: #fdebd0;">
+            <h6 style="margin-top: 0; margin-bottom: 10px; color: #e67e22; font-size: 1.1rem;">Logs de Auditoria</h6>
+            <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Registrando todas as atividades relevantes, garantindo rastreabilidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Nota oficial ISC2 - mantendo a classe original -->
+  <p class="isc2-note" style="font-style: italic; color: #555; margin-top: 25px; padding-left: 20px; border-left: 4px solid #2c3e50; font-size: 1rem; line-height: 1.6;">
+    Nota: Este conteúdo está em conformidade com os princípios de proteção de dados e diretrizes do curso oficial da ISC2.
+  </p>
+  
+  <!-- Seção para Pontos Importantes do Exame - com estilo renovado -->
+  <div style="background-color: #f5f7fa; border-radius: 8px; padding: 20px; margin: 30px 0; border: 1px solid #dee2e6;">
+    <div style="background-color: #f5f7fa; padding: 15px; display: flex; align-items: center;">
+      <div style="width: 48px; height: 48px; border-radius: 50%; background-color: #5d6d7e; display: flex; justify-content: center; align-items: center; margin-right: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="color: white; font-size: 24px;">📝</span>
+      </div>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 22px; font-weight: 600;">Pontos-chave para o exame CC</h4>
+    </div>
+    <ul style="margin: 15px 0 0 0; padding-left: 25px; font-size: 1.1rem; line-height: 1.6;">
+      <li style="margin-bottom: 10px;"><u>Definições Básicas:</u> Entender que a <strong>privacidade</strong> protege informações pessoais, enquanto o <strong>não-repúdio</strong> assegura que uma ação não pode ser negada.</li>
+      <li style="margin-bottom: 10px;"><u>Regulamentações e Legislação:</u> Conhecer as principais leis como <strong>HIPAA</strong> e <strong>GDPR</strong>, e compreender o conceito de <strong>expectativa razoável de privacidade</strong>.</li>
+      <li style="margin-bottom: 10px;"><u>Responsabilidades dos Profissionais de TI:</u> Proteger as próprias informações, educar usuários e auxiliar os oficiais de privacidade.</li>
+      <li style="margin-bottom: 10px;"><u>Exemplos Práticos:</u> Redes sociais geralmente não têm expectativa de privacidade; e-mails e mensagens diretas têm maior expectativa de privacidade.</li>
+      <li style="margin-bottom: 10px;"><u>Ferramentas de Proteção:</u> Assinaturas digitais, logs de auditoria e criptografia são essenciais para garantir a segurança e o não-repúdio.</li>
+      <li><u>Contexto Organizacional:</u> Em ambientes corporativos, a expectativa de privacidade é reduzida e políticas internas, como a <strong>AUP</strong>, devem ser claras.</li>
+    </ul>
+  </div>
+</article>
         
 
         <article id="gestao-riscos">
@@ -322,8 +1117,227 @@
           
           <h4 class="quano">Quantitative Risk Analysis</h4>
           <p>
-
+            <strong>Definição para CC:</strong><br>
+            Na avaliação quantitativa de riscos, <mark style="background-color: #ffeb99;">atribuímos valores numéricos específicos aos riscos</mark>, permitindo que as organizações compreendam o impacto financeiro potencial e possam tomar decisões baseadas em dados concretos.
           </p>
+          
+          <p>
+            <strong>Principais Termos para o CC:</strong>
+          </p>
+          <div class="risk-terms" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+            <div style="flex: 1; min-width: 300px; background-color: #f8f9fa; border-radius: 8px; padding: 12px; border-left: 4px solid #4682B4;">
+              <strong style="color: #4682B4;">AV (Asset Value)</strong>
+              <p style="margin-top: 5px;">Valor monetário do ativo que está sendo protegido.</p>
+            </div>
+            <div style="flex: 1; min-width: 300px; background-color: #f8f9fa; border-radius: 8px; padding: 12px; border-left: 4px solid #4682B4;">
+              <strong style="color: #4682B4;">EF (Exposure Factor)</strong>
+              <p style="margin-top: 5px;">Percentagem do ativo que seria perdida em caso de incidente.</p>
+            </div>
+          </div>
+          
+          <div class="risk-terms" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+            <div style="flex: 1; min-width: 300px; background-color: #f8f9fa; border-radius: 8px; padding: 12px; border-left: 4px solid #4682B4;">
+              <strong style="color: #4682B4;">SLE (Single Loss Expectancy)</strong>
+              <p style="margin-top: 5px;">Valor monetário perdido em um único incidente.</p>
+            </div>
+            <div style="flex: 1; min-width: 300px; background-color: #f8f9fa; border-radius: 8px; padding: 12px; border-left: 4px solid #4682B4;">
+              <strong style="color: #4682B4;">ARO (Annualized Rate of Occurrence)</strong>
+              <p style="margin-top: 5px;">Frequência esperada do risco em um ano.</p>
+            </div>
+          </div>
+          
+          <div class="risk-terms" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+            <div style="flex: 1; min-width: 300px; background-color: #f8f9fa; border-radius: 8px; padding: 12px; border-left: 4px solid #4682B4;">
+              <strong style="color: #4682B4;">ALE (Annualized Loss Expectancy)</strong>
+              <p style="margin-top: 5px;">Quanto se espera perder anualmente devido ao risco.</p>
+            </div>
+          </div>
+          
+          <div style="margin: 25px 0;">
+            <h5 style="background-color: #4682B4; color: white; padding: 10px; border-radius: 5px 5px 0 0; margin: 0;">Fórmulas Essenciais para o CC</h5>
+            <div style="background-color: #F0F8FF; padding: 15px; border-radius: 0 0 5px 5px; border: 1px solid #4682B4; border-top: none;">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <div style="width: 50px; height: 50px; background-color: #4682B4; color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; margin-right: 15px;">1</div>
+                <div>
+                  <p style="margin: 0; font-weight: bold;">SLE = AV × EF</p>
+                  <p style="margin: 0; color: #555; font-style: italic;">Valor do Ativo × Fator de Exposição</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; background-color: #4682B4; color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; margin-right: 15px;">2</div>
+                <div>
+                  <p style="margin: 0; font-weight: bold;">ALE = SLE × ARO</p>
+                  <p style="margin: 0; color: #555; font-style: italic;">Expectativa de Perda Única × Taxa Anual de Ocorrência</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin: 30px 0;">
+            <h5 style="background-color: #5C9276; color: white; padding: 10px; border-radius: 5px 5px 0 0; margin: 0;">Exemplo Prático para CC</h5>
+            <div style="background-color: #f8f9fa; padding: 20px; border-radius: 0 0 5px 5px; border: 1px solid #5C9276; border-top: none;">
+              <p>
+                Um laptop usado para armazenar dados de clientes tem valor de <strong>1.000€</strong>. 
+                Se for roubado ou perdido, estima-se que <strong>60%</strong> do seu valor seria comprometido. 
+                A probabilidade de roubo/perda é estimada em <strong>uma vez a cada 5 anos</strong>.
+              </p>
+              
+              <div style="background-color: #E6F7FF; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #4682B4;">
+                <div style="margin-bottom: 15px;">
+                  <span style="background-color: #4682B4; color: white; padding: 3px 8px; border-radius: 4px; font-size: 14px;">Passo 1</span>
+                  <p style="margin-top: 5px; margin-bottom: 0;"><strong>Calcular SLE</strong></p>
+                  <p style="margin-top: 5px; margin-bottom: 0;">SLE = 1.000€ × 0,6 = <span style="font-weight: bold; color: #4682B4;">600€</span></p>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                  <span style="background-color: #4682B4; color: white; padding: 3px 8px; border-radius: 4px; font-size: 14px;">Passo 2</span>
+                  <p style="margin-top: 5px; margin-bottom: 0;"><strong>Calcular ARO</strong></p>
+                  <p style="margin-top: 5px; margin-bottom: 0;">ARO = 1 ÷ 5 = <span style="font-weight: bold; color: #4682B4;">0,2</span> (ou 20% de chance por ano)</p>
+                </div>
+                
+                <div>
+                  <span style="background-color: #4682B4; color: white; padding: 3px 8px; border-radius: 4px; font-size: 14px;">Passo 3</span>
+                  <p style="margin-top: 5px; margin-bottom: 0;"><strong>Calcular ALE</strong></p>
+                  <p style="margin-top: 5px; margin-bottom: 0;">ALE = 600€ × 0,2 = <span style="font-weight: bold; color: #4682B4;">120€ por ano</span></p>
+                </div>
+              </div>
+              
+              <p>
+                <strong>Interpretação:</strong> A organização pode esperar perder, em média, <strong style="color: #4682B4;">120€ por ano</strong> devido ao risco de roubo/perda de laptops com esse perfil.
+              </p>
+            </div>
+          </div>
+          
+          <div style="margin: 30px 0;">
+            <h5 style="background-color: #C95C6D; color: white; padding: 10px; border-radius: 5px 5px 0 0; margin: 0;">Avaliação de Contramedidas</h5>
+            <div style="background-color: #f8f9fa; padding: 20px; border-radius: 0 0 5px 5px; border: 1px solid #C95C6D; border-top: none;">
+              <p>
+                A empresa considera implementar criptografia de disco e rastreamento remoto por <strong>50€/ano</strong> por laptop.
+              </p>
+              
+              <div style="background-color: #FFF9E6; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #C95C6D;">
+                <table style="width: 100%; border-collapse: collapse;">
+                  <tr>
+                    <td style="padding: 8px; width: 60%;"><strong>Custo da contramedida</strong></td>
+                    <td style="padding: 8px; width: 40%;">50€/ano</td>
+                  </tr>
+                  <tr style="background-color: rgba(0,0,0,0.03);">
+                    <td style="padding: 8px;"><strong>Redução do EF com a contramedida</strong></td>
+                    <td style="padding: 8px;">de 60% para 30%</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px;"><strong>Novo SLE</strong></td>
+                    <td style="padding: 8px;">1.000€ × 0,3 = 300€</td>
+                  </tr>
+                  <tr style="background-color: rgba(0,0,0,0.03);">
+                    <td style="padding: 8px;"><strong>Novo ALE</strong></td>
+                    <td style="padding: 8px;">300€ × 0,2 = 60€/ano</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px;"><strong>Economia Anual</strong></td>
+                    <td style="padding: 8px;">120€ - 60€ = 60€/ano</td>
+                  </tr>
+                  <tr style="background-color: rgba(0,0,0,0.03);">
+                    <td style="padding: 8px;"><strong>ROI Anual</strong></td>
+                    <td style="padding: 8px;">60€ - 50€ = 10€/ano (positivo)</td>
+                  </tr>
+                </table>
+              </div>
+    
+    <div style="background-color: #5C9276; color: white; padding: 10px; border-radius: 5px; text-align: center; margin-top: 15px;">
+      <p style="margin: 0; font-weight: bold;">Conclusão: Vale a pena implementar a contramedida, pois há um retorno positivo.</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin: 25px 0;">
+  <h5 style="border-bottom: 2px solid #4682B4; padding-bottom: 8px; color: #4682B4;">O que o CC exige que você saiba:</h5>
+  <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px;">
+    <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; border-radius: 8px; padding: 15px; border-left: 4px solid #5C9276;">
+      <p style="margin: 0;"><span style="background-color: #5C9276; color: white; border-radius: 50%; width: 24px; height: 24px; display: inline-block; text-align: center; line-height: 24px; margin-right: 10px;">✓</span> Compreender os <strong>conceitos básicos</strong> da análise quantitativa</p>
+    </div>
+    <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; border-radius: 8px; padding: 15px; border-left: 4px solid #5C9276;">
+      <p style="margin: 0;"><span style="background-color: #5C9276; color: white; border-radius: 50%; width: 24px; height: 24px; display: inline-block; text-align: center; line-height: 24px; margin-right: 10px;">✓</span> Identificar os <strong>componentes da fórmula</strong> (AV, EF, SLE, ARO, ALE)</p>
+    </div>
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px;">
+    <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; border-radius: 8px; padding: 15px; border-left: 4px solid #5C9276;">
+      <p style="margin: 0;"><span style="background-color: #5C9276; color: white; border-radius: 50%; width: 24px; height: 24px; display: inline-block; text-align: center; line-height: 24px; margin-right: 10px;">✓</span> Entender como ajuda na <strong>tomada de decisões</strong> de segurança</p>
+    </div>
+    <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; border-radius: 8px; padding: 15px; border-left: 4px solid #5C9276;">
+      <p style="margin: 0;"><span style="background-color: #5C9276; color: white; border-radius: 50%; width: 24px; height: 24px; display: inline-block; text-align: center; line-height: 24px; margin-right: 10px;">✓</span> Reconhecer a <strong>diferença</strong> entre análise quantitativa e qualitativa</p>
+    </div>
+  </div>
+</div>
+
+<div class="test-container" style="margin: 30px 0; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+  <h4 class="test" style="background-color: #f0f0f0; margin: 0; padding: 15px; border-bottom: 1px solid #ddd;">Pergunta Tipo Exame CC</h4>
+  <div style="padding: 20px;">
+    <p>
+      Uma organização possui um servidor que vale 50.000€. Uma vulnerabilidade poderia resultar em um comprometimento de 40% do valor do servidor. Estima-se que essa vulnerabilidade seja explorada uma vez a cada 4 anos. Qual é a Expectativa de Perda Anual (ALE)?
+    </p>
+    <ol type="a" style="margin-top: 15px;">
+      <li>5.000€</li>
+      <li>12.500€</li>
+      <li>20.000€</li>
+      <li>5.500€</li>
+    </ol>
+    <details style="margin-top: 20px; border: 1px solid #ddd; border-radius: 5px;">
+      <summary style="padding: 10px; background-color: #f9f9f9; cursor: pointer; font-weight: bold;">Ver Resposta</summary>
+      <div style="padding: 15px; border-top: 1px solid #ddd;">
+        <p style="margin-top: 0;">
+          <strong>Resposta: A 5.000€</strong>
+        </p>
+        <div style="background-color: #E6F7FF; padding: 15px; border-radius: 5px; margin-top: 10px;">
+          <p style="margin: 0;"><strong>Resolução:</strong></p>
+          <p style="margin-top: 10px; margin-bottom: 5px;">SLE = 50.000€ × 0,4 = 20.000€</p>
+          <p style="margin-top: 5px; margin-bottom: 5px;">ARO = 1 ÷ 4 = 0,25</p>
+          <p style="margin-top: 5px; margin-bottom: 0;">ALE = 20.000€ × 0,25 = 5.000€</p>
+        </div>
+      </div>
+    </details>
+  </div>
+</div>
+
+<div style="margin: 30px 0;">
+  <h5 style="border-bottom: 2px solid #4682B4; padding-bottom: 8px; color: #4682B4;">Comparação entre Análise Qualitativa e Quantitativa no CC:</h5>
+  
+  <table style="width: 100%; border-collapse: collapse; margin-top: 15px; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden;">
+    <thead>
+      <tr style="background-color: #4682B4; color: white;">
+        <th style="padding: 12px; text-align: center; border-right: 1px solid #5d8eb3;">Análise Qualitativa</th>
+        <th style="padding: 12px; text-align: center;">Análise Quantitativa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 10px; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;">Usa termos como "Alto", "Médio", "Baixo"</td>
+        <td style="padding: 10px; border-bottom: 1px solid #dee2e6;">Usa valores numéricos e monetários específicos</td>
+      </tr>
+      <tr style="background-color: rgba(0,0,0,0.02);">
+        <td style="padding: 10px; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;">Mais rápida e subjetiva</td>
+        <td style="padding: 10px; border-bottom: 1px solid #dee2e6;">Mais precisa e objetiva, mas requer mais dados</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;">Útil para avaliação inicial e classificação</td>
+        <td style="padding: 10px; border-bottom: 1px solid #dee2e6;">Útil para justificar investimentos em segurança</td>
+      </tr>
+      <tr style="background-color: rgba(0,0,0,0.02);">
+        <td style="padding: 10px; border-right: 1px solid #dee2e6;">Baseia-se em conhecimento e experiência</td>
+        <td style="padding: 10px;">Baseia-se em estatísticas e valores financeiros</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="background-color: #FFD1A9; border-radius: 5px; padding: 15px; margin: 25px 0; border-left: 5px solid #C95C6D;">
+  <p style="margin: 0; font-weight: bold;">Dica para o Exame CC:</p>
+  <p style="margin-top: 8px; margin-bottom: 0;">Muitas organizações usam uma <strong>abordagem híbrida</strong>, começando com análise qualitativa para identificar riscos prioritários e depois aplicando análise quantitativa para os riscos mais significativos.</p>
+</div>
+
+<p class="isc2-note" style="margin-top: 30px; font-style: italic; color: #555; padding-left: 20px; border-left: 4px solid #4682B4;">
+  Nota: Este conteúdo sobre análise quantitativa de riscos está alinhado com o domínio de Princípios de Segurança do exame ISC² CC, focando nos conceitos fundamentais sem aprofundar em complexidades avançadas que vão além do escopo da certificação.
+</p>
           <h4 class="qualo">Qualitative Risk Analysis</h4>
           <p>
 

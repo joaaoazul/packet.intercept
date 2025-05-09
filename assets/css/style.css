@@ -107,20 +107,7 @@ section {
   margin-bottom: 40px;
 }
 
-.CIA{
-  color: #00a0a0;
-  font-weight: 600;
-}
 
-.cia-triad-img{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-.cia-triad-img img{
-  border-radius: 12px;
-}
 
 .heat-map-img {
   padding-top: 15px;
@@ -140,19 +127,6 @@ section {
 }
 
 
-section h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #2C3E50; /* Azul escuro elegante */
-border-left: #2980B9 solid 5px;
-padding-left: 10px;
-    padding-bottom: 5px;
-    margin-top: 30px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  font-weight: 700;
-}
-
 article {
   margin-bottom: 20px;
   border: 1px solid #ddd;
@@ -161,6 +135,15 @@ article {
   position: relative;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s;
+}
+
+article#password-policy {
+  margin: 25px 0 !important; 
+  border: 1px solid #dee2e6 !important; 
+  border-radius: 8px; 
+  overflow: hidden !important; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background-color: #eaf2f8 !important;
 }
 
 article mark {
@@ -388,37 +371,6 @@ footer {
   background-color: #0e0b56;
 }
 
-.dark-mode .isc2-note {
-  background-color: #004d99; /* Fundo azul */
-  color: #fff;              /* Texto branco */
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.triad-section {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-.triad-section p {
-  margin: 5px 0;
-  line-height: 1.5;
-}
-
-#confidenciality{
-color: #2980B9;
-}
-
-#integrity{
-  color: #F4D03F;
-}
-
-#availability{
-  color: #D35400;
-}
 
 mark {
   background-color: #fff3cd; /* Fundo amarelo pastel suave */
@@ -458,7 +410,7 @@ mark:hover {
 }
 
 .low-risk{
-  color: #3498db; /* Azul para representar menor risco */
+  color: #155724; /* Azul para representar menor risco */
   font-weight: bold
 }
 
@@ -528,12 +480,10 @@ mark:hover {
 h4 {
   font-size: 1.0rem;
   font-weight: bold;
-  color: #e74c3c; /* Vermelho para destaque */
-  background: #fbeee6; /* Fundo suave */
+
   padding: 6px 10px;
   border-radius: 5px !important;
   margin-top: 20px;
-  border-left: #e74c3c solid 5px;
 }
 
 
