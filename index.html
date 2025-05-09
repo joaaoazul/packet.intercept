@@ -829,72 +829,91 @@
     <div style="padding: 20px; background-color: #ebf5fb;">
       <p style="font-size: 1.1rem; line-height: 1.6;"><strong style="color: #7fb3d5; font-size: 1.2rem;">O que é:</strong> A privacidade é um componente essencial da segurança da informação. Ao compreendermos o nível de privacidade da informação, podemos implementar os controles adequados. Diversos padrões, políticas e procedimentos regulam a privacidade no ambiente de trabalho, variando por região geográfica.</p>
       
-      <!-- Modelo de Camadas de Privacidade - Diagrama SVG - AUMENTADO -->
-      <div style="text-align: center; margin: 30px 0; background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-        <h5 style="color: #7fb3d5; margin-top: 0; margin-bottom: 20px; font-size: 1.3rem;">Modelo de Camadas de Privacidade</h5>
-        <svg width="700" height="450" viewBox="0 0 500 320" style="max-width: 100%; height: auto;">
-          <!-- Fundo com gradiente suave -->
-          <defs>
-            <linearGradient id="privacyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#ebf5fb; stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#d6eaf8; stop-opacity:1" />
-            </linearGradient>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#privacyGradient)" rx="10" ry="10" />
+      <!-- Modelo de Camadas de Privacidade - Versão Redesenhada -->
+      <div class="content-wrapper">
+        <div style="text-align: center; margin: 30px 0; background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          <h5 style="color: #7fb3d5; margin-top: 0; margin-bottom: 20px; font-size: 1.3rem;">Modelo de Camadas de Privacidade</h5>
           
-          <!-- Camadas de privacidade (círculos concêntricos) -->
-          <circle cx="250" cy="160" r="140" fill="#f5f9fd" stroke="#7fb3d5" stroke-width="2" />
-          <circle cx="250" cy="160" r="105" fill="#d6eaf8" stroke="#5499c7" stroke-width="2" />
-          <circle cx="250" cy="160" r="70" fill="#aed6f1" stroke="#3498db" stroke-width="2" />
-          <circle cx="250" cy="160" r="35" fill="#85c1e9" stroke="#2e86c1" stroke-width="2" />
+          <!-- SVG com círculos maiores e texto externo -->
+          <svg width="100%" height="auto" viewBox="0 0 600 450" style="max-width: 700px; margin: 0 auto; display: block;">
+            <!-- Fundo com gradiente suave -->
+            <defs>
+              <linearGradient id="privacyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ebf5fb; stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#d6eaf8; stop-opacity:1" />
+              </linearGradient>
+              <!-- Definindo as setas para as linhas -->
+              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+              </marker>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#privacyGradient)" rx="10" ry="10" />
+            
+            <!-- Camadas de privacidade - círculos maiores -->
+            <circle cx="300" cy="200" r="170" fill="#f5f9fd" stroke="#7fb3d5" stroke-width="2" />
+            <circle cx="300" cy="200" r="130" fill="#d6eaf8" stroke="#5499c7" stroke-width="2" />
+            <circle cx="300" cy="200" r="90" fill="#aed6f1" stroke="#3498db" stroke-width="2" />
+            <circle cx="300" cy="200" r="50" fill="#85c1e9" stroke="#2e86c1" stroke-width="2" />
+            
+            <!-- Ícone central representando o indivíduo -->
+            <circle cx="300" cy="200" r="25" fill="#2874a6" />
+            <text x="300" y="208" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">EU</text>
+            
+            <!-- Título -->
+            <text x="300" y="35" font-family="Arial" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">CAMADAS DE PRIVACIDADE</text>
+            
+            <!-- Linhas conectoras para cada camada -->
+            <line x1="300" y1="150" x2="150" y2="100" stroke="#2e86c1" stroke-width="1" />
+            <line x1="300" y1="110" x2="450" y2="80" stroke="#3498db" stroke-width="1" />
+            <line x1="300" y1="70" x2="180" y2="380" stroke="#5499c7" stroke-width="1" />
+            <line x1="300" y1="30" x2="450" y2="370" stroke="#7fb3d5" stroke-width="1" />
+            
+            <!-- Textos das camadas - Agora fora dos círculos -->
+            <text x="110" y="90" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Informações</text>
+            <text x="110" y="105" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Pessoais Sensíveis</text>
+            <text x="110" y="120" font-family="Arial" font-size="11" fill="#5499c7" text-anchor="middle" font-style="italic">Senhas, Dados Médicos,</text>
+            <text x="110" y="135" font-family="Arial" font-size="11" fill="#5499c7" text-anchor="middle" font-style="italic">Documentos Legais</text>
+            
+            <text x="480" y="70" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Dados</text>
+            <text x="480" y="85" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Confidenciais</text>
+            <text x="480" y="100" font-family="Arial" font-size="11" fill="#5499c7" text-anchor="middle" font-style="italic">E-mails Pessoais,</text>
+            <text x="480" y="115" font-family="Arial" font-size="11" fill="#5499c7" text-anchor="middle" font-style="italic">Histórico Financeiro</text>
+            
+            <text x="120" y="375" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Dados Compartilhados</text>
+            <text x="120" y="390" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Limitados</text>
+            <text x="120" y="405" font-family="Arial" font-size="11" fill="#5499c7" text-anchor="middle" font-style="italic">Lista de Amigos,</text>
+            <text x="120" y="420" font-family="Arial" font-size="11" fill="#5499c7" text-anchor="middle" font-style="italic">Local de Trabalho</text>
+            
+            <text x="490" y="365" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Informações</text>
+            <text x="490" y="380" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Públicas</text>
+            <text x="490" y="395" font-family="Arial" font-size="11" fill="#5499c7" text-anchor="middle" font-style="italic">Nome, Foto de</text>
+            <text x="490" y="410" font-family="Arial" font-size="11" fill="#5499c7" text-anchor="middle" font-style="italic">Perfil Pública</text>
+            
+            <!-- Setas para direção de privacidade - Melhor posicionadas -->
+            <line x1="525" y1="430" x2="565" y2="430" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+            <text x="470" y="435" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="end">Menos Privado</text>
+            
+            <line x1="75" y1="430" x2="35" y2="430" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
+            <text x="130" y="435" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="start">Mais Privado</text>
+          </svg>
           
-          <!-- Ícone central representando o indivíduo -->
-          <circle cx="250" cy="160" r="20" fill="#2874a6" />
-          <text x="250" y="165" font-family="Arial" font-size="14" fill="white" text-anchor="middle">EU</text>
-          
-          <!-- Texto para cada camada -->
-          <text x="250" y="40" font-family="Arial" font-size="16" fill="#2c3e50" text-anchor="middle" font-weight="bold">CAMADAS DE PRIVACIDADE</text>
-          
-          <!-- Textos nas camadas -->
-          <text x="250" y="83" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Informações Pessoais Sensíveis</text>
-          <text x="250" y="118" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Dados Confidenciais</text>
-          <text x="250" y="210" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Dados Compartilhados Limitados</text>
-          <text x="250" y="245" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Informações Públicas</text>
-          
-          <!-- Exemplos de informações em cada camada -->
-          <text x="250" y="98" font-family="Arial" font-size="12" fill="#5499c7" text-anchor="middle" font-style="italic">Senhas, Dados Médicos, Documentos Legais</text>
-          <text x="250" y="135" font-family="Arial" font-size="12" fill="#5499c7" text-anchor="middle" font-style="italic">E-mails Pessoais, Histórico Financeiro</text>
-          <text x="250" y="225" font-family="Arial" font-size="12" fill="#5499c7" text-anchor="middle" font-style="italic">Lista de Amigos, Local de Trabalho</text>
-          <text x="250" y="260" font-family="Arial" font-size="12" fill="#5499c7" text-anchor="middle" font-style="italic">Nome, Foto de Perfil Pública</text>
-          
-          <!-- Seta para direção de privacidade -->
-          <defs>
-            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-              <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
-            </marker>
-          </defs>
-          <line x1="400" y1="290" x2="430" y2="290" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
-          <text x="370" y="295" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="end">Menos Privado</text>
-          
-          <line x1="100" y1="290" x2="70" y2="290" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)" />
-          <text x="130" y="295" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="start">Mais Privado</text>
-        </svg>
-        <p style="margin-top: 15px; font-size: 1rem; color: #666; font-style: italic;">Figura 1: Diferentes níveis de privacidade de informações pessoais, da mais sensível (centro) à mais pública (exterior).</p>
-      </div>
-      
-      <div style="background-color: white; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #7fb3d5;">
-        <h5 style="color: #7fb3d5; margin-top: 0; margin-bottom: 15px; font-size: 1.3rem;">Considerações sobre Privacidade</h5>
-        <p style="margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6;">
-          No mundo digital, as organizações coletam uma grande quantidade de informações sobre indivíduos e suas ações. De transações com cartões de crédito a registros educacionais, todos nós deixamos um rastro significativo de dados. É essencial que entendamos como essas informações são coletadas e utilizadas.
-        </p>
-        <p style="margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6;">
-          Como profissionais de TI, temos três principais responsabilidades:
-        </p>
-        <ul style="margin-bottom: 0; font-size: 1.1rem; line-height: 1.6;">
-          <li>Compreender quem possui informações sobre nós e como elas são utilizadas.</li>
-          <li>Educar os usuários sobre como proteger suas próprias informações pessoais.</li>
-          <li>Ajudar os oficiais de privacidade das organizações a proteger as informações confidenciais sob nossa responsabilidade.</li>
-        </ul>
+          <p style="margin-top: 15px; font-size: 1rem; color: #666; font-style: italic;">Figura 1: Diferentes níveis de privacidade de informações pessoais, da mais sensível (centro) à mais pública (exterior).</p>
+        </div>
+        
+        <div style="background-color: white; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 15px solid #7fb3d5;">
+          <h5 style="color: #7fb3d5; margin-top: 0; margin-bottom: 15px; font-size: 1.3rem;">Considerações sobre Privacidade</h5>
+          <p style="margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6;">
+            No mundo digital, as organizações coletam uma grande quantidade de informações sobre indivíduos e suas ações. De transações com cartões de crédito a registros educacionais, todos nós deixamos um rastro significativo de dados. É essencial que entendamos como essas informações são coletadas e utilizadas.
+          </p>
+          <p style="margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6;">
+            Como profissionais de TI, temos três principais responsabilidades:
+          </p>
+          <ul style="margin-bottom: 0; font-size: 1.1rem; line-height: 1.6;">
+            <li>Compreender quem possui informações sobre nós e como elas são utilizadas.</li>
+            <li>Educar os usuários sobre como proteger suas próprias informações pessoais.</li>
+            <li>Ajudar os oficiais de privacidade das organizações a proteger as informações confidenciais sob nossa responsabilidade.</li>
+          </ul>
+        </div>
       </div>
       
       <!-- Conceito destacado -->
@@ -904,11 +923,11 @@
       
       <h5 style="color: #7fb3d5; margin-top: 25px; margin-bottom: 15px; border-bottom: 1px solid #d6eaf8; padding-bottom: 8px; font-size: 1.3rem;">Regulamentações Importantes</h5>
       <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-        <div style="flex: 1; min-width: 250px; background-color: white; padding: 15px; border-radius: 5px; border-left: 4px solid #ec7063;">
+        <div style="flex: 1; min-width: 250px; background-color: white; padding: 15px; border-radius: 5px; border-left: 10px solid #ec7063;">
           <h6 style="margin-top: 0; margin-bottom: 10px; color: #ec7063; font-size: 1.1rem;">HIPAA (EUA)</h6>
           <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Regula como a privacidade das informações médicas deve ser mantida.</p>
         </div>
-        <div style="flex: 1; min-width: 250px; background-color: white; padding: 15px; border-radius: 5px; border-left: 4px solid #5dade2;">
+        <div style="flex: 1; min-width: 250px; background-color: white; padding: 15px; border-radius: 5px; border-left: 10px solid #5dade2;">
           <h6 style="margin-top: 0; margin-bottom: 10px; color: #5dade2; font-size: 1.1rem;">GDPR (União Europeia)</h6>
           <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Garante que qualquer pessoa dentro das fronteiras da UE tenha controle sobre quais informações pessoais podem ser coletadas e armazenadas pelas empresas.</p>
         </div>
@@ -930,146 +949,381 @@
       <h4 style="margin: 0; color: #2c3e50; font-size: 22px; font-weight: 600;">Não-repúdio</h4>
     </div>
     
-    <!-- Conteúdo do cartão -->
+    <!-- Conteúdo expandido do cartão -->
     <div style="padding: 20px; background-color: #fef5e7;">
-      <p style="font-size: 1.1rem; line-height: 1.6;"><strong style="color: #f5b041; font-size: 1.2rem;">O que é:</strong> Garante que uma ação ou transação não possa ser negada pelo autor posteriormente, criando um registro verificável da ação.</p>
+      <!-- Definição principal -->
+      <p style="font-size: 1.1rem; line-height: 1.6; border-left: 5px solid #f5b041; padding-left: 15px; background-color: #fef5e7; margin-bottom: 20px;">
+        <strong style="color: #f5b041; font-size: 1.2rem;">Definição:</strong> Garante que uma ação ou transação não possa ser negada pelo autor posteriormente, criando um registro verificável da ação.
+      </p>
       
-      <!-- Diagrama de Assinatura Digital - SVG - AUMENTADO -->
-      <div style="text-align: center; margin: 30px 0; background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-        <h5 style="color: #f5b041; margin-top: 0; margin-bottom: 20px; font-size: 1.3rem;">Funcionamento da Assinatura Digital</h5>
-        <svg width="700" height="450" viewBox="0 0 500 330" style="max-width: 100%; height: auto;">
-          <!-- Fundo com gradiente suave -->
-          <defs>
-            <linearGradient id="nonRepudiationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#fef5e7; stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#fdebd0; stop-opacity:1" />
-            </linearGradient>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#nonRepudiationGradient)" rx="10" ry="10" />
-          
-          <!-- Título -->
-          <text x="250" y="30" font-family="Arial" font-size="16" fill="#2c3e50" text-anchor="middle" font-weight="bold">PROCESSO DE ASSINATURA DIGITAL</text>
-          
-          <!-- Personagens -->
-          <circle cx="80" cy="90" r="25" fill="#f5b041" />
-          <text x="80" y="95" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Alice</text>
-          
-          <circle cx="420" cy="90" r="25" fill="#5dade2" />
-          <text x="420" y="95" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Bob</text>
-          
-          <!-- Caixas de documentos -->
-          <rect x="40" y="140" width="80" height="40" rx="5" ry="5" fill="white" stroke="#f5b041" stroke-width="2" />
-          <text x="80" y="165" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Documento</text>
-          
-          <rect x="380" y="140" width="80" height="40" rx="5" ry="5" fill="white" stroke="#5dade2" stroke-width="2" />
-          <text x="420" y="165" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Documento</text>
-          
-          <!-- Processo de hash -->
-          <rect x="40" y="200" width="80" height="40" rx="5" ry="5" fill="#f8f9fa" stroke="#f5b041" stroke-width="2" />
-          <text x="80" y="225" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Hash</text>
-          
-          <!-- Chave privada -->
-          <polygon points="60,260 100,260 90,280 70,280" fill="#e67e22" stroke="#d35400" stroke-width="1" />
-          <text x="80" y="273" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Chave Privada</text>
-          
-          <!-- Assinatura -->
-          <rect x="40" y="300" width="80" height="40" rx="5" ry="5" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" />
-          <text x="80" y="325" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Assinatura</text>
-          
-          <!-- Processo de verificação -->
-          <rect x="380" y="200" width="80" height="40" rx="5" ry="5" fill="#f8f9fa" stroke="#5dade2" stroke-width="2" />
-          <text x="420" y="225" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Hash</text>
-          
-          <!-- Chave pública -->
-          <polygon points="400,260 440,260 430,280 410,280" fill="#3498db" stroke="#2980b9" stroke-width="1" />
-          <text x="420" y="273" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Chave Pública</text>
-          
-          <!-- Verificação -->
-          <rect x="380" y="300" width="80" height="40" rx="5" ry="5" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" />
-          <text x="420" y="323" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Verificação</text>
-          <text x="420" y="335" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle">Não-repúdio</text>
-          
-          <!-- Setas e fluxo do processo -->
-          <defs>
-            <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-              <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
-            </marker>
-          </defs>
-          
-          <!-- De documento para hash (Alice) -->
-          <line x1="80" y1="185" x2="80" y2="195" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
-          
-          <!-- De hash para chave privada -->
-          <line x1="80" y1="245" x2="80" y2="255" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
-          
-          <!-- De chave privada para assinatura -->
-          <line x1="80" y1="285" x2="80" y2="295" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
-          
-          <!-- De assinatura para Bob -->
-          <path d="M 125 320 C 200 320, 300 320, 375 320" stroke="#2c3e50" stroke-width="1.5" fill="transparent" marker-end="url(#arrowhead2)" />
-          <text x="250" y="310" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle">Envio seguro</text>
-          
-          <!-- De documento para hash (Bob) -->
-          <line x1="420" y1="185" x2="420" y2="195" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
-          
-          <!-- De hash para chave pública -->
-          <line x1="420" y1="245" x2="420" y2="255" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
-          
-          <!-- De chave pública para verificação -->
-          <line x1="420" y1="285" x2="420" y2="295" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrowhead2)" />
-          
-          <!-- De Alice para Bob (documento) -->
-          <path d="M 125 160 C 200 160, 300 160, 375 160" stroke="#2c3e50" stroke-width="1.5" fill="transparent" marker-end="url(#arrowhead2)" />
-          <text x="250" y="150" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle">Documento original</text>
-          
-          <!-- Linha central -->
-          <line x1="250" y1="50" x2="250" y2="290" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5" />
-          
-          <!-- Legenda dos lados -->
-          <text x="80" y="55" font-family="Arial" font-size="14" fill="#d35400" text-anchor="middle" font-style="italic">Enviando</text>
-          <text x="420" y="55" font-family="Arial" font-size="14" fill="#2980b9" text-anchor="middle" font-style="italic">Verificando</text>
-        </svg>
-        <p style="margin-top: 15px; font-size: 1rem; color: #666; font-style: italic;">Figura 2: Processo de assinatura digital que garante o não-repúdio em comunicações eletrônicas.</p>
+      <!-- Expansão conceitual -->
+      <div style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 25px;">
+        <h5 style="font-size: 20px; color: #f5b041; margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid #fdebd0; padding-bottom: 8px;">Compreensão Aprofundada</h5>
+        <p style="margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6;">
+          O não-repúdio é especialmente crucial numa era digital onde transações eletrônicas substituem interações físicas. Enquanto a <span style="color: #7fb3d5; font-weight: bold;">confidencialidade</span> protege informações de olhos curiosos e a <span style="color: #f5b041; font-weight: bold;">integridade</span> garante que os dados não foram alterados, o não-repúdio assegura que ninguém pode negar sua responsabilidade sobre uma ação.
+        </p>
+        
+        <!-- Analogia educativa -->
+        <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 10px solid #5dade2;">
+          <h6 style="margin-top: 0; margin-bottom: 10px; color: #2e7d32; font-size: 1.1rem;">💡 Analogia para Compreender</h6>
+          <p style="margin: 0; font-size: 1rem; line-height: 1.6;">
+            Imagine assinar um cheque no banco. Sua assinatura manuscrita serve como prova de que foi você quem autorizou o pagamento - você não pode depois dizer "esse cheque foi falsificado" se a assinatura for verificada como autêntica. O não-repúdio digital funciona de forma similar, mas usa criptografia para criar essa prova irrefutável.
+          </p>
+        </div>
       </div>
       
-      <div style="background-color: white; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #f5b041;">
-        <h5 style="color: #f5b041; margin-top: 0; margin-bottom: 15px; font-size: 1.3rem;">Como Proteger o Não-repúdio</h5>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-          <div style="flex: 1; min-width: 250px; padding: 15px; border-radius: 5px; background-color: #fdebd0;">
-            <h6 style="margin-top: 0; margin-bottom: 10px; color: #e67e22; font-size: 1.1rem;">Assinaturas Digitais</h6>
-            <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Utilizando criptografia para validar a autoria de uma transação ou mensagem.</p>
+      <!-- Elementos Técnicos -->
+      <div style="margin-top: 25px;">
+        <h5 style=" font-size: 20px; color: #f5b041; margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid #fdebd0; padding-bottom: 8px;">⚙️ Como é Implementado Tecnicamente</h5>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+          <!-- Card 1: Assinaturas Digitais -->
+          <div style="flex: 1; min-width: 300px; background-color: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+            <div style="background-color: #f5b041; padding: 10px 15px; color: white; display: flex; align-items: center;">
+              <span style="font-size: 24px; margin-right: 10px;">🔐</span>
+              <h6 style="margin: 0; font-size: 16px;">Assinaturas Digitais</h6>
+            </div>
+            <div style="padding: 15px;">
+              <p style="margin: 0; font-size: 1rem; line-height: 1.5;">
+                Usam <strong>criptografia de chave pública</strong> para criar uma "impressão digital" única. Apenas o detentor da chave privada pode criar a assinatura, enquanto qualquer pessoa com a chave pública pode verificá-la.
+              </p>
+              <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #f0f0f0; color: #666; font-size: 0.9rem;">
+                Algoritmos: RSA, ECDSA, DSA
+              </div>
+            </div>
           </div>
-          <div style="flex: 1; min-width: 250px; padding: 15px; border-radius: 5px; background-color: #fdebd0;">
-            <h6 style="margin-top: 0; margin-bottom: 10px; color: #e67e22; font-size: 1.1rem;">Logs de Auditoria</h6>
-            <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">Registrando todas as atividades relevantes, garantindo rastreabilidade.</p>
+          
+          <!-- Card 2: Certificados Digitais -->
+          <div style="flex: 1; min-width: 300px; background-color: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+            <div style="background-color: #5dade2; padding: 10px 15px; color: white; display: flex; align-items: center;">
+              <span style="font-size: 24px; margin-right: 10px;">📜</span>
+              <h6 style="margin: 0; font-size: 16px;">Certificados Digitais</h6>
+            </div>
+            <div style="padding: 15px;">
+              <p style="margin: 0; font-size: 1rem; line-height: 1.5;">
+                Vinculam a <strong>identidade do signatário</strong> à sua chave pública. São emitidos por Autoridades Certificadoras (CA) confiáveis que validam a identidade do titular.
+              </p>
+              <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #f0f0f0; color: #666; font-size: 0.9rem;">
+                Padrão: X.509, PKCS#12
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px;">
+          <!-- Card 3: Timestamps -->
+          <div style="flex: 1; min-width: 300px; background-color: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+            <div style="background-color: #7dcea0; padding: 10px 15px; color: white; display: flex; align-items: center;">
+              <span style="font-size: 24px; margin-right: 10px;">⏰</span>
+              <h6 style="margin: 0; font-size: 16px;">Timestamps</h6>
+            </div>
+            <div style="padding: 15px;">
+              <p style="margin: 0; font-size: 1rem; line-height: 1.5;">
+                Provam <strong>exatamente quando</strong> a ação foi realizada. São fornecidos por servidores de timestamp confiáveis e são essenciais para validações legais.
+              </p>
+              <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #f0f0f0; color: #666; font-size: 0.9rem;">
+                Padrão: RFC 3161, PKCS#7
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 4: Logs Imutáveis -->
+          <div style="flex: 1; min-width: 300px; background-color: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+            <div style="background-color: #bb8fce; padding: 10px 15px; color: white; display: flex; align-items: center;">
+              <span style="font-size: 24px; margin-right: 10px;">📊</span>
+              <h6 style="margin: 0; font-size: 16px;">Logs de Auditoria</h6>
+            </div>
+            <div style="padding: 15px;">
+              <p style="margin: 0; font-size: 1rem; line-height: 1.5;">
+                Registram <strong>todas as atividades</strong> com detalhes como usuário, ação realizada, timestamp e IP de origem. Protegidos contra adulteração.
+              </p>
+              <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #f0f0f0; color: #666; font-size: 0.9rem;">
+                Tecnologias: Blockchain, WORM storage
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cenários Práticos -->
+      <div style="margin-top: 30px;">
+        <h5 style="font-size: 20px; color: #f5b041; margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid #fdebd0; padding-bottom: 8px;">📋 Cenários de Aplicação no Mundo Real</h5>
+        
+        <div style="background-color: white; border-radius: 8px; padding: 20px; margin-bottom: 15px; border: 1px solid #e0e0e0;">
+          <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <span style="background-color: #f5b041; color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-weight: bold;">1</span>
+            <h6 style="margin: 0; font-size: 16px; font-weight: bold;">Transações Bancárias Online</h6>
+          </div>
+          <p style="margin-bottom: 10px; font-size: 1rem; line-height: 1.5;">
+            <strong>Cenário:</strong> João autoriza uma transferência de €5,000 pelo internetbanking.
+          </p>
+          <p style="margin-bottom: 10px; font-size: 1rem; line-height: 1.5; color: #555;">
+            <strong>Não-repúdio em Ação:</strong> O sistema registra IP, timestamp, token de autenticação e até padrões biométricos de digitação. Se João tentar negar a transação depois, o banco tem provas irrefutáveis.
+          </p>
+          <p style="margin: 0; font-size: 1rem; line-height: 1.5; background-color: #d5f5e3; padding: 8px; border-radius: 4px;">
+            <strong>Resultado:</strong> João não pode alegar fraude ou negar a autorização da transferência.
+          </p>
+        </div>
+        
+        <div style="background-color: white; border-radius: 8px; padding: 20px; margin-bottom: 15px; border: 1px solid #e0e0e0;">
+          <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <span style="background-color: #5dade2; color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-weight: bold;">2</span>
+            <h6 style="margin: 0; font-size: 16px; font-weight: bold;">Contratos Electrónicos</h6>
+          </div>
+          <p style="margin-bottom: 10px; font-size: 1rem; line-height: 1.5;">
+            <strong>Cenário:</strong> Uma empresa assina um contrato de €50,000 através de plataforma digital.
+          </p>
+          <p style="margin-bottom: 10px; font-size: 1rem; line-height: 1.5; color: #555;">
+            <strong>Não-repúdio em Ação:</strong> Assinatura digital com certificado qualificado, timestamp de servidor NTP e hash do documento são registrados em blockchain.
+          </p>
+          <p style="margin: 0; font-size: 1rem; line-height: 1.5; background-color: #d5f5e3; padding: 8px; border-radius: 4px;">
+            <strong>Resultado:</strong> O contrato tem validade legal e nenhuma parte pode negar ter assinado.
+          </p>
+        </div>
+        
+        <div style="background-color: white; border-radius: 8px; padding: 20px; margin-bottom: 15px; border: 1px solid #e0e0e0;">
+          <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <span style="background-color: #7dcea0; color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px; font-weight: bold;">3</span>
+            <h6 style="margin: 0; font-size: 16px; font-weight: bold;">Sistema de Votação Electrónica</h6>
+          </div>
+          <p style="margin-bottom: 10px; font-size: 1rem; line-height: 1.5;">
+            <strong>Cenário:</strong> Um deputado vota numa sessão parlamentar através de sistema digital.
+          </p>
+          <p style="margin-bottom: 10px; font-size: 1rem; line-height: 1.5; color: #555;">
+            <strong>Desafio Especial:</strong> Deve-se provar que o deputado votou (não-repúdio) sem revelar como votou (sigilo do voto).
+          </p>
+          <p style="margin: 0; font-size: 1rem; line-height: 1.5; background-color: #d5f5e3; padding: 8px; border-radius: 4px;">
+            <strong>Solução:</strong> Assinatura com cartão de cidadão + código one-time usado para separar identidade do conteúdo do voto.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Diagrama de Processo de Assinatura Digital -->
+      <div class="content-wrapper">
+        <div style="text-align: center; margin: 30px 0; background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          <h5 style="color: #f5b041; margin-top: 0; margin-bottom: 20px; font-size: 1.3rem;">Funcionamento da Assinatura Digital</h5>
+          
+          <!-- SVG Redesenhado com Melhor Espaçamento -->
+          <svg width="100%" height="auto" viewBox="0 0 800 500" style="max-width: 900px; margin: 0 auto; display: block;">
+            <!-- Fundo com gradiente suave -->
+            <defs>
+              <linearGradient id="nonRepudiationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#fef5e7; stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#fdebd0; stop-opacity:1" />
+              </linearGradient>
+              <!-- Definindo setas -->
+              <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+              </marker>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#nonRepudiationGradient)" rx="10" ry="10" />
+            
+            <!-- Título -->
+            <text x="400" y="40" font-family="Arial" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">PROCESSO DE ASSINATURA DIGITAL</text>
+            
+            <!-- Divisor Central -->
+            <line x1="400" y1="60" x2="400" y2="450" stroke="#2c3e50" stroke-width="2" stroke-dasharray="8,8" />
+            
+            <!-- Seção Alice (Enviando) -->
+            <text x="200" y="85" font-family="Arial" font-size="16" fill="#d35400" text-anchor="middle" font-weight="bold" font-style="italic">Alice (Enviando)</text>
+            
+            <!-- Avatar Alice -->
+            <circle cx="100" cy="120" r="30" fill="#f5b041" />
+            <text x="100" y="128" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Alice</text>
+            
+            <!-- Documento Original (Alice) -->
+            <rect x="40" y="170" width="120" height="50" rx="8" ry="8" fill="white" stroke="#f5b041" stroke-width="2" />
+            <text x="100" y="190" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Documento</text>
+            <text x="100" y="205" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Original</text>
+            
+            <!-- Função Hash (Alice) -->
+            <rect x="40" y="250" width="120" height="50" rx="8" ry="8" fill="#f8f9fa" stroke="#f5b041" stroke-width="2" />
+            <text x="100" y="270" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Função Hash</text>
+            <text x="100" y="285" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">SHA-256</text>
+            
+            <!-- Chave Privada -->
+            <rect x="200" y="250" width="120" height="50" rx="8" ry="8" fill="#e67e22" stroke="#d35400" stroke-width="2" />
+            <text x="260" y="270" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Chave Privada</text>
+            <text x="260" y="285" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">RSA/ECDSA</text>
+            
+            <!-- Assinatura Digital -->
+            <rect x="120" y="330" width="120" height="50" rx="8 " ry="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" />
+            <text x="180" y="350" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Assinatura</text>
+            <text x="180" y="365" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Digital</text>
+            
+            <!-- Seção Bob (Verificando) -->
+            <text x="600" y="85" font-family="Arial" font-size="16" fill="#2980b9" text-anchor="middle" font-weight="bold" font-style="italic">Bob (Verificando)</text>
+            
+            <!-- Avatar Bob -->
+            <circle cx="700" cy="120" r="30" fill="#5dade2" />
+            <text x="700" y="128" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Bob</text>
+            
+            <!-- Documento Recebido (Bob) -->
+            <rect x="640" y="170" width="120" height="50" rx="8" ry="8" fill="white" stroke="#5dade2" stroke-width="2" />
+            <text x="700" y="190" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Documento</text>
+            <text x="700" y="205" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Recebido</text>
+            
+            <!-- Função Hash (Bob) -->
+            <rect x="640" y="250" width="120" height="50" rx="8" ry="8" fill="#f8f9fa" stroke="#5dade2" stroke-width="2" />
+            <text x="700" y="270" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Função Hash</text>
+            <text x="700" y="285" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">SHA-256</text>
+            
+            <!-- Chave Pública -->
+            <rect x="480" y="250" width="120" height="50" rx="8" ry="8" fill="#3498db" stroke="#2980b9" stroke-width="2" />
+            <text x="540" y="270" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Chave Pública</text>
+            <text x="540" y="285" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">Alice</text>
+            
+            <!-- Verificação -->
+            <rect x="560" y="330" width="140" height="60" rx="8" ry="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" />
+            <text x="630" y="350" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle" font-weight="bold">Verificação</text>
+            <text x="630" y="365" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Sucesso!</text>
+            <text x="630" y="380" font-family="Arial" font-size="12" fill="#27ae60" text-anchor="middle" font-weight="bold">Não-repúdio</text>
+            
+            <!-- Setas de Fluxo -->
+            <!-- Alice: Documento → Hash -->
+            <line x1="100" y1="220" x2="100" y2="245" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead2)" />
+            
+            <!-- Alice: Hash → Assinatura -->
+            <line x1="100" y1="300" x2="140" y2="325" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead2)" />
+            
+            <!-- Alice: Chave Privada → Assinatura -->
+            <line x1="240" y1="300" x2="220" y2="325" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead2)" />
+            
+            <!-- Transferência: Alice → Bob (Documento) -->
+            <path d="M 165 195 C 250 195, 350 195, 635 195" stroke="#2c3e50" stroke-width="2" fill="transparent" marker-end="url(#arrowhead2)" />
+            <text x="400" y="185" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle" font-weight="bold">Documento + Assinatura</text>
+            
+            <!-- Transferência: Alice → Bob (Assinatura) -->
+            <path d="M 245 355 C 350 355, 450 355, 555 355" stroke="#2c3e50" stroke-width="2" fill="transparent" marker-end="url(#arrowhead2)" />
+            <text x="400" y="345" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle" font-style="italic">Canal seguro</text>
+            
+            <!-- Bob: Documento → Hash -->
+            <line x1="700" y1="220" x2="700" y2="245" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead2)" />
+            
+            <!-- Bob: Hash → Verificação -->
+            <line x1="700" y1="300" x2="660" y2="325" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead2)" />
+            
+            <!-- Bob: Chave Pública → Verificação -->
+            <line x1="560" y1="300" x2="580" y2="325" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead2)" />
+            
+            <!-- Legendas dos Processos -->
+            <rect x="50" y="430" width="300" height="50" rx="8" ry="8" fill="#f8f9fa" stroke="#f5b041" stroke-width="1" />
+            <text x="200" y="450" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle" font-weight="bold">1. Alice cria hash do documento</text>
+            <text x="200" y="465" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">2. Assina hash com chave privada</text>
+            
+            <rect x="450" y="430" width="300" height="50" rx="8" ry="8" fill="#f8f9fa" stroke="#5dade2" stroke-width="1" />
+            <text x="600" y="450" font-family="Arial" font-size="12" fill="#2c3e50" text-anchor="middle" font-weight="bold">3. Bob cria hash do documento</text>
+            <text x="600" y="465" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">4. Verifica com chave pública de Alice</text>
+          </svg>
+          
+          <p style="margin-top: 15px; font-size: 1rem; color: #666; font-style: italic;">
+            Figura 2: Processo de assinatura digital que garante o não-repúdio em comunicações eletrónicas, mostrando o fluxo completo desde a criação até a verificação da assinatura.
+          </p>
+        </div>
+        
+        <div style="background-color: white; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 10px solid #f5b041;">
+          <h5 style="color: #f5b041; margin-top: 0; margin-bottom: 15px; font-size: 1.3rem;">Como Proteger o Não-repúdio</h5>
+          <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div style="flex: 1; min-width: 250px; padding: 15px; border-radius: 5px; background-color: #fdebd0;">
+              <h6 style="margin-top: 0; margin-bottom: 10px; color: #e67e22; font-size: 1.1rem;">Assinaturas Digitais</h6>
+              <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">
+                Utilizando criptografia para validar a autoria de uma transação ou mensagem. O processo emprega algoritmos como RSA ou ECDSA para garantir que apenas o detentor da chave privada possa criar a assinatura, enquanto qualquer pessoa com a chave pública pode verificá-la.
+              </p>
+            </div>
+            <div style="flex: 1; min-width: 250px; padding: 15px; border-radius: 5px; background-color: #fdebd0;">
+              <h6 style="margin-top: 0; margin-bottom: 10px; color: #e67e22; font-size: 1.1rem;">Logs de Auditoria</h6>
+              <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">
+                Registrando todas as atividades relevantes, garantindo rastreabilidade. Os logs incluem timestamps, identificação do usuário, tipo de operação realizada e resultados, criando um histórico imutável de todas as transações.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Quiz Educativo -->
+      <div style="margin-top: 30px;">
+        <h5 style="color: #f5b041; margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid #fdebd0; padding-bottom: 8px;">🧠 Teste Seu Conhecimento</h5>
+        
+        <div style="background-color: #e8f5e9; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+          <h6 style="margin-top: 0; margin-bottom: 15px; font-size: 15px;">Pergunta 1:</h6>
+          <p style="margin-bottom: 10px;">Um funcionário alega que nunca aprovou uma despesa de €10,000 no sistema corporativo. Que elementos do não-repúdio o sistema deveria ter registrado para provar que ele de fato fez a aprovação?</p>
+          <details style="margin-top: 10px;">
+            <summary style="cursor: pointer; color: #f5b041; font-weight: bold;">▶ Ver Resposta</summary>
+            <div style="padding: 10px; background-color: #f5f5f5; margin-top: 10px; border-radius: 4px;">
+              <p style="margin: 0;">O sistema deveria ter registrado: assinatura digital criada com a chave privada do funcionário, hash do documento aprovado, timestamp preciso da ação, IP do computador usado, log de autenticação com credenciais verificadas, e metadata adicional como navegador e sessão do usuário.</p>
+            </div>
+          </details>
+        </div>
+        
+        <div style="background-color: #e3f2fd; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+          <h6 style="margin-top: 0; margin-bottom: 15px;">Pergunta 2:</h6>
+          <p style="margin-bottom: 10px;">Qual é a diferença fundamental entre autenticação e não-repúdio? Por que simplesmente fazer login com usuário e senha não garante não-repúdio?</p>
+          <details style="margin-top: 10px;">
+            <summary style="cursor: pointer; color: #f5b041; font-weight: bold;">▶ Ver Resposta</summary>
+            <div style="padding: 10px; background-color: #f5f5f5; margin-top: 10px; border-radius: 4px;">
+              <p style="margin: 0;">Autenticação prova "quem você é agora", enquanto não-repúdio prova "o que você fez no passado". Apenas login com usuário e senha não garante não-repúdio porque não cria uma prova criptográfica vinculada à ação específica. Além disso, senhas podem ser compartilhadas ou comprometidas. O não-repúdio requer assinaturas digitais com chaves privadas, logs imutáveis e timestamps confiáveis.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+      
+      <!-- Conexões com Outros Conceitos -->
+      <div style="margin-top: 30px; background-color: #f5f7fa; border-radius: 8px; padding: 20px;">
+        <h5 style="color: #f5b041; margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid #e0e6ed; padding-bottom: 8px;">🔗 Conexões com Outros Conceitos de Segurança</h5>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+          <div style="flex: 1; min-width: 250px;">
+            <h6 style="margin: 0 0 10px 0; color: #5d6d7e;">Integração com CIA Triad:</h6>
+            <ul style="margin: 0; padding-left: 20px; font-size: 0.95rem;">
+              <li><span style="color: #7fb3d5;">Confidencialidade:</span> Protege quem assina</li>
+              <li><span style="color: #f5b041;">Integridade:</span> Garante que o assinado não mudou</li>
+              <li><span style="color: #f1948a;">Disponibilidade:</span> Permite verificação quando necessário</li>
+            </ul>
+          </div>
+          
+          <div style="flex: 1; min-width: 250px;">
+            <h6 style="margin: 0 0 10px 0; color: #5d6d7e;">Aplicações Práticas:</h6>
+            <ul style="margin: 0; padding-left: 20px; font-size: 0.95rem;">
+              <li>Compliance com LGPD e GDPR</li>
+              <li>Forense digital</li>
+              <li>Controlo de acesso avançado</li>
+              <li>Auditoria e responsabilização</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
   
-  <!-- Nota oficial ISC2 - mantendo a classe original -->
-  <p class="isc2-note" style="font-style: italic; color: #555; margin-top: 25px; padding-left: 20px; border-left: 4px solid #2c3e50; font-size: 1rem; line-height: 1.6;">
-    Nota: Este conteúdo está em conformidade com os princípios de proteção de dados e diretrizes do curso oficial da ISC2.
-  </p>
-  
-  <!-- Seção para Pontos Importantes do Exame - com estilo renovado -->
+  <!-- Pontos-chave para o exame CC (novo) -->
   <div style="background-color: #f5f7fa; border-radius: 8px; padding: 20px; margin: 30px 0; border: 1px solid #dee2e6;">
     <div style="background-color: #f5f7fa; padding: 15px; display: flex; align-items: center;">
       <div style="width: 48px; height: 48px; border-radius: 50%; background-color: #5d6d7e; display: flex; justify-content: center; align-items: center; margin-right: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <span style="color: white; font-size: 24px;">📝</span>
       </div>
-      <h4 style="margin: 0; color: #2c3e50; font-size: 22px; font-weight: 600;">Pontos-chave para o exame CC</h4>
+      <h4 style="margin: 0; color: #2c3e50; font-size: 22px; font-weight: 600;">Pontos-chave de Não-repúdio para o exame CC</h4>
     </div>
     <ul style="margin: 15px 0 0 0; padding-left: 25px; font-size: 1.1rem; line-height: 1.6;">
-      <li style="margin-bottom: 10px;"><u>Definições Básicas:</u> Entender que a <strong>privacidade</strong> protege informações pessoais, enquanto o <strong>não-repúdio</strong> assegura que uma ação não pode ser negada.</li>
-      <li style="margin-bottom: 10px;"><u>Regulamentações e Legislação:</u> Conhecer as principais leis como <strong>HIPAA</strong> e <strong>GDPR</strong>, e compreender o conceito de <strong>expectativa razoável de privacidade</strong>.</li>
-      <li style="margin-bottom: 10px;"><u>Responsabilidades dos Profissionais de TI:</u> Proteger as próprias informações, educar usuários e auxiliar os oficiais de privacidade.</li>
-      <li style="margin-bottom: 10px;"><u>Exemplos Práticos:</u> Redes sociais geralmente não têm expectativa de privacidade; e-mails e mensagens diretas têm maior expectativa de privacidade.</li>
-      <li style="margin-bottom: 10px;"><u>Ferramentas de Proteção:</u> Assinaturas digitais, logs de auditoria e criptografia são essenciais para garantir a segurança e o não-repúdio.</li>
-      <li><u>Contexto Organizacional:</u> Em ambientes corporativos, a expectativa de privacidade é reduzida e políticas internas, como a <strong>AUP</strong>, devem ser claras.</li>
+      <li style="margin-bottom: 10px;">Não-repúdio é diferente de autenticação - prova ações passadas, não identidade atual</li>
+      <li style="margin-bottom: 10px;">Requer três elementos fundamentais: <strong>assinatura digital + timestamp + log imutável</strong></li>
+      <li style="margin-bottom: 10px;">É essencial em ambientes onde <strong>responsabilização legal</strong> é necessária</li>
+      <li style="margin-bottom: 10px;">Integra-se com confidencialidade e integridade para formar uma solução completa</li>
+      <li style="margin-bottom: 10px;">Chaves privadas devem ser protegidas com <strong>máxima segurança</strong> para garantir não-repúdio</li>
+      <li>Logs de auditoria devem ser <strong>protegidos contra adulteração</strong> para manter validade legal</li>
     </ul>
+    
+    <div style="margin-top: 20px; background-color: #fff9e6; padding: 15px; border-radius: 5px; border: 1px solid #ffeeb8;">
+      <h6 style="margin: 0 0 10px 0; color: #b8860b; font-weight: bold;">💡 Dica para o Exame:</h6>
+      <p style="margin: 0; font-size: 1rem; line-height: 1.5;">
+        Se encontrar uma pergunta sobre "provar que alguém realizou uma ação no passado", a resposta provável envolve não-repúdio, incluindo assinaturas digitais e timestamping.
+      </p>
+    </div>
   </div>
+  
+  <!-- Nota final ISC2 - mantém igual ao teu código -->
+  <p class="isc2-note">
+    Nota: Este conteúdo expandido sobre não-repúdio está em conformidade com os princípios de proteção de dados e diretrizes do curso oficial da ISC2, fornecindo uma base completa para compreensão e aplicação prática.
+  </p>
 </article>
         
 
